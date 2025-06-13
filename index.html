@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art for Games - Interactive Course</title>
+    <meta name="description" content="Comprehensive 6-week course teaching pixel art creation and Unity integration for game development">
+    
+    <!-- Enhanced CSS for educational platform -->
+    <style>
+        /* CSS Variables for consistent theming */
+        :root {
+            --bg-color: #282c34;
+            --primary-text: #abb2bf;
+            --header-text: #61afef;
+            --accent-color: #e06c75;
+            --border-color: #3b4048;
+            --tab-active-bg: #3b4048;
+            --tab-inactive-bg: #21252b;
+            --tab-hover-bg: #4f5661;
+            --content-bg: #2c313a;
+            --interactive-bg: #21252b;
+            --button-bg: #4b5263;
+            --button-active-bg: #61afef;
+            --button-text: #ffffff;
+            --quiz-correct: #80a956;
+            --quiz-incorrect: #9e2835;
+            --success-color: #98c379;
+            --warning-color: #e5c07b;
+        }
+
+        /* General styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 1.5rem 0;
+            border-bottom: 2px solid var(--border-color);
+            background: linear-gradient(135deg, var(--bg-color), var(--tab-inactive-bg));
+        }
+
+        header h1 {
+            color: var(--header-text);
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 0;
+            color: var(--primary-text);
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+
+        /* Navigation tabs */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            background-color: var(--tab-inactive-bg);
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: var(--primary-text);
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            min-width: 50px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--tab-hover-bg);
+            transform: translateY(-2px);
+        }
+
+        nav ul li a.active {
+            background-color: var(--bg-color);
+            border-bottom: 3px solid var(--header-text);
+            font-weight: 700;
+            color: var(--header-text);
+        }
+
+        /* Main content area */
+        main {
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Week content sections */
+        .week-section {
+            background-color: var(--content-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .week-header {
+            background: linear-gradient(135deg, var(--header-text), var(--accent-color));
+            color: white;
+            padding: 1.5rem;
+            margin: 0;
+        }
+
+        .week-header h2 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.8rem;
+        }
+
+        .week-header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .week-content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        @media (min-width: 1000px) {
+            .week-content {
+                flex-direction: row;
+            }
+        }
+
+        /* Educational content styling */
+        .lesson-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .lesson-content h3 {
+            color: var(--header-text);
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .lesson-content h4 {
+            color: var(--accent-color);
+            margin: 1.2rem 0 0.8rem 0;
+        }
+
+        .lesson-content p {
+            margin: 1rem 0;
+            text-align: justify;
+        }
+
+        .lesson-content ul, .lesson-content ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        .lesson-content li {
+            margin: 0.5rem 0;
+        }
+
+        .lesson-content strong {
+            color: var(--header-text);
+        }
+
+        .lesson-content em {
+            color: var(--accent-color);
+        }
+
+        /* Interactive area styling */
+        .interactive-area {
+            flex-basis: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: var(--interactive-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .interactive-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .interactive-header h4 {
+            color: var(--header-text);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .interactive-header p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Canvas styling */
+        .pixel-canvas {
+            background-color: #ffffff;
+            cursor: crosshair;
+            image-rendering: pixelated;
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            border: 2px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        /* Controls styling */
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .controls button, .tool {
+            padding: 0.7rem 1.2rem;
+            border: none;
+            border-radius: 6px;
+            background-color: var(--button-bg);
+            color: var(--button-text);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .controls button:hover, .tool:hover {
+            background-color: var(--tab-hover-bg);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .controls button.active, .tool.active {
+            background-color: var(--button-active-bg);
+            color: var(--bg-color);
+        }
+
+        /* Palette styling */
+        .palette {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .color-box {
+            width: 32px;
+            height: 32px;
+            border: 2px solid var(--primary-text);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-box.selected {
+            border-color: var(--button-active-bg);
+            border-width: 3px;
+            transform: scale(1.15);
+        }
+
+        /* Exercise section */
+        .exercise-section {
+            background-color: var(--interactive-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .exercise-section h4 {
+            color: var(--success-color);
+            margin: 0 0 1rem 0;
+        }
+
+        .exercise-steps {
+            counter-reset: step-counter;
+        }
+
+        .exercise-step {
+            counter-increment: step-counter;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: var(--content-bg);
+            border-radius: 6px;
+            border-left: 4px solid var(--header-text);
+        }
+
+        .exercise-step::before {
+            content: "Step " counter(step-counter) ": ";
+            font-weight: bold;
+            color: var(--header-text);
+        }
+
+        /* Success criteria */
+        .success-criteria {
+            background-color: var(--content-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--success-color);
+        }
+
+        .success-criteria h4 {
+            color: var(--success-color);
+            margin: 0 0 1rem 0;
+        }
+
+        .success-criteria ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .success-criteria li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .success-criteria li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Utility classes */
+        .hidden {
+            display: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .margin-top {
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+            
+            .week-content {
+                padding: 1rem;
+            }
+            
+            .interactive-area {
+                flex-basis: auto;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Pixel Art for Games</h1>
+        <p>Interactive Course: From Pixel Fundamentals to Unity Integration</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav>
+        <ul>
+            <li><a href="#week-1" class="tab-link active">Week 1</a></li>
+            <li><a href="#week-2" class="tab-link">Week 2</a></li>
+            <li><a href="#week-3" class="tab-link">Week 3</a></li>
+            <li><a href="#week-4" class="tab-link">Week 4</a></li>
+            <li><a href="#week-5" class="tab-link">Week 5</a></li>
+            <li><a href="#week-6" class="tab-link">Week 6</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Week 1: Comprehensive Content Integration -->
+        <section id="week-1" class="week-section">
+            <div class="week-header">
+                <h2>Week 1: Introduction to Pixel Art Basics</h2>
+                <p>Master the fundamentals of pixel art creation and understand its role in game development</p>
+            </div>
+            
+            <div class="week-content">
+                <div class="lesson-content">
+                    <h3>What is Pixel Art?</h3>
+                    <p>Pixel art is a form of digital art where images are created and edited at the pixel level. Each individual pixel is deliberately placed to create forms, characters, and environments with a distinctive aesthetic that emerged from the technical limitations of early computer graphics.</p>
+                    
+                    <p>Unlike other digital art forms that rely on brushes, gradients, and anti-aliasing, pixel art embraces the <strong>grid-based nature of digital displays</strong>. Every pixel serves a purpose, and the artist must work within strict constraints of resolution and colour palette.</p>
+
+                    <h4>Historical Origins and Evolution</h4>
+                    <p>Pixel art originated in the late 1970s and early 1980s when computer graphics were severely limited by hardware constraints. Early arcade games like <em>Space Invaders</em> (1978) and <em>Pac-Man</em> (1980) used simple pixel arrangements to create recognisable characters and environments.</p>
+                    
+                    <p>These technical limitations forced artists to be incredibly creative and efficient. With only a few colours available and tiny resolutions to work with, every pixel had to count. This constraint-driven creativity led to iconic characters and visual styles that remain influential today.</p>
+
+                    <h4>Modern Revival and Artistic Choice</h4>
+                    <p>Today's pixel art represents an <strong>artistic choice rather than technical necessity</strong>. Modern indie games like <em>Celeste</em> (2018), <em>Hyper Light Drifter</em> (2016), and <em>Undertale</em> (2015) demonstrate how pixel art can create emotionally resonant experiences that connect with contemporary audiences.</p>
+
+                    <p>This revival shows that pixel art's appeal extends beyond nostalgia. The style's clarity, expressiveness, and distinctive aesthetic make it a powerful tool for game developers who want to create memorable visual experiences.</p>
+
+                    <h3>Fundamental Principles</h3>
+                    
+                    <h4>Grid-Based Design</h4>
+                    <p>All pixel art is created on a grid where each square represents one pixel. Understanding this grid is crucial for creating clean, precise artwork. The grid provides structure and helps maintain consistency across your artwork.</p>
+
+                    <h4>Deliberate Pixel Placement</h4>
+                    <p>Unlike painting or sketching where you can make broad strokes, pixel art requires <strong>intentional placement of each pixel</strong>. This precision is both a challenge and a strength - it forces you to consider every visual element carefully.</p>
+
+                    <h4>Limited Colour Palettes</h4>
+                    <p>Traditional pixel art uses restricted colour palettes, often ranging from 4 to 32 colours total. This limitation encourages creative colour mixing and helps create visual harmony across your artwork.</p>
+
+                    <h4>Cultural Sensitivity in Design</h4>
+                    <p>As you begin creating pixel art, it's important to consider how your artistic choices might be perceived by diverse audiences. Pixel art, like all art forms, carries cultural meaning and should be created with <strong>inclusivity and respect</strong> in mind.</p>
+
+                    <div class="exercise-section">
+                        <h4>Practice Exercise: Your First Pixel Art</h4>
+                        <p>Use the interactive canvas to create your first pixel art piece. Try drawing simple shapes like hearts, stars, or smiley faces to get comfortable with pixel-perfect placement.</p>
+                        
+                        <div class="exercise-steps">
+                            <div class="exercise-step">Select the pencil tool and choose a colour from the palette below</div>
+                            <div class="exercise-step">Click on individual grid squares to place pixels</div>
+                            <div class="exercise-step">Use the eraser tool to remove pixels if needed</div>
+                            <div class="exercise-step">Toggle the grid on/off to see how your art looks without guide lines</div>
+                            <div class="exercise-step">Try creating a simple 8x8 icon using only 2-3 colours</div>
+                        </div>
+                    </div>
+
+                    <h3>Tools and Workflow</h3>
+                    <p>Professional pixel artists use specialised software that provides pixel-perfect control. The tools in this interactive course simulate these professional capabilities, including:</p>
+                    
+                    <ul>
+                        <li><strong>Pencil Tool:</strong> Places individual pixels with precision</li>
+                        <li><strong>Eraser Tool:</strong> Removes pixels cleanly</li>
+                        <li><strong>Fill Tool:</strong> Fills connected areas with colour</li>
+                        <li><strong>Grid Toggle:</strong> Shows/hides the pixel grid for reference</li>
+                        <li><strong>Colour Palette:</strong> Limited selection encouraging creative constraint</li>
+                    </ul>
+
+                    <h3>Connection to Game Development</h3>
+                    <p>Understanding pixel art fundamentals prepares you for the complete game development pipeline. The precision and planning required for pixel art directly transfers to:</p>
+                    
+                    <ul>
+                        <li><strong>Asset Creation:</strong> Characters, environments, and UI elements</li>
+                        <li><strong>Animation Planning:</strong> Designing sprites that work well in motion</li>
+                        <li><strong>Performance Consideration:</strong> Creating efficient art that performs well in games</li>
+                        <li><strong>Style Consistency:</strong> Maintaining visual coherence across game assets</li>
+                    </ul>
+
+                    <div class="success-criteria">
+                        <h4>Week 1 Success Criteria</h4>
+                        <ul>
+                            <li>Create clean pixel art using deliberate pixel placement</li>
+                            <li>Demonstrate understanding of grid-based design principles</li>
+                            <li>Use limited colour palettes effectively</li>
+                            <li>Show awareness of cultural sensitivity in design choices</li>
+                            <li>Complete simple pixel art exercises with confidence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="interactive-area">
+                    <div class="interactive-header">
+                        <h4>Interactive Pixel Art Canvas</h4>
+                        <p>16×16 grid for learning fundamental pixel placement</p>
+                    </div>
+
+                    <div class="controls">
+                        <button class="tool active" data-tool="pencil" title="Pencil Tool">✏️ Pencil</button>
+                        <button class="tool" data-tool="eraser" title="Eraser Tool">🧼 Eraser</button>
+                        <button class="tool" data-tool="fill" title="Fill Tool">🎨 Fill</button>
+                        <button data-action="grid">Grid</button>
+                        <button data-action="reset">Reset</button>
+                    </div>
+
+                    <canvas id="week-1-canvas" class="pixel-canvas" width="320" height="320"></canvas>
+
+                    <div id="week-1-palette" class="palette">
+                        <div class="color-box" data-color="#000000" title="Black"></div>
+                        <div class="color-box" data-color="#ffffff" title="White"></div>
+                        <div class="color-box" data-color="#ff0000" title="Red"></div>
+                        <div class="color-box" data-color="#00ff00" title="Green"></div>
+                        <div class="color-box" data-color="#0000ff" title="Blue"></div>
+                        <div class="color-box" data-color="#ffff00" title="Yellow"></div>
+                    </div>
+
+                    <div class="margin-top">
+                        <p class="text-center"><strong>Pro Tip:</strong> Start with simple shapes and focus on clean edges. Every pixel matters!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Week 2: Placeholder for now -->
+        <section id="week-2" class="week-section hidden">
+            <div class="week-header">
+                <h2>Week 2: Colour Theory & Shading</h2>
+                <p>Master colour palettes and shading techniques for pixel art</p>
+            </div>
+            <div class="week-content">
+                <div class="lesson-content">
+                    <h3>Coming Soon</h3>
+                    <p>Comprehensive colour theory content will be integrated here following the same pattern as Week 1.</p>
+                </div>
+                <div class="interactive-area">
+                    <p>Interactive shading exercises coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weeks 3-6: Placeholders -->
+        <section id="week-3" class="week-section hidden">
+            <div class="week-header">
+                <h2>Week 3: Character Design & Sprites</h2>
+                <p>Create expressive characters using professional techniques</p>
+            </div>
+            <div class="week-content">
+                <p>Content integration in progress...</p>
+            </div>
+        </section>
+
+        <section id="week-4" class="week-section hidden">
+            <div class="week-header">
+                <h2>Week 4: Environment Art & Tilemaps</h2>
+                <p>Build seamless game environments with tileable patterns</p>
+            </div>
+            <div class="week-content">
+                <p>Content integration in progress...</p>
+            </div>
+        </section>
+
+        <section id="week-5" class="week-section hidden">
+            <div class="week-header">
+                <h2>Week 5: Pixel Art Animation</h2>
+                <p>Bring your creations to life with frame-by-frame animation</p>
+            </div>
+            <div class="week-content">
+                <p>Content integration in progress...</p>
+            </div>
+        </section>
+
+        <section id="week-6" class="week-section hidden">
+            <div class="week-header">
+                <h2>Week 6: Unity Integration & Pipeline</h2>
+                <p>Complete the journey from pixel art to playable game</p>
+            </div>
+            <div class="week-content">
+                <p>Content integration in progress...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced JavaScript with sophisticated canvas system -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Base Canvas Class - Enhanced from original demo
+            class BaseCanvas {
+                constructor(canvasId, paletteId, config = {}) {
+                    this.canvas = document.getElementById(canvasId);
+                    this.paletteContainer = document.getElementById(paletteId);
+                    if (!this.canvas || !this.paletteContainer) return;
+
+                    this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
+                    this.gridSize = config.gridSize || 16;
+                    this.pixelSize = this.canvas.width / this.gridSize;
+                    
+                    this.isDrawing = false;
+                    this.showGrid = true;
+                    this.currentTool = 'pencil';
+                    this.selectedColor = '#000000';
+                    
+                    this.init();
+                }
+
+                init() {
+                    this.setupControls();
+                    this.setupPalette();
+                    this.setupCanvasEvents();
+                    this.reset();
+                }
+                
+                setupControls() {
+                    const controls = this.canvas.closest('.interactive-area');
+                    controls.querySelectorAll('.tool').forEach(button => {
+                        button.addEventListener('click', () => {
+                            this.currentTool = button.dataset.tool;
+                            controls.querySelectorAll('.tool').forEach(b => b.classList.remove('active'));
+                            button.classList.add('active');
+                        });
+                    });
+                    
+                    const gridButton = controls.querySelector('[data-action="grid"]');
+                    if (gridButton) gridButton.addEventListener('click', () => {
+                        this.showGrid = !this.showGrid;
+                        this.redraw();
+                    });
+                    
+                    const resetButton = controls.querySelector('[data-action="reset"]');
+                    if (resetButton) resetButton.addEventListener('click', () => this.reset());
+                }
+
+                setupPalette() {
+                    this.paletteContainer.querySelectorAll('.color-box').forEach(box => {
+                        box.style.backgroundColor = box.dataset.color;
+                        box.addEventListener('click', () => {
+                            this.selectedColor = box.dataset.color;
+                            this.paletteContainer.querySelectorAll('.color-box').forEach(b => b.classList.remove('selected'));
+                            box.classList.add('selected');
+                        });
+                    });
+                    
+                    // Select first color by default
+                    const firstColor = this.paletteContainer.querySelector('.color-box');
+                    if (firstColor) {
+                        firstColor.classList.add('selected');
+                        this.selectedColor = firstColor.dataset.color;
+                    }
+                }
+
+                setupCanvasEvents() {
+                    this.canvas.addEventListener('mousedown', e => this.startDrawing(e));
+                    this.canvas.addEventListener('mousemove', e => this.draw(e));
+                    window.addEventListener('mouseup', () => this.stopDrawing());
+                    this.canvas.addEventListener('mouseleave', () => this.stopDrawing());
+                    
+                    // Touch events for mobile
+                    this.canvas.addEventListener('touchstart', e => {
+                        e.preventDefault();
+                        this.startDrawing(e.touches[0]);
+                    }, { passive: false });
+                    this.canvas.addEventListener('touchmove', e => {
+                        e.preventDefault();
+                        this.draw(e.touches[0]);
+                    }, { passive: false });
+                    this.canvas.addEventListener('touchend', () => this.stopDrawing());
+                }
+
+                startDrawing(e) {
+                    e.preventDefault();
+                    this.isDrawing = true;
+                    this.handleInteraction(e);
+                }
+
+                draw(e) {
+                    if (!this.isDrawing || this.currentTool === 'fill') return;
+                    e.preventDefault();
+                    this.handleInteraction(e);
+                }
+                
+                stopDrawing() {
+                    this.isDrawing = false;
+                }
+
+                handleInteraction(e) {
+                    const rect = this.canvas.getBoundingClientRect();
+                    const scaleX = this.canvas.width / rect.width;
+                    const scaleY = this.canvas.height / rect.height;
+                    const x = (e.clientX - rect.left) * scaleX;
+                    const y = (e.clientY - rect.top) * scaleY;
+                    const gridX = Math.floor(x / this.pixelSize);
+                    const gridY = Math.floor(y / this.pixelSize);
+                    
+                    if (gridX < 0 || gridX >= this.gridSize || gridY < 0 || gridY >= this.gridSize) return;
+
+                    if (this.currentTool === 'fill') {
+                        this.floodFill(gridX, gridY, this.selectedColor);
+                        this.isDrawing = false;
+                    } else {
+                        this.setPixel(gridX, gridY, this.currentTool === 'eraser' ? null : this.selectedColor);
+                        this.redraw();
+                    }
+                }
+
+                setPixel(x, y, color) {
+                    if (!this.pixels) this.pixels = [];
+                    if (!this.pixels[y]) this.pixels[y] = [];
+                    this.pixels[y][x] = color;
+                }
+
+                getPixel(x, y) {
+                    return (this.pixels && this.pixels[y] && this.pixels[y][x]) || null;
+                }
+
+                floodFill(startX, startY, fillColor) {
+                    const startColor = this.getPixel(startX, startY);
+                    if (startColor === fillColor) return;
+                    
+                    const stack = [[startX, startY]];
+                    while (stack.length > 0) {
+                        const [x, y] = stack.pop();
+                        if (x < 0 || x >= this.gridSize || y < 0 || y >= this.gridSize) continue;
+                        if (this.getPixel(x, y) === startColor) {
+                            this.setPixel(x, y, fillColor);
+                            stack.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
+                        }
+                    }
+                    this.redraw();
+                }
+
+                redraw() {
+                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                    this.ctx.fillStyle = '#ffffff';
+                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+                    // Draw pixels
+                    if (this.pixels) {
+                        for (let y = 0; y < this.gridSize; y++) {
+                            for (let x = 0; x < this.gridSize; x++) {
+                                const color = this.getPixel(x, y);
+                                if (color) {
+                                    this.ctx.fillStyle = color;
+                                    this.ctx.fillRect(x * this.pixelSize, y * this.pixelSize, this.pixelSize, this.pixelSize);
+                                }
+                            }
+                        }
+                    }
+
+                    // Draw grid
+                    if (this.showGrid) this.drawGridLines();
+                }
+                
+                drawGridLines() {
+                    this.ctx.strokeStyle = '#dddddd';
+                    this.ctx.lineWidth = 1;
+                    this.ctx.beginPath();
+                    for (let i = 0; i <= this.gridSize; i++) {
+                        this.ctx.moveTo(i * this.pixelSize, 0);
+                        this.ctx.lineTo(i * this.pixelSize, this.canvas.height);
+                        this.ctx.moveTo(0, i * this.pixelSize);
+                        this.ctx.lineTo(this.canvas.width, i * this.pixelSize);
+                    }
+                    this.ctx.stroke();
+                }
+
+                reset() {
+                    this.pixels = [];
+                    this.redraw();
+                }
+            }
+
+            // Tab Navigation System
+            const tabLinks = document.querySelectorAll('.tab-link');
+            const contentSections = document.querySelectorAll('.week-section');
+            
+            function initializeCanvasForTab(tabId) {
+                const canvasId = tabId.replace('#', '') + '-canvas';
+                const paletteId = tabId.replace('#', '') + '-palette';
+                const canvasElement = document.getElementById(canvasId);
+
+                if (canvasElement && !canvasElement.dataset.initialized) {
+                    new BaseCanvas(canvasId, paletteId, {});
+                    canvasElement.dataset.initialized = 'true';
+                }
+            }
+            
+            tabLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    tabLinks.forEach(tab => tab.classList.remove('active'));
+                    link.classList.add('active');
+                    contentSections.forEach(section => section.classList.add('hidden'));
+                    
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.classList.remove('hidden');
+                        initializeCanvasForTab(targetId);
+                    }
+                });
+            });
+
+            // Initialize default tab
+            initializeCanvasForTab('#week-1');
+        });
+    </script>
+</body>
+</html>
