@@ -139,12 +139,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize canvas for exercises
-    function initializeCanvas(weekNum, tabName, canvasConfig) {
+    function initializeCanvas(weekNum, tabName, canvasConfig, attempt = 1) {
         const canvasId = `week${weekNum}-${tabName}-canvas`;
         const canvasContainer = document.getElementById(canvasId);
         
         if (!canvasContainer) {
-            console.error(`Canvas container ${canvasId} not found`);
+            if (attempt < 5) {
+                setTimeout(() => initializeCanvas(weekNum, tabName, canvasConfig, attempt + 1), 100);
+            } else {
+                console.error(`Canvas container ${canvasId} not found after ${attempt} attempts`);
+            }
             return;
         }
 

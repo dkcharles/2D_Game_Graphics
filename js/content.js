@@ -1349,8 +1349,7 @@ const courseContent = {
                 canvas: {
                     type: 'layered',
                     gridSize: 32,
-                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C', '#E67E22', '#95A5A6', '#34495E', '#C0392B'],
-                    preloaded: 'character_guide'
+                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C', '#E67E22', '#95A5A6', '#34495E', '#C0392B']
                 }
             },
             assessment: {

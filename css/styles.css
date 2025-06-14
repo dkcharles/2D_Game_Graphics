@@ -250,10 +250,14 @@ body {
 }
 
 .pixel-canvas {
+    image-rendering: pixelated; /* Most modern browsers */
+    image-rendering: crisp-edges; /* Firefox, some others */
+    image-rendering: -webkit-optimize-contrast; /* Old Safari, Edge 79+ */
+    image-rendering: -moz-crisp-edges; /* Old Firefox */
+    image-rendering: -o-crisp-edges; /* Old Opera */
+    image-rendering: optimize-contrast; /* Legacy */
+    -ms-interpolation-mode: nearest-neighbor; /* IE */
     cursor: crosshair;
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
     border: 1px solid #ddd;
     display: block;
 }
