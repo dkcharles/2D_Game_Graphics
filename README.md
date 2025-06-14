@@ -1,126 +1,101 @@
 # Pixel Art for Games - Interactive Web Course
 
-A comprehensive 6-week interactive course teaching pixel art creation and Unity integration for game development. This web application combines sophisticated drawing tools with university-standard educational content.
+## Overview
+A comprehensive 6-week interactive web course for learning pixel art creation for Unity game development. The application features a modern sub-tab navigation system that eliminates long scrolling and provides focused learning experiences.
 
-## 🎯 Course Structure
+## Structure
+```
+WebApp/
+├── index.html          # Main HTML file
+├── css/
+│   └── styles.css      # All styles (513 lines)
+├── js/
+│   ├── canvas.js       # Canvas classes (575 lines)
+│   ├── content.js      # Course content (1,703 lines)
+│   └── main.js         # Application logic (457 lines)
+└── README.md           # This file
+```
 
-- **Week 1:** Introduction to Pixel Art Basics
-- **Week 2:** Colour Theory & Shading Techniques  
-- **Week 3:** Character Design & Sprites
-- **Week 4:** Environment Art & Tilemaps
-- **Week 5:** Pixel Art Animation
-- **Week 6:** Unity Integration & Game Pipeline
+## Features
 
-## 🛠️ Features
+### Navigation Structure
+- **Main Navigation**: 6 weeks of content
+- **Sub-Navigation**: Each week has 6 tabs:
+  - Overview: Introduction and learning objectives
+  - Concepts: Theory and principles
+  - Practice 1: Guided exercise
+  - Practice 2: Semi-guided exercise
+  - Challenge: Creative application
+  - Assessment: Quiz and self-evaluation
 
-- **Interactive Drawing Canvas:** Pixel-perfect drawing tools with professional features
-- **Comprehensive Educational Content:** University-standard curriculum with cultural sensitivity
-- **Progressive Skill Building:** From basic pixel placement to Unity integration
-- **Responsive Design:** Works on desktop, tablet, and mobile devices
-- **GitHub Pages Ready:** Easy deployment and sharing
+### Interactive Elements
+- **Multiple Canvas Types**:
+  - Basic drawing canvas
+  - Canvas with fill tool
+  - Layered canvas for complex sprites
+  - Animation canvas with timeline
+  - Tile canvas with live preview
 
-## 🚀 Quick Start
+### Week-by-Week Content
+1. **Week 1**: Introduction to Pixel Art Basics
+2. **Week 2**: Colour Theory and Shading
+3. **Week 3**: Character Design and Sprites
+4. **Week 4**: Environment Art and Tilemaps
+5. **Week 5**: Pixel Art Animation
+6. **Week 6**: Game Art Pipeline & Unity Integration
+
+## Usage
 
 ### Local Development
-1. Clone or download this repository
-2. Open `index.html` in a modern web browser
-3. Start learning pixel art!
+1. Open `index.html` in a modern web browser
+2. Navigate between weeks using the top navigation
+3. Access different exercises using sub-tabs
+4. Interactive canvases load automatically for practice sections
 
-### GitHub Pages Deployment
-1. Fork this repository
-2. Go to Settings > Pages
-3. Select "Deploy from a branch" > "main" > "/ (root)"
-4. Your course will be available at `https://yourusername.github.io/PixelArtApp`
+### Deployment
+The application is fully client-side and can be deployed to any static hosting service:
+- GitHub Pages
+- Netlify
+- Vercel
+- Any web server
 
-## 📚 Educational Content Integration
+## Technical Details
 
-Currently **Week 1 is fully integrated** as a complete example. The framework is ready for integrating the remaining weeks using the comprehensive content developed in the `/Project/content/` directory.
+### Canvas System
+- **PixelCanvas**: Base class for all drawing functionality
+- **LayeredCanvas**: Extends PixelCanvas with layer support
+- **AnimationCanvas**: Frame-by-frame animation support
+- **TileCanvas**: Seamless tile creation with preview
 
-### Content Integration Process
-1. Each week follows the same structure established in Week 1
-2. Educational content from `/Project/content/weekX/lesson-content.md` can be integrated into the HTML
-3. Interactive exercises are built using the sophisticated canvas system
-4. Assessment materials can be added as interactive quizzes
+### Responsive Design
+- Desktop optimized (1400px max width)
+- Tablet friendly with touch support
+- Mobile responsive with adapted navigation
 
-## 🎨 Technical Features
+### Browser Compatibility
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+- Mobile browsers with touch support
 
-### Sophisticated Drawing System
-- **Pixel-perfect placement** with grid-based editing
-- **Professional tools:** Pencil, eraser, fill tools
-- **Colour palette management** with educational constraints
-- **Touch support** for tablet-based learning
+## Future Enhancements
+- Export functionality for saving artwork
+- Progress tracking across sessions
+- Cloud save support
+- Additional exercise variations
+- Community gallery features
 
-### Educational Design
-- **Progressive disclosure** of complex concepts
-- **Cultural sensitivity** integrated throughout
-- **Professional workflow** preparation
-- **Portfolio development** focus
+## Educational Philosophy
+The course emphasizes:
+- Progressive skill building
+- Hands-on practice
+- Cultural sensitivity in design
+- Professional game development workflows
+- Unity integration best practices
 
-## 🌍 Cultural Sensitivity
+## License
+Educational use permitted. Please provide attribution.
 
-This course emphasizes inclusive design principles throughout:
-- Respectful character representation guidelines
-- Universal design principles for diverse audiences
-- Professional responsibility in game development
-- Cultural research methodologies
-
-## 💼 Professional Preparation
-
-Students completing this course will have:
-- **Portfolio-ready pixel art** suitable for game industry careers
-- **Unity integration skills** for professional game development
-- **Cultural competency** for international game development
-- **Professional workflow** understanding
-
-## 🔧 Technical Requirements
-
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- JavaScript enabled
-- Recommended: Desktop or tablet for optimal drawing experience
-- No additional software installation required
-
-## 📖 Course Philosophy
-
-This course balances:
-- **Technical excellence** with creative expression
-- **Professional skills** with artistic development  
-- **Cultural sensitivity** with creative freedom
-- **Academic rigor** with practical application
-
-## 🏫 Academic Use
-
-This course is designed for university-level instruction in:
-- Game Development programs
-- Digital Art courses
-- Interactive Media studies
-- Computer Science with creative applications
-
-### Instructor Resources
-- Comprehensive teaching guides available in `/Project/content/`
-- Assessment rubrics and quiz materials provided
-- Professional development emphasis throughout
-- Cultural sensitivity teaching frameworks included
-
-## 🤝 Contributing
-
-To contribute additional content or improvements:
-1. Review the content structure in `/Project/content/`
-2. Follow the established educational standards
-3. Maintain cultural sensitivity principles
-4. Test interactive features across browsers
-
-## 📄 License
-
-This educational content is designed for academic and educational use. Please respect the educational intent and cultural sensitivity principles when adapting or sharing.
-
-## 🎓 Educational Outcomes
-
-Students will demonstrate:
-- **Technical proficiency** in pixel art creation and Unity integration
-- **Cultural competency** in inclusive design principles
-- **Professional readiness** for game industry careers
-- **Creative achievement** within technical constraints
-
----
-
-**Ready to start your pixel art journey? Open `index.html` and begin with Week 1!**
+## Contact
+For questions or improvements, please submit issues or pull requests.

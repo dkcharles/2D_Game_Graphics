@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Test - Pixel Art Course</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="content-container">
+        <h2>Canvas Functionality Test</h2>
+        
+        <div class="exercise-container">
+            <div class="exercise-instructions">
+                <h3>Test Canvas</h3>
+                <p>This page tests that the canvas classes are working correctly.</p>
+            </div>
+            
+            <div class="exercise-workspace">
+                <div class="tools">
+                    <button class="tool-btn active" data-tool="pencil">✏️ Pencil</button>
+                    <button class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                    <button class="tool-btn" data-tool="fill">🪣 Fill</button>
+                    <button class="tool-btn" data-action="clear">🗑️ Clear</button>
+                    <button class="tool-btn" data-action="grid">⊞ Grid</button>
+                </div>
+                
+                <div class="canvas-container">
+                    <canvas id="test-canvas" class="pixel-canvas" width="320" height="320"></canvas>
+                </div>
+                
+                <div class="palette">
+                    <div class="color-swatch active" style="background-color: #000000" data-color="#000000"></div>
+                    <div class="color-swatch" style="background-color: #FF0000" data-color="#FF0000"></div>
+                    <div class="color-swatch" style="background-color: #00FF00" data-color="#00FF00"></div>
+                    <div class="color-swatch" style="background-color: #0000FF" data-color="#0000FF"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/canvas.js"></script>
+    <script>
+        // Simple test of canvas functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.getElementById('test-canvas');
+            const pixelCanvas = new PixelCanvas(canvas, {
+                gridSize: 16,
+                defaultColor: '#000000'
+            });
+
+            // Setup tool buttons
+            document.querySelectorAll('.tool-btn[data-tool]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    pixelCanvas.setTool(btn.dataset.tool);
+                    document.querySelectorAll('.tool-btn[data-tool]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
+
+            // Setup action buttons
+            document.querySelectorAll('.tool-btn[data-action]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const action = btn.dataset.action;
+                    if (action === 'clear') {
+                        pixelCanvas.clear();
+                    } else if (action === 'grid') {
+                        pixelCanvas.toggleGrid();
+                        btn.classList.toggle('active');
+                    }
+                });
+            });
+
+            // Setup color palette
+            document.querySelectorAll('.color-swatch').forEach(swatch => {
+                swatch.addEventListener('click', () => {
+                    pixelCanvas.setColor(swatch.dataset.color);
+                    document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+                    swatch.classList.add('active');
+                });
+            });
+
+            console.log('Canvas initialized successfully!');
+        });
+    </script>
+</body>
+</html>

@@ -3,947 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Art for Games - Interactive Course</title>
-    <meta name="description" content="Comprehensive 6-week course with 4 focused tasks per week">
+    <meta name="description" content="Learn pixel art creation for Unity game development with this comprehensive 6-week interactive course">
+    <meta name="keywords" content="pixel art, game development, Unity, tutorial, course, interactive">
+    <meta name="author" content="Pixel Art for Games Course">
     
-    <style>
-        /* CSS Variables for consistent theming */
-        :root {
-            --bg-color: #282c34;
-            --primary-text: #abb2bf;
-            --header-text: #61afef;
-            --accent-color: #e06c75;
-            --secondary-accent: #c678dd;
-            --success-color: #98c379;
-            --warning-color: #e5c07b;
-            --border-color: #3b4048;
-            --tab-active-bg: #3b4048;
-            --tab-inactive-bg: #21252b;
-            --tab-hover-bg: #4f5661;
-            --content-bg: #2c313a;
-            --interactive-bg: #21252b;
-            --button-bg: #4b5263;
-            --button-active-bg: #61afef;
-            --button-text: #ffffff;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--primary-text);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            text-align: center;
-            padding: 1.5rem 0;
-            border-bottom: 2px solid var(--border-color);
-            background: linear-gradient(135deg, var(--bg-color), var(--tab-inactive-bg));
-        }
-
-        header h1 {
-            color: var(--header-text);
-            margin: 0 0 0.5rem 0;
-            font-size: 2.2rem;
-            font-weight: 700;
-        }
-
-        header p {
-            margin: 0;
-            color: var(--primary-text);
-            opacity: 0.8;
-            font-size: 1.1rem;
-        }
-
-        /* Main Week Navigation */
-        .main-nav {
-            background-color: var(--tab-inactive-bg);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .main-nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .main-nav ul li {
-            flex: 1;
-            min-width: 120px;
-        }
-
-        .main-nav ul li a {
-            display: block;
-            padding: 1.2rem 1rem;
-            text-decoration: none;
-            color: var(--primary-text);
-            text-align: center;
-            border-bottom: 4px solid transparent;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            font-size: 1rem;
-        }
-
-        .main-nav ul li a:hover {
-            background-color: var(--tab-hover-bg);
-            color: var(--header-text);
-            transform: translateY(-2px);
-        }
-
-        .main-nav ul li a.active {
-            background-color: var(--content-bg);
-            border-bottom: 4px solid var(--header-text);
-            color: var(--header-text);
-            font-weight: 700;
-        }
-
-        /* Sub-Task Navigation (elegant design) */
-        .task-nav {
-            background: linear-gradient(to right, var(--interactive-bg), var(--content-bg));
-            border-bottom: 2px solid var(--border-color);
-            padding: 0.5rem 0;
-        }
-
-        .task-nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-            max-width: 800px;
-            margin: 0 auto;
-            gap: 0.5rem;
-        }
-
-        .task-nav ul li {
-            flex: 1;
-            min-width: 140px;
-        }
-
-        .task-nav ul li a {
-            display: block;
-            padding: 1rem 0.8rem;
-            text-decoration: none;
-            color: var(--primary-text);
-            text-align: center;
-            background-color: var(--interactive-bg);
-            border-radius: 8px;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .task-nav ul li a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s;
-        }
-
-        .task-nav ul li a:hover::before {
-            left: 100%;
-        }
-
-        .task-nav ul li a:hover {
-            background-color: var(--tab-hover-bg);
-            color: var(--header-text);
-            border-color: var(--header-text);
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        .task-nav ul li a.active {
-            background: linear-gradient(135deg, var(--secondary-accent), var(--accent-color));
-            color: white;
-            border-color: var(--secondary-accent);
-            font-weight: 600;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(198,120,221,0.4);
-        }
-
-        .task-number {
-            display: block;
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 0.3rem;
-            letter-spacing: 0.5px;
-        }
-
-        .task-title {
-            display: block;
-            font-size: 0.75rem;
-            opacity: 0.9;
-            font-weight: 500;
-        }
-
-        /* Task completion indicator */
-        .task-status {
-            position: absolute;
-            top: 0.3rem;
-            right: 0.3rem;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .task-status.completed {
-            background-color: var(--success-color);
-            box-shadow: 0 0 8px var(--success-color);
-        }
-
-        .task-status.in-progress {
-            background-color: var(--warning-color);
-            box-shadow: 0 0 8px var(--warning-color);
-        }
-
-        /* Main Content */
-        main {
-            padding: 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .week-section {
-            background-color: var(--content-bg);
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-
-        .week-header {
-            background: linear-gradient(135deg, var(--header-text), var(--accent-color));
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .week-header h2 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .week-header p {
-            margin: 0;
-            font-size: 1.1rem;
-            opacity: 0.95;
-        }
-
-        /* Task Content Areas */
-        .task-content {
-            display: none;
-            padding: 2.5rem;
-            min-height: 600px;
-        }
-
-        .task-content.active {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            animation: fadeIn 0.3s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (min-width: 1000px) {
-            .task-content.active {
-                flex-direction: row;
-            }
-        }
-
-        /* Content sections */
-        .lesson-content {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .lesson-content h3 {
-            color: var(--header-text);
-            font-size: 1.6rem;
-            margin: 0 0 1.5rem 0;
-            border-bottom: 3px solid var(--secondary-accent);
-            padding-bottom: 0.5rem;
-        }
-
-        .lesson-content h4 {
-            color: var(--accent-color);
-            margin: 1.5rem 0 1rem 0;
-            font-size: 1.2rem;
-        }
-
-        .lesson-content p {
-            margin: 1rem 0;
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        .lesson-content ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-
-        .lesson-content li {
-            margin: 0.8rem 0;
-        }
-
-        .lesson-content strong {
-            color: var(--header-text);
-        }
-
-        /* Interactive area */
-        .interactive-area {
-            flex-basis: 420px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 2rem;
-            background: linear-gradient(135deg, var(--interactive-bg), var(--tab-inactive-bg));
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        .interactive-header {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .interactive-header h4 {
-            color: var(--header-text);
-            margin: 0 0 0.5rem 0;
-            font-size: 1.3rem;
-        }
-
-        .interactive-header p {
-            margin: 0;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .pixel-canvas {
-            background-color: #ffffff;
-            cursor: crosshair;
-            image-rendering: pixelated;
-            width: 100%;
-            max-width: 320px;
-            height: auto;
-            aspect-ratio: 1 / 1;
-            border: 3px solid var(--border-color);
-            border-radius: 8px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-        }
-
-        .controls {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.7rem;
-            margin: 1rem 0;
-        }
-
-        .controls button, .tool {
-            padding: 0.8rem 1.4rem;
-            border: none;
-            border-radius: 8px;
-            background-color: var(--button-bg);
-            color: var(--button-text);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-size: 0.9rem;
-            font-weight: 500;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        .controls button:hover, .tool:hover {
-            background-color: var(--tab-hover-bg);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        .controls button.active, .tool.active {
-            background-color: var(--button-active-bg);
-            color: var(--bg-color);
-            transform: translateY(-1px);
-        }
-
-        .palette {
-            display: flex;
-            gap: 0.7rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 1.5rem 0;
-        }
-
-        .color-box {
-            width: 36px;
-            height: 36px;
-            border: 2px solid var(--primary-text);
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        .color-box:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-        }
-
-        .color-box.selected {
-            border-color: var(--button-active-bg);
-            border-width: 3px;
-            transform: scale(1.2);
-            box-shadow: 0 0 16px var(--button-active-bg);
-        }
-
-        /* Utility classes */
-        .hidden {
-            display: none;
-        }
-
-        .placeholder-content {
-            text-align: center;
-            padding: 3rem;
-            background-color: var(--interactive-bg);
-            border-radius: 8px;
-            border: 2px dashed var(--border-color);
-            color: var(--primary-text);
-            opacity: 0.7;
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            main {
-                padding: 1rem;
-            }
-            
-            .task-content {
-                padding: 1.5rem;
-            }
-            
-            .interactive-area {
-                flex-basis: auto;
-                padding: 1.5rem;
-            }
-            
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .task-title {
-                display: none;
-            }
-
-            .main-nav ul li a {
-                padding: 1rem 0.5rem;
-                font-size: 0.9rem;
-            }
-
-            .task-nav ul li a {
-                padding: 0.8rem 0.5rem;
-            }
-        }
-    </style>
+    <title>Pixel Art for Games - Interactive Course</title>
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon (optional - add your own) -->
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="header">
         <h1>Pixel Art for Games</h1>
-        <p>Interactive Course: 6 Weeks × 4 Tasks = Complete Mastery</p>
+        <p>Master the fundamentals of pixel art creation for Unity game development</p>
     </header>
 
-    <!-- Main Week Navigation -->
+    <!-- Main Navigation (Weeks) -->
     <nav class="main-nav">
         <ul>
-            <li><a href="#week-1" class="week-link active">Week 1</a></li>
-            <li><a href="#week-2" class="week-link">Week 2</a></li>
-            <li><a href="#week-3" class="week-link">Week 3</a></li>
-            <li><a href="#week-4" class="week-link">Week 4</a></li>
-            <li><a href="#week-5" class="week-link">Week 5</a></li>
-            <li><a href="#week-6" class="week-link">Week 6</a></li>
+            <li><a href="#week1" class="week-nav active" data-week="1">Week 1</a></li>
+            <li><a href="#week2" class="week-nav" data-week="2">Week 2</a></li>
+            <li><a href="#week3" class="week-nav" data-week="3">Week 3</a></li>
+            <li><a href="#week4" class="week-nav" data-week="4">Week 4</a></li>
+            <li><a href="#week5" class="week-nav" data-week="5">Week 5</a></li>
+            <li><a href="#week6" class="week-nav" data-week="6">Week 6</a></li>
         </ul>
     </nav>
 
-    <main>
-        <!-- Week 1: Introduction to Pixel Art Basics -->
-        <section id="week-1" class="week-section">
-            <div class="week-header">
-                <h2>Week 1: Introduction to Pixel Art Basics</h2>
-                <p>Master the fundamentals of pixel art creation and understand its role in game development</p>
+    <!-- Main Content Container -->
+    <div class="content-container">
+        <!-- Content will be dynamically loaded here -->
+        <div id="week-content"></div>
+    </div>
+
+    <!-- Canvas templates (hidden, cloned when needed) -->
+    <div id="canvas-templates" style="display: none;">
+        <!-- Basic canvas template -->
+        <div class="exercise-workspace" id="basic-canvas-template">
+            <div class="tools">
+                <button class="tool-btn active" data-tool="pencil">✏️ Pencil</button>
+                <button class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                <button class="tool-btn" data-action="clear">🗑️ Clear</button>
+                <button class="tool-btn" data-action="grid">⊞ Grid</button>
             </div>
             
-            <!-- Task Navigation for Week 1 -->
-            <nav class="task-nav">
-                <ul>
-                    <li>
-                        <a href="#week1-task1" class="task-link active" data-week="1" data-task="1">
-                            <span class="task-number">Task 1</span>
-                            <span class="task-title">Fundamentals</span>
-                            <span class="task-status"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#week1-task2" class="task-link" data-week="1" data-task="2">
-                            <span class="task-number">Task 2</span>
-                            <span class="task-title">Basic Shapes</span>
-                            <span class="task-status"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#week1-task3" class="task-link" data-week="1" data-task="3">
-                            <span class="task-number">Task 3</span>
-                            <span class="task-title">Icons & Symbols</span>
-                            <span class="task-status"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#week1-task4" class="task-link" data-week="1" data-task="4">
-                            <span class="task-number">Task 4</span>
-                            <span class="task-title">Assessment</span>
-                            <span class="task-status"></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Task Content Areas -->
-            
-            <!-- Task 1: Fundamentals -->
-            <div id="week1-task1" class="task-content active">
-                <div class="lesson-content">
-                    <h3>What is Pixel Art?</h3>
-                    <p>Pixel art is a form of digital art where images are created and edited at the pixel level. Each individual pixel is deliberately placed to create forms, characters, and environments with a distinctive aesthetic.</p>
-                    
-                    <h4>Key Principles</h4>
-                    <ul>
-                        <li><strong>Grid-Based Design:</strong> Every pixel is placed on a precise grid</li>
-                        <li><strong>Deliberate Placement:</strong> Each pixel serves a specific purpose</li>
-                        <li><strong>Limited Palettes:</strong> Constrained colour choices create harmony</li>
-                        <li><strong>Cultural Sensitivity:</strong> Inclusive design from the start</li>
-                    </ul>
-
-                    <h4>Your First Exercise</h4>
-                    <p>Use the canvas to experiment with pixel placement. Try clicking different squares and observe how each pixel contributes to the overall image.</p>
-                </div>
-
-                <div class="interactive-area">
-                    <div class="interactive-header">
-                        <h4>Pixel Placement Practice</h4>
-                        <p>16×16 grid for learning fundamentals</p>
-                    </div>
-
-                    <div class="controls">
-                        <button class="tool active" data-tool="pencil">✏️ Pencil</button>
-                        <button class="tool" data-tool="eraser">🧼 Eraser</button>
-                        <button data-action="grid">Grid</button>
-                        <button data-action="reset">Reset</button>
-                    </div>
-
-                    <canvas id="week1-task1-canvas" class="pixel-canvas" width="320" height="320"></canvas>
-
-                    <div id="week1-task1-palette" class="palette">
-                        <div class="color-box" data-color="#000000"></div>
-                        <div class="color-box" data-color="#ffffff"></div>
-                        <div class="color-box" data-color="#ff0000"></div>
-                        <div class="color-box" data-color="#0000ff"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Task 2: Basic Shapes -->
-            <div id="week1-task2" class="task-content">
-                <div class="lesson-content">
-                    <h3>Creating Basic Shapes</h3>
-                    <p>Learning to create clean, recognizable shapes is fundamental to pixel art. Start with simple geometric forms and focus on smooth edges and consistent proportions.</p>
-                    
-                    <h4>Exercise: Draw Basic Shapes</h4>
-                    <p>Practice creating: circle, square, triangle, heart, and star. Focus on clean edges and proportional design.</p>
-                </div>
-
-                <div class="interactive-area">
-                    <div class="interactive-header">
-                        <h4>Shape Creation Practice</h4>
-                        <p>16×16 grid for basic shapes</p>
-                    </div>
-                    <div class="placeholder-content">
-                        <p>Task 2 Interactive Tools<br>Ready for Content Integration</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Task 3: Icons & Symbols -->
-            <div id="week1-task3" class="task-content">
-                <div class="lesson-content">
-                    <h3>Creating Game Icons</h3>
-                    <p>Icons are essential in game development for UI elements, inventory items, and player communication. Learn to create clear, recognizable symbols.</p>
-                    
-                    <h4>Exercise: Game Icon Set</h4>
-                    <p>Create icons for: health/heart, coin/treasure, key, sword, and shield.</p>
-                </div>
-
-                <div class="interactive-area">
-                    <div class="interactive-header">
-                        <h4>Icon Design Workshop</h4>
-                        <p>16×16 grid for game icons</p>
-                    </div>
-                    <div class="placeholder-content">
-                        <p>Task 3 Interactive Tools<br>Ready for Content Integration</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Task 4: Assessment -->
-            <div id="week1-task4" class="task-content">
-                <div class="lesson-content">
-                    <h3>Week 1 Assessment</h3>
-                    <p>Demonstrate your understanding of pixel art fundamentals through practical exercises and knowledge questions.</p>
-                    
-                    <h4>Final Challenge</h4>
-                    <p>Create a pixel art piece that demonstrates clean placement, effective colour use, and cultural sensitivity.</p>
-                </div>
-
-                <div class="interactive-area">
-                    <div class="interactive-header">
-                        <h4>Assessment Canvas</h4>
-                        <p>Create your Week 1 masterpiece</p>
-                    </div>
-                    <div class="placeholder-content">
-                        <p>Task 4 Assessment Tools<br>Ready for Content Integration</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Week 2: Colour Theory & Shading -->
-        <section id="week-2" class="week-section hidden">
-            <div class="week-header">
-                <h2>Week 2: Colour Theory & Shading</h2>
-                <p>Master colour palettes and shading techniques for compelling pixel art</p>
+            <div class="canvas-container">
+                <canvas class="pixel-canvas" width="320" height="320"></canvas>
             </div>
             
-            <nav class="task-nav">
-                <ul>
-                    <li><a href="#week2-task1" class="task-link active" data-week="2" data-task="1">
-                        <span class="task-number">Task 1</span>
-                        <span class="task-title">Colour Theory</span>
-                        <span class="task-status"></span>
-                    </a></li>
-                    <li><a href="#week2-task2" class="task-link" data-week="2" data-task="2">
-                        <span class="task-number">Task 2</span>
-                        <span class="task-title">Limited Palettes</span>
-                        <span class="task-status"></span>
-                    </a></li>
-                    <li><a href="#week2-task3" class="task-link" data-week="2" data-task="3">
-                        <span class="task-number">Task 3</span>
-                        <span class="task-title">Shading Practice</span>
-                        <span class="task-status"></span>
-                    </a></li>
-                    <li><a href="#week2-task4" class="task-link" data-week="2" data-task="4">
-                        <span class="task-number">Task 4</span>
-                        <span class="task-title">Assessment</span>
-                        <span class="task-status"></span>
-                    </a></li>
-                </ul>
-            </nav>
-
-            <div id="week2-task1" class="task-content active">
-                <div class="placeholder-content">
-                    <h3>Week 2: Colour Theory & Shading</h3>
-                    <p>Task structure ready for comprehensive content integration</p>
-                </div>
+            <div class="palette">
+                <!-- Colors will be added dynamically -->
             </div>
-            <div id="week2-task2" class="task-content"><div class="placeholder-content"><p>Task 2 Content</p></div></div>
-            <div id="week2-task3" class="task-content"><div class="placeholder-content"><p>Task 3 Content</p></div></div>
-            <div id="week2-task4" class="task-content"><div class="placeholder-content"><p>Task 4 Content</p></div></div>
-        </section>
+        </div>
 
-        <!-- Week 3: Character Design -->
-        <section id="week-3" class="week-section hidden">
-            <div class="week-header">
-                <h2>Week 3: Character Design & Sprites</h2>
-                <p>Create expressive characters using professional techniques</p>
+        <!-- Canvas with fill tool template -->
+        <div class="exercise-workspace" id="fill-canvas-template">
+            <div class="tools">
+                <button class="tool-btn active" data-tool="pencil">✏️ Pencil</button>
+                <button class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                <button class="tool-btn" data-tool="fill">🪣 Fill</button>
+                <button class="tool-btn" data-action="clear">🗑️ Clear</button>
+                <button class="tool-btn" data-action="grid">⊞ Grid</button>
             </div>
             
-            <nav class="task-nav">
-                <ul>
-                    <li><a href="#" class="task-link active"><span class="task-number">Task 1</span><span class="task-title">Silhouettes</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 2</span><span class="task-title">Character Design</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 3</span><span class="task-title">Expressions</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 4</span><span class="task-title">Assessment</span><span class="task-status"></span></a></li>
-                </ul>
-            </nav>
-            <div class="task-content active"><div class="placeholder-content"><h3>Week 3 Structure Ready</h3></div></div>
-        </section>
-
-        <!-- Week 4: Environment Art -->
-        <section id="week-4" class="week-section hidden">
-            <div class="week-header">
-                <h2>Week 4: Environment Art & Tilemaps</h2>
-                <p>Build seamless game environments with tileable patterns</p>
+            <div class="canvas-container">
+                <canvas class="pixel-canvas" width="320" height="320"></canvas>
             </div>
             
-            <nav class="task-nav">
-                <ul>
-                    <li><a href="#" class="task-link active"><span class="task-number">Task 1</span><span class="task-title">Tile Basics</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 2</span><span class="task-title">Seamless Patterns</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 3</span><span class="task-title">Environment Sets</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 4</span><span class="task-title">Assessment</span><span class="task-status"></span></a></li>
-                </ul>
-            </nav>
-            <div class="task-content active"><div class="placeholder-content"><h3>Week 4 Structure Ready</h3></div></div>
-        </section>
+            <div class="palette">
+                <!-- Colors will be added dynamically -->
+            </div>
+        </div>
 
-        <!-- Week 5: Animation -->
-        <section id="week-5" class="week-section hidden">
-            <div class="week-header">
-                <h2>Week 5: Pixel Art Animation</h2>
-                <p>Bring your creations to life with frame-by-frame animation</p>
+        <!-- Layered canvas template -->
+        <div class="exercise-workspace" id="layered-canvas-template">
+            <div class="layer-controls">
+                <button class="tool-btn active" data-layer="1">Layer 1</button>
+                <button class="tool-btn" data-layer="0">Guide Layer</button>
+                <button class="tool-btn" data-action="toggle-guide">Toggle Guide</button>
+            </div>
+
+            <div class="tools">
+                <button class="tool-btn active" data-tool="pencil">✏️ Pencil</button>
+                <button class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                <button class="tool-btn" data-tool="fill">🪣 Fill</button>
+                <button class="tool-btn" data-action="clear">🗑️ Clear</button>
+                <button class="tool-btn" data-action="grid">⊞ Grid</button>
             </div>
             
-            <nav class="task-nav">
-                <ul>
-                    <li><a href="#" class="task-link active"><span class="task-number">Task 1</span><span class="task-title">Animation Basics</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 2</span><span class="task-title">Character Animation</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 3</span><span class="task-title">Effects</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 4</span><span class="task-title">Assessment</span><span class="task-status"></span></a></li>
-                </ul>
-            </nav>
-            <div class="task-content active"><div class="placeholder-content"><h3>Week 5 Structure Ready</h3></div></div>
-        </section>
-
-        <!-- Week 6: Unity Integration -->
-        <section id="week-6" class="week-section hidden">
-            <div class="week-header">
-                <h2>Week 6: Unity Integration & Pipeline</h2>
-                <p>Complete the journey from pixel art to playable game</p>
+            <div class="canvas-container">
+                <canvas class="pixel-canvas" width="320" height="320"></canvas>
             </div>
             
-            <nav class="task-nav">
-                <ul>
-                    <li><a href="#" class="task-link active"><span class="task-number">Task 1</span><span class="task-title">Unity Setup</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 2</span><span class="task-title">Asset Import</span><span class="task-status"></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 3</span><span class="task-title">Scene Assembly</span><span class="task-status"></span></a></li>
-                    <li><a href="#" class="task-link"><span class="task-number">Task 4</span><span class="task-title">Portfolio</span><span class="task-status"></span></a></li>
-                </ul>
-            </nav>
-            <div class="task-content active"><div class="placeholder-content"><h3>Week 6 Structure Ready</h3></div></div>
-        </section>
-    </main>
+            <div class="palette">
+                <!-- Colors will be added dynamically -->
+            </div>
+        </div>
 
-    <!-- JavaScript for navigation and canvas functionality -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Simple Canvas System for demo
-            class SimpleCanvas {
-                constructor(canvasId, paletteId) {
-                    this.canvas = document.getElementById(canvasId);
-                    this.paletteContainer = document.getElementById(paletteId);
-                    if (!this.canvas || !this.paletteContainer) return;
+        <!-- Animation canvas template -->
+        <div class="exercise-workspace" id="animation-canvas-template">
+            <div class="animation-controls">
+                <button class="tool-btn" data-action="play">▶️ Play</button>
+                <button class="tool-btn" data-action="pause" style="display: none;">⏸️ Pause</button>
+                <button class="tool-btn" data-action="onion">👻 Onion Skin</button>
+            </div>
 
-                    this.ctx = this.canvas.getContext('2d');
-                    this.gridSize = 16;
-                    this.pixelSize = this.canvas.width / this.gridSize;
-                    this.selectedColor = '#000000';
-                    this.currentTool = 'pencil';
-                    this.pixels = [];
-                    this.showGrid = true;
+            <div class="frame-controls">
+                <button class="tool-btn" data-action="prev-frame">⬅️</button>
+                <span class="frame-indicator">Frame 1 / 1</span>
+                <button class="tool-btn" data-action="next-frame">➡️</button>
+                <button class="tool-btn" data-action="add-frame">➕ Add Frame</button>
+                <button class="tool-btn" data-action="delete-frame">🗑️ Delete Frame</button>
+            </div>
 
-                    this.init();
-                }
+            <div class="tools">
+                <button class="tool-btn active" data-tool="pencil">✏️ Pencil</button>
+                <button class="tool-btn" data-tool="eraser">🧹 Eraser</button>
+                <button class="tool-btn" data-action="clear">🗑️ Clear Frame</button>
+                <button class="tool-btn" data-action="grid">⊞ Grid</button>
+            </div>
+            
+            <div class="canvas-container">
+                <canvas class="pixel-canvas" width="320" height="320"></canvas>
+            </div>
+            
+            <div class="palette">
+                <!-- Colors will be added dynamically -->
+            </div>
+        </div>
 
-                init() {
-                    this.setupControls();
-                    this.setupPalette();
-                    this.setupEvents();
-                    this.redraw();
-                }
+        <!-- Tile preview template -->
+        <div class="preview-container" id="tile-preview-template">
+            <p class="preview-title">Live Tiling Preview (3×3)</p>
+            <canvas id="tile-preview" width="144" height="144"></canvas>
+        </div>
+    </div>
 
-                setupControls() {
-                    const area = this.canvas.closest('.interactive-area');
-                    area.querySelectorAll('.tool').forEach(btn => {
-                        btn.addEventListener('click', () => {
-                            this.currentTool = btn.dataset.tool;
-                            area.querySelectorAll('.tool').forEach(b => b.classList.remove('active'));
-                            btn.classList.add('active');
-                        });
-                    });
-
-                    const resetBtn = area.querySelector('[data-action="reset"]');
-                    if (resetBtn) resetBtn.addEventListener('click', () => this.reset());
-
-                    const gridBtn = area.querySelector('[data-action="grid"]');
-                    if (gridBtn) gridBtn.addEventListener('click', () => {
-                        this.showGrid = !this.showGrid;
-                        this.redraw();
-                    });
-                }
-
-                setupPalette() {
-                    this.paletteContainer.querySelectorAll('.color-box').forEach(box => {
-                        box.style.backgroundColor = box.dataset.color;
-                        box.addEventListener('click', () => {
-                            this.selectedColor = box.dataset.color;
-                            this.paletteContainer.querySelectorAll('.color-box').forEach(b => b.classList.remove('selected'));
-                            box.classList.add('selected');
-                        });
-                    });
-                    this.paletteContainer.querySelector('.color-box').classList.add('selected');
-                }
-
-                setupEvents() {
-                    this.canvas.addEventListener('click', e => this.handleClick(e));
-                }
-
-                handleClick(e) {
-                    const rect = this.canvas.getBoundingClientRect();
-                    const x = Math.floor((e.clientX - rect.left) * this.canvas.width / rect.width / this.pixelSize);
-                    const y = Math.floor((e.clientY - rect.top) * this.canvas.height / rect.height / this.pixelSize);
-                    
-                    this.setPixel(x, y, this.currentTool === 'eraser' ? null : this.selectedColor);
-                    this.redraw();
-                }
-
-                setPixel(x, y, color) {
-                    if (!this.pixels[y]) this.pixels[y] = [];
-                    this.pixels[y][x] = color;
-                }
-
-                redraw() {
-                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-                    this.ctx.fillStyle = '#ffffff';
-                    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-
-                    // Draw pixels
-                    for (let y = 0; y < this.gridSize; y++) {
-                        for (let x = 0; x < this.gridSize; x++) {
-                            const color = this.pixels[y] && this.pixels[y][x];
-                            if (color) {
-                                this.ctx.fillStyle = color;
-                                this.ctx.fillRect(x * this.pixelSize, y * this.pixelSize, this.pixelSize, this.pixelSize);
-                            }
-                        }
-                    }
-
-                    // Draw grid
-                    if (this.showGrid) {
-                        this.ctx.strokeStyle = '#ddd';
-                        this.ctx.lineWidth = 1;
-                        this.ctx.beginPath();
-                        for (let i = 0; i <= this.gridSize; i++) {
-                            this.ctx.moveTo(i * this.pixelSize, 0);
-                            this.ctx.lineTo(i * this.pixelSize, this.canvas.height);
-                            this.ctx.moveTo(0, i * this.pixelSize);
-                            this.ctx.lineTo(this.canvas.width, i * this.pixelSize);
-                        }
-                        this.ctx.stroke();
-                    }
-                }
-
-                reset() {
-                    this.pixels = [];
-                    this.redraw();
-                }
-            }
-
-            // Navigation System
-            const weekLinks = document.querySelectorAll('.week-link');
-            const weekSections = document.querySelectorAll('.week-section');
-            const taskLinks = document.querySelectorAll('.task-link');
-
-            // Week navigation
-            weekLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    
-                    // Update week tabs
-                    weekLinks.forEach(w => w.classList.remove('active'));
-                    link.classList.add('active');
-                    
-                    // Show target week
-                    weekSections.forEach(s => s.classList.add('hidden'));
-                    const targetWeek = document.querySelector(link.getAttribute('href'));
-                    if (targetWeek) {
-                        targetWeek.classList.remove('hidden');
-                        
-                        // Activate first task of the week
-                        const firstTask = targetWeek.querySelector('.task-link');
-                        if (firstTask) {
-                            switchToTask(firstTask);
-                        }
-                    }
-                });
-            });
-
-            // Task navigation
-            taskLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    if (link.dataset.week && link.dataset.task) {
-                        switchToTask(link);
-                    }
-                });
-            });
-
-            function switchToTask(taskLink) {
-                const week = taskLink.dataset.week;
-                const task = taskLink.dataset.task;
-                
-                // Update task tabs within the current week
-                const currentWeek = document.querySelector(`#week-${week}`);
-                if (currentWeek) {
-                    currentWeek.querySelectorAll('.task-link').forEach(t => t.classList.remove('active'));
-                    taskLink.classList.add('active');
-                    
-                    // Show target task content
-                    currentWeek.querySelectorAll('.task-content').forEach(c => c.classList.remove('active'));
-                    const targetTask = document.querySelector(`#week${week}-task${task}`);
-                    if (targetTask) {
-                        targetTask.classList.add('active');
-                        
-                        // Initialize canvas for this task
-                        const canvasId = `week${week}-task${task}-canvas`;
-                        const paletteId = `week${week}-task${task}-palette`;
-                        if (document.getElementById(canvasId) && !document.getElementById(canvasId).dataset.initialized) {
-                            new SimpleCanvas(canvasId, paletteId);
-                            document.getElementById(canvasId).dataset.initialized = 'true';
-                        }
-                    }
-                }
-            }
-
-            // Initialize default view (Week 1, Task 1)
-            const defaultTask = document.querySelector('.task-link[data-week="1"][data-task="1"]');
-            if (defaultTask) {
-                switchToTask(defaultTask);
-            }
-
-            // Demo: Mark some tasks as completed for visual demo
-            setTimeout(() => {
-                document.querySelector('.task-link[data-week="1"][data-task="1"] .task-status').classList.add('completed');
-            }, 2000);
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="js/canvas.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
