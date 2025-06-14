@@ -276,7 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         btn.classList.toggle('active');
                         break;
                     case 'export':
-                        exportCanvas(canvasInstance);
+                        // Get the scale from the select dropdown
+                        const scaleSelect = container.querySelector('.export-scale-select');
+                        const scale = scaleSelect ? parseInt(scaleSelect.value, 10) : 4;
+                        // Get transparency from checkbox
+                        const transparentCheckbox = container.querySelector('.export-transparent-checkbox');
+                        const transparent = transparentCheckbox ? transparentCheckbox.checked : false;
+                        exportCanvas(canvasInstance, scale, transparent);
                         break;
                 }
             });
@@ -389,6 +395,34 @@ document.addEventListener('DOMContentLoaded', () => {
                 frameIndicator.textContent = `Frame ${e.detail.current} / ${e.detail.total}`;
             });
         }
+
+        // Add export logic for animation canvas
+        const exportBtn = container.querySelector('.tool-btn[data-action="export"]');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => {
+                const scaleSelect = container.querySelector('.export-scale-select');
+                const scale = scaleSelect ? parseInt(scaleSelect.value, 10) : 4;
+                const transparentCheckbox = container.querySelector('.export-transparent-checkbox');
+                const transparent = transparentCheckbox ? transparentCheckbox.checked : false;
+                exportCanvas(canvasInstance, scale, transparent);
+            });
+        }
+
+        // Add sprite sheet export logic
+        const exportSpriteBtn = container.querySelector('.tool-btn[data-action="export-sprite"]');
+        if (exportSpriteBtn) {
+            exportSpriteBtn.addEventListener('click', () => {
+                const scaleSelect = container.querySelector('.export-scale-select');
+                const scale = scaleSelect ? parseInt(scaleSelect.value, 10) : 4;
+                const transparentCheckbox = container.querySelector('.export-transparent-checkbox');
+                const transparent = transparentCheckbox ? transparentCheckbox.checked : false;
+                const dataURL = canvasInstance.exportAsSpriteSheet(scale, transparent);
+                const link = document.createElement('a');
+                link.download = `pixel-art-spritesheet-${Date.now()}.png`;
+                link.href = dataURL;
+                link.click();
+            });
+        }
     }
 
     // Load outline data into canvas
@@ -440,8 +474,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Export canvas as PNG
-    function exportCanvas(canvasInstance) {
-        const dataURL = canvasInstance.exportAsPNG(4); // 4x scale
+    function exportCanvas(canvasInstance, scale = 4, transparent = false) {
+        const dataURL = canvasInstance.exportAsPNG(scale, transparent);
         
         const link = document.createElement('a');
         link.download = `pixel-art-${Date.now()}.png`;

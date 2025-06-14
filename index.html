@@ -19,7 +19,7 @@
     <!-- Header -->
     <header class="header">
         <h1>Pixel Art for Games</h1>
-        <p>Interactive Course: 6 Weeks × 4 Tasks = Complete Mastery</p>
+        <p>Interactive Course: Begin Your Journey to Mastery</p>
     </header>
 
     <!-- Main Navigation (Weeks) -->
@@ -58,6 +58,17 @@
             <div class="palette">
                 <!-- Colors will be added dynamically -->
             </div>
+            <button class="tool-btn export-btn" data-action="export">⬇️ Export PNG</button>
+            <label style="margin-left: 0.5rem; font-size: 0.95em;">Size scale:</label>
+            <select class="export-scale-select" style="margin-left: 0.25rem;">
+              <option value="1">1x</option>
+              <option value="2">2x</option>
+              <option value="4" selected>4x</option>
+              <option value="8">8x</option>
+            </select>
+            <label style="margin-left: 0.75rem; font-size: 0.95em;">
+              <input type="checkbox" class="export-transparent-checkbox" style="vertical-align: middle; margin-right: 0.25em;"> Transparent background
+            </label>
         </div>
 
         <!-- Canvas with fill tool template -->
@@ -77,6 +88,16 @@
             <div class="palette">
                 <!-- Colors will be added dynamically -->
             </div>
+            <button class="tool-btn export-btn" data-action="export">⬇️ Export PNG</button>
+            <select class="export-scale-select" style="margin-left: 0.5rem;">
+              <option value="1">1x</option>
+              <option value="2">2x</option>
+              <option value="4" selected>4x</option>
+              <option value="8">8x</option>
+            </select>
+            <label style="margin-left: 0.75rem; font-size: 0.95em;">
+              <input type="checkbox" class="export-transparent-checkbox" style="vertical-align: middle; margin-right: 0.25em;"> Transparent background
+            </label>
         </div>
 
         <!-- Layered canvas template -->
@@ -102,6 +123,16 @@
             <div class="palette">
                 <!-- Colors will be added dynamically -->
             </div>
+            <button class="tool-btn export-btn" data-action="export">⬇️ Export PNG</button>
+            <select class="export-scale-select" style="margin-left: 0.5rem;">
+              <option value="1">1x</option>
+              <option value="2">2x</option>
+              <option value="4" selected>4x</option>
+              <option value="8">8x</option>
+            </select>
+            <label style="margin-left: 0.75rem; font-size: 0.95em;">
+              <input type="checkbox" class="export-transparent-checkbox" style="vertical-align: middle; margin-right: 0.25em;"> Transparent background
+            </label>
         </div>
 
         <!-- Animation canvas template -->
@@ -134,12 +165,24 @@
             <div class="palette">
                 <!-- Colors will be added dynamically -->
             </div>
+            <button class="tool-btn export-btn" data-action="export">⬇️ Export PNG</button>
+            <label style="margin-left: 0.5rem; font-size: 0.95em;">Size scale:</label>
+            <select class="export-scale-select" style="margin-left: 0.25rem;">
+              <option value="1">1x</option>
+              <option value="2">2x</option>
+              <option value="4" selected>4x</option>
+              <option value="8">8x</option>
+            </select>
+            <label style="margin-left: 0.75rem; font-size: 0.95em;">
+              <input type="checkbox" class="export-transparent-checkbox" style="vertical-align: middle; margin-right: 0.25em;"> Transparent background
+            </label>
+            <button class="tool-btn export-sprite-btn" data-action="export-sprite" style="margin-left: 1rem;">⬇️ Export Sprite Sheet</button>
         </div>
 
         <!-- Tile preview template -->
         <div class="preview-container" id="tile-preview-template">
             <p class="preview-title">Live Tiling Preview (3×3)</p>
-            <canvas id="tile-preview" width="144" height="144"></canvas>
+            <canvas id="tile-preview" width="288" height="288"></canvas>
         </div>
     </div>
 

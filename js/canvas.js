@@ -207,24 +207,25 @@ class PixelCanvas {
     }
     
     // Export functionality
-    exportAsPNG(scale = 1) {
+    exportAsPNG(scale = 1, transparent = false) {
         const exportCanvas = document.createElement('canvas');
         const exportCtx = exportCanvas.getContext('2d');
-        
         exportCanvas.width = this.gridSize * scale;
         exportCanvas.height = this.gridSize * scale;
-        
-        // Draw pixels without grid
+        if (!transparent) {
+            exportCtx.fillStyle = '#ffffff';
+            exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+        }
+        const frame = this.pixels;
         for (let y = 0; y < this.gridSize; y++) {
             for (let x = 0; x < this.gridSize; x++) {
-                const color = this.pixels[y][x];
+                const color = frame[y][x];
                 if (color) {
                     exportCtx.fillStyle = color;
                     exportCtx.fillRect(x * scale, y * scale, scale, scale);
                 }
             }
         }
-        
         return exportCanvas.toDataURL('image/png');
     }
 }
@@ -361,6 +362,41 @@ class LayeredCanvas extends PixelCanvas {
     clear() {
         this.layers[this.currentLayer] = this.createEmptyPixelArray();
         this.redraw();
+    }
+    
+    exportAsPNG(scale = 1, transparent = false) {
+        const exportCanvas = document.createElement('canvas');
+        const exportCtx = exportCanvas.getContext('2d');
+        exportCanvas.width = this.gridSize * scale;
+        exportCanvas.height = this.gridSize * scale;
+        if (!transparent) {
+            exportCtx.fillStyle = '#ffffff';
+            exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+        }
+        for (let layerIndex = 0; layerIndex < this.layers.length; layerIndex++) {
+            if (!this.layerVisibility[layerIndex]) continue;
+            const layer = this.layers[layerIndex];
+            if (!Array.isArray(layer) || layer.length !== this.gridSize) continue;
+            const opacity = layerIndex === 0 ? 0.3 : 1.0;
+            exportCtx.globalAlpha = opacity;
+            for (let y = 0; y < this.gridSize; y++) {
+                if (!Array.isArray(layer[y]) || layer[y].length !== this.gridSize) continue;
+                for (let x = 0; x < this.gridSize; x++) {
+                    const color = layer[y][x];
+                    if (color) {
+                        exportCtx.fillStyle = color;
+                        exportCtx.fillRect(
+                            x * scale,
+                            y * scale,
+                            scale,
+                            scale
+                        );
+                    }
+                }
+            }
+        }
+        exportCtx.globalAlpha = 1.0;
+        return exportCanvas.toDataURL('image/png');
     }
 }
 
@@ -542,20 +578,70 @@ class AnimationCanvas extends PixelCanvas {
             gridSize: this.gridSize
         };
     }
+    
+    exportAsPNG(scale = 1, transparent = false) {
+        const exportCanvas = document.createElement('canvas');
+        const exportCtx = exportCanvas.getContext('2d');
+        exportCanvas.width = this.gridSize * scale;
+        exportCanvas.height = this.gridSize * scale;
+        if (!transparent) {
+            exportCtx.fillStyle = '#ffffff';
+            exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+        }
+        const frame = this.frames[this.currentFrame];
+        for (let y = 0; y < this.gridSize; y++) {
+            for (let x = 0; x < this.gridSize; x++) {
+                const color = frame[y][x];
+                if (color) {
+                    exportCtx.fillStyle = color;
+                    exportCtx.fillRect(x * scale, y * scale, scale, scale);
+                }
+            }
+        }
+        return exportCanvas.toDataURL('image/png');
+    }
+    
+    exportAsSpriteSheet(scale = 1, transparent = false) {
+        const numFrames = this.frames.length;
+        const exportCanvas = document.createElement('canvas');
+        const exportCtx = exportCanvas.getContext('2d');
+        exportCanvas.width = this.gridSize * scale * numFrames;
+        exportCanvas.height = this.gridSize * scale;
+        if (!transparent) {
+            exportCtx.fillStyle = '#ffffff';
+            exportCtx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+        }
+        for (let f = 0; f < numFrames; f++) {
+            const frame = this.frames[f];
+            for (let y = 0; y < this.gridSize; y++) {
+                for (let x = 0; x < this.gridSize; x++) {
+                    const color = frame[y][x];
+                    if (color) {
+                        exportCtx.fillStyle = color;
+                        exportCtx.fillRect(
+                            (f * this.gridSize + x) * scale,
+                            y * scale,
+                            scale,
+                            scale
+                        );
+                    }
+                }
+            }
+        }
+        return exportCanvas.toDataURL('image/png');
+    }
 }
 
 // Tile Canvas with live preview
 class TileCanvas extends PixelCanvas {
     constructor(canvas, previewCanvas, options = {}) {
         super(canvas, options);
-        
         this.previewCanvas = previewCanvas;
         this.previewCtx = previewCanvas.getContext('2d');
         this.previewSize = 3; // 3x3 preview
-        
-        // Set preview canvas size
-        this.previewCanvas.width = this.gridSize * this.previewSize;
-        this.previewCanvas.height = this.gridSize * this.previewSize;
+        // Set preview canvas size (double size)
+        this.previewCanvas.width = this.gridSize * this.previewSize * 2;
+        this.previewCanvas.height = this.gridSize * this.previewSize * 2;
         this.init();
     }
     
@@ -568,8 +654,7 @@ class TileCanvas extends PixelCanvas {
         // Clear preview
         this.previewCtx.fillStyle = '#ffffff';
         this.previewCtx.fillRect(0, 0, this.previewCanvas.width, this.previewCanvas.height);
-        
-        // Draw tiled pattern
+        // Draw tiled pattern (2x scale)
         for (let ty = 0; ty < this.previewSize; ty++) {
             for (let tx = 0; tx < this.previewSize; tx++) {
                 for (let y = 0; y < this.gridSize; y++) {
@@ -578,33 +663,30 @@ class TileCanvas extends PixelCanvas {
                         if (color) {
                             this.previewCtx.fillStyle = color;
                             this.previewCtx.fillRect(
-                                tx * this.gridSize + x,
-                                ty * this.gridSize + y,
-                                1,
-                                1
+                                (tx * this.gridSize + x) * 2,
+                                (ty * this.gridSize + y) * 2,
+                                2,
+                                2
                             );
                         }
                     }
                 }
             }
         }
-        
         // Optional: Draw grid on preview
         if (this.showGrid) {
             this.previewCtx.strokeStyle = '#f0f0f0';
             this.previewCtx.lineWidth = 0.5;
-            
-            for (let i = 0; i <= this.previewSize; i++) {
+            for (let i = 0; i <= this.previewSize * this.gridSize; i++) {
                 // Vertical lines
                 this.previewCtx.beginPath();
-                this.previewCtx.moveTo(i * this.gridSize, 0);
-                this.previewCtx.lineTo(i * this.gridSize, this.previewCanvas.height);
+                this.previewCtx.moveTo(i * 2, 0);
+                this.previewCtx.lineTo(i * 2, this.previewCanvas.height);
                 this.previewCtx.stroke();
-                
                 // Horizontal lines
                 this.previewCtx.beginPath();
-                this.previewCtx.moveTo(0, i * this.gridSize);
-                this.previewCtx.lineTo(this.previewCanvas.width, i * this.gridSize);
+                this.previewCtx.moveTo(0, i * 2);
+                this.previewCtx.lineTo(this.previewCanvas.width, i * 2);
                 this.previewCtx.stroke();
             }
         }
