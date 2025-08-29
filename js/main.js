@@ -58,6 +58,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Clear all progress
+    function clearProgress() {
+        console.log('clearProgress function called');
+        if (confirm('Are you sure you want to clear all progress? This cannot be undone.')) {
+            try {
+                console.log('User confirmed, clearing progress...');
+                localStorage.removeItem('pixelArtCourseProgress');
+                
+                // Reset state
+                state.visitedTabs.clear();
+                state.quizAnswered.clear();
+                state.currentWeek = 1;
+                state.currentTab = 'overview';
+                
+                // Reload to Week 1
+                loadWeek(1);
+                updateNavigationState();
+                
+                console.log('Progress cleared successfully');
+                alert('Progress cleared! Returned to Week 1.');
+                
+            } catch (error) {
+                console.error('Failed to clear progress:', error);
+                alert('Error clearing progress. Check console for details.');
+            }
+        } else {
+            console.log('User cancelled progress clearing');
+        }
+    }
+
     // Cache DOM elements
     const weekContent = document.getElementById('week-content');
     const weekNavLinks = document.querySelectorAll('.week-nav');
@@ -162,6 +192,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         } else {
                             canvasInstance.undo();
                         }
+                        e.preventDefault();
+                    }
+                    return;
+                case 'x':
+                    // Clear progress (with Ctrl+Alt modifier - less likely to conflict)
+                    if ((e.ctrlKey || e.metaKey) && e.altKey) {
+                        console.log('Ctrl+Alt+X pressed, calling clearProgress');
+                        clearProgress();
                         e.preventDefault();
                     }
                     return;
