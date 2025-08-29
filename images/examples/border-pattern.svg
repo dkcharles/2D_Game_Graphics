@@ -1,0 +1,59 @@
+<svg width="180" height="140" viewBox="0 0 9 7" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+  </style>
+  
+  <!-- Border pattern example -->
+  <!-- Top border -->
+  <rect x="0" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="1" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="2" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="3" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="4" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Left border -->
+  <rect x="0" y="1" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="0" y="2" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="0" y="3" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="0" y="4" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="0" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Right border -->
+  <rect x="8" y="1" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="2" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="3" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="4" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Bottom border -->
+  <rect x="0" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="1" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="2" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="3" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="4" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Interior decoration -->
+  <rect x="2" y="2" width="1" height="1" fill="#FF0000" class="pixel"/>
+  <rect x="4" y="2" width="1" height="1" fill="#FF0000" class="pixel"/>
+  <rect x="6" y="2" width="1" height="1" fill="#FF0000" class="pixel"/>
+  
+  <rect x="2" y="4" width="1" height="1" fill="#FF0000" class="pixel"/>
+  <rect x="4" y="4" width="1" height="1" fill="#FF0000" class="pixel"/>
+  <rect x="6" y="4" width="1" height="1" fill="#FF0000" class="pixel"/>
+  
+  <!-- Grid lines -->
+  <defs>
+    <pattern id="grid" width="1" height="1" patternUnits="userSpaceOnUse">
+      <path d="M 1 0 L 0 0 0 1" fill="none" stroke="#ddd" stroke-width="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="9" height="7" fill="url(#grid)"/>
+</svg>

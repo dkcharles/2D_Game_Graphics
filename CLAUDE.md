@@ -78,3 +78,52 @@ This is university-level curriculum focusing on:
 - Unity integration best practices (Week 6)
 
 The sub-tab structure eliminates scrolling fatigue and provides focused learning modules that can be completed individually or as complete weeks.
+
+## Visual Example System
+
+A comprehensive visual learning system has been implemented for Practice sections:
+
+### File Structure for Examples
+- `/images/examples/` - Directory for all practice example images
+- SVG format for scalable, crisp pixel art examples
+- Naming convention: `[section-name].svg` (e.g., `single-pixels.svg`, `checkerboard.svg`)
+
+### HTML Structure Pattern
+```html
+<li>
+    <strong>Task Name (time estimate):</strong>
+    <div class="task-with-example">
+        <div class="task-instructions">
+            <ul>
+                <li>Step-by-step instructions...</li>
+                <li><em>Success goal: Clear completion criteria</em></li>
+            </ul>
+        </div>
+        <div class="task-example">
+            <img src="images/examples/example-name.svg" alt="Descriptive alt text" class="pixel-example"/>
+            <p class="example-caption">Example: Brief description</p>
+        </div>
+    </div>
+</li>
+```
+
+### CSS Classes
+- `.task-with-example` - Flexbox container for side-by-side layout
+- `.task-instructions` - Left column with instructions
+- `.task-example` - Right column with visual example
+- `.pixel-example` - Image styling with crisp pixel rendering
+- `.example-caption` - Caption text styling
+
+### SVG Creation Guidelines
+- Use `viewBox` for proper scaling
+- Apply `image-rendering: pixelated` for crisp pixels
+- Include grid lines for educational clarity
+- Use consistent color palette matching the application
+- Keep examples simple and clearly demonstrate the task goal
+
+### Implementation Process
+1. Create SVG examples in `/images/examples/`
+2. Update HTML content in `content.js` with the pattern above
+3. CSS styling is already implemented and reusable
+
+This system has been successfully implemented in Week 1 Practice 1 (`js/content.js:140-228`) and can be replicated in other practice sections.

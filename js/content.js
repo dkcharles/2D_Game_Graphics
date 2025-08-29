@@ -137,11 +137,94 @@ const courseContent = {
                             
                             <h4>Your Progressive Tasks:</h4>
                             <ol>
-                                <li><strong>Single Pixels:</strong> Click on the grid to place individual pixels</li>
-                                <li><strong>Pattern Creation:</strong> Create a simple checkerboard pattern</li>
-                                <li><strong>Letter Formation:</strong> Try writing your initials using pixels</li>
-                                <li><strong>Simple Faces:</strong> Make a basic emoji face (eyes, nose, mouth)</li>
-                                <li><strong>Geometric Patterns:</strong> Create repeating patterns or borders</li>
+                                <li>
+                                    <strong>Single Pixels (1-2 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Click anywhere on the grid to place your first pixel</li>
+                                                <li>Try clicking different colors from the palette below</li>
+                                                <li>Use the eraser tool to remove pixels you don't want</li>
+                                                <li><em>Success goal: Place and remove at least 5 different colored pixels</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/single-pixels.svg" alt="Example of randomly placed colored pixels" class="pixel-example"/>
+                                            <p class="example-caption">Example: Different colored pixels placed on the grid</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Checkerboard Pattern (3-4 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Start with a black pixel in the top-left corner</li>
+                                                <li>Place a white pixel next to it</li>
+                                                <li>Continue alternating black and white across the row</li>
+                                                <li>On the next row, start with white where you had black above</li>
+                                                <li><em>Success goal: Create at least a 4×4 checkerboard pattern</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/checkerboard.svg" alt="Example of a 4x4 checkerboard pattern" class="pixel-example"/>
+                                            <p class="example-caption">Example: 4×4 checkerboard pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Letter Formation (5-7 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Choose one of your initials to start with</li>
+                                                <li>Plan the letter mentally before placing pixels</li>
+                                                <li>Use black pixels on the white background</li>
+                                                <li>Make letters at least 5 pixels tall for readability</li>
+                                                <li><em>Success goal: Create a clearly recognizable letter</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/letter-A.svg" alt="Example of pixel letter A" class="pixel-example"/>
+                                            <p class="example-caption">Example: Letter "A" made with pixels</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Simple Smiley Face (6-8 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Start with two black pixels for eyes, spaced 2-3 pixels apart</li>
+                                                <li>Add a single pixel below and between them for a nose (optional)</li>
+                                                <li>Create a curved smile using 3-5 pixels in an arc shape</li>
+                                                <li>Try different expressions: sad face, surprised face, winking</li>
+                                                <li><em>Success goal: Make a face that clearly conveys an emotion</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/smiley-face.svg" alt="Example of a simple smiley face" class="pixel-example"/>
+                                            <p class="example-caption">Example: Simple smiley face with eyes and curved smile</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Border Pattern (4-5 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Create a border around the edge of your canvas</li>
+                                                <li>Try different patterns: solid line, dashed line, alternating colors</li>
+                                                <li>Experiment with corner designs where lines meet</li>
+                                                <li><em>Success goal: Complete border that looks intentionally designed</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/border-pattern.svg" alt="Example of a border pattern with decorative elements" class="pixel-example"/>
+                                            <p class="example-caption">Example: Border with decorative interior pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
                             </ol>
                             
                             <div class="tip-box">
@@ -157,11 +240,24 @@ const courseContent = {
                                 <li><strong>Symmetry:</strong> Balanced pixel placement creates pleasing compositions</li>
                             </ul>
 
-                            <h4>Troubleshooting Common Issues</h4>
+                            <h4>Beginner Tips & Shortcuts</h4>
                             <ul>
-                                <li><strong>Accidental clicks:</strong> Use the eraser tool to remove unwanted pixels</li>
-                                <li><strong>Imprecise placement:</strong> Ensure you're clicking in the center of grid squares</li>
-                                <li><strong>Unclear patterns:</strong> Step back and look at the overall shape</li>
+                                <li><strong>Accidental clicks:</strong> Use the eraser tool or right-click to remove unwanted pixels</li>
+                                <li><strong>Imprecise placement:</strong> Ensure you're clicking in the center of grid squares - watch for the cursor to change</li>
+                                <li><strong>Color switching:</strong> Click directly on colors in the palette, or use number keys 1-8 for quick color selection</li>
+                                <li><strong>Zoom in/out:</strong> Use the mouse wheel or trackpad to get closer for detail work</li>
+                                <li><strong>Grid visibility:</strong> Toggle the grid on/off if it becomes distracting</li>
+                                <li><strong>Undo mistakes:</strong> Press Ctrl+Z (Cmd+Z on Mac) to undo your last action</li>
+                                <li><strong>Planning ahead:</strong> Lightly sketch your design mentally before committing pixels</li>
+                            </ul>
+                            
+                            <h4>Common Beginner Mistakes to Avoid</h4>
+                            <ul>
+                                <li><strong>Rushing:</strong> Take your time with pixel placement - precision matters more than speed</li>
+                                <li><strong>Too many colors:</strong> Start with just 2-3 colors for cleaner results</li>
+                                <li><strong>Ignoring symmetry:</strong> For faces and patterns, try to keep elements balanced</li>
+                                <li><strong>Not using the full canvas:</strong> Don't be afraid to use the entire grid space available</li>
+                                <li><strong>Perfectionism:</strong> Your first attempts won't be perfect - focus on learning and experimenting</li>
                             </ul>
 
                             <div class="info-box">
