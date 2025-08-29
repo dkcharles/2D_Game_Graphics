@@ -534,3 +534,121 @@ body {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
+
+/* Tooltips */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+[data-tooltip]:after {
+    content: '';
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Custom color picker */
+.custom-color-container {
+    margin-left: 0.5rem;
+}
+
+.custom-color-picker {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
+.custom-color-picker:hover {
+    border-color: var(--accent-primary);
+    transform: scale(1.1);
+}
+
+.custom-color-picker.active {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+}
+
+.color-input {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Progress indicators */
+.progress-indicator {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: #e0e0e0;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.progress-indicator.partial {
+    background-color: #ffa726;
+    color: white;
+}
+
+.progress-indicator.complete {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Sub-tab visited indicator */
+.sub-tab-nav.visited::after {
+    content: '✓';
+    margin-left: 0.5rem;
+    color: #4caf50;
+    font-weight: bold;
+}

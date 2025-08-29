@@ -7,18 +7,88 @@ document.addEventListener('DOMContentLoaded', () => {
         currentWeek: 1,
         currentTab: 'overview',
         canvasInstances: new Map(),
-        quizAnswered: new Set()
+        quizAnswered: new Set(),
+        visitedTabs: new Set() // Track visited tabs as "week-tab"
     };
+
+    // Load progress from localStorage
+    function loadProgress() {
+        try {
+            const savedProgress = localStorage.getItem('pixelArtCourseProgress');
+            if (savedProgress) {
+                const progress = JSON.parse(savedProgress);
+                
+                // Restore visited tabs
+                if (progress.visitedTabs) {
+                    progress.visitedTabs.forEach(tab => state.visitedTabs.add(tab));
+                }
+                
+                // Restore quiz answers
+                if (progress.quizAnswered) {
+                    progress.quizAnswered.forEach(quiz => state.quizAnswered.add(quiz));
+                }
+                
+                // Restore current position
+                if (progress.currentWeek) {
+                    state.currentWeek = progress.currentWeek;
+                }
+                if (progress.currentTab) {
+                    state.currentTab = progress.currentTab;
+                }
+            }
+        } catch (error) {
+            console.warn('Failed to load progress from localStorage:', error);
+        }
+    }
+
+    // Save progress to localStorage
+    function saveProgress() {
+        try {
+            const progress = {
+                visitedTabs: Array.from(state.visitedTabs),
+                quizAnswered: Array.from(state.quizAnswered),
+                currentWeek: state.currentWeek,
+                currentTab: state.currentTab,
+                timestamp: Date.now()
+            };
+            
+            localStorage.setItem('pixelArtCourseProgress', JSON.stringify(progress));
+        } catch (error) {
+            console.warn('Failed to save progress to localStorage:', error);
+        }
+    }
 
     // Cache DOM elements
     const weekContent = document.getElementById('week-content');
     const weekNavLinks = document.querySelectorAll('.week-nav');
 
+    // Load saved progress
+    loadProgress();
+    
     // Initialize navigation
     initializeNavigation();
     
-    // Load initial content
-    loadWeek(1);
+    // Initialize keyboard shortcuts
+    initializeKeyboardShortcuts();
+    
+    // Load initial content (use saved position or default)
+    loadWeek(state.currentWeek);
+    
+    // Update navigation to reflect loaded progress
+    updateNavigationState();
+
+    // Update navigation active states based on current state
+    function updateNavigationState() {
+        // Update week navigation active state
+        weekNavLinks.forEach(nav => nav.classList.remove('active'));
+        const activeWeekLink = document.querySelector(`.week-nav[data-week="${state.currentWeek}"]`);
+        if (activeWeekLink) {
+            activeWeekLink.classList.add('active');
+        }
+        
+        // Update progress indicators
+        updateProgressIndicators();
+    }
 
     // Navigation functions
     function initializeNavigation() {
@@ -38,10 +108,87 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initialize keyboard shortcuts
+    function initializeKeyboardShortcuts() {
+        document.addEventListener('keydown', (e) => {
+            // Don't trigger shortcuts if user is typing in an input field
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+                return;
+            }
+
+            // Get current active canvas instance
+            const currentCanvasKey = `week${state.currentWeek}-${state.currentTab}-canvas`;
+            const canvasInstance = state.canvasInstances.get(currentCanvasKey);
+            
+            if (!canvasInstance) return;
+
+            // Find the current canvas container to update button states
+            const currentContainer = document.querySelector('.exercise-workspace');
+            if (!currentContainer) return;
+
+            const key = e.key.toLowerCase();
+            let tool = null;
+            
+            // Map keyboard shortcuts to tools
+            switch (key) {
+                case 'p':
+                    tool = 'pencil';
+                    break;
+                case 'e':
+                    tool = 'eraser';
+                    break;
+                case 'f':
+                    tool = 'fill';
+                    break;
+                case 'g':
+                    // Toggle grid
+                    canvasInstance.toggleGrid();
+                    const gridBtn = currentContainer.querySelector('[data-action="grid"]');
+                    if (gridBtn) gridBtn.classList.toggle('active');
+                    e.preventDefault();
+                    return;
+                case 'c':
+                    // Clear canvas (with Ctrl/Cmd modifier to prevent accidental clears)
+                    if (e.ctrlKey || e.metaKey) {
+                        canvasInstance.clear();
+                        e.preventDefault();
+                    }
+                    return;
+                case 'z':
+                    // Undo/Redo
+                    if (e.ctrlKey || e.metaKey) {
+                        if (e.shiftKey) {
+                            canvasInstance.redo();
+                        } else {
+                            canvasInstance.undo();
+                        }
+                        e.preventDefault();
+                    }
+                    return;
+            }
+
+            if (tool) {
+                // Check if the tool button exists in current canvas
+                const toolBtn = currentContainer.querySelector(`[data-tool="${tool}"]`);
+                if (toolBtn) {
+                    canvasInstance.setTool(tool);
+                    
+                    // Update button active states
+                    const allToolBtns = currentContainer.querySelectorAll('.tool-btn[data-tool]');
+                    allToolBtns.forEach(btn => btn.classList.remove('active'));
+                    toolBtn.classList.add('active');
+                    
+                    e.preventDefault();
+                }
+            }
+        });
+    }
+
     // Load week content
     function loadWeek(weekNum) {
         state.currentWeek = weekNum;
         state.currentTab = 'overview';
+        saveProgress();
         
         const weekData = courseContent[`week${weekNum}`];
         if (!weekData) {
@@ -105,6 +252,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load tab content
     function loadTab(weekNum, tabName) {
         state.currentTab = tabName;
+        
+        // Track visited tab
+        const tabKey = `${weekNum}-${tabName}`;
+        state.visitedTabs.add(tabKey);
+        updateProgressIndicators();
+        saveProgress();
         
         const weekData = courseContent[`week${weekNum}`];
         const tabData = weekData.tabs[tabName];
@@ -233,6 +386,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Update progress indicators for tabs and weeks
+    function updateProgressIndicators() {
+        // Update week navigation with progress dots
+        weekNavLinks.forEach(link => {
+            const weekNum = parseInt(link.dataset.week);
+            const weekTabs = ['overview', 'concepts', 'practice1', 'practice2', 'challenge', 'assessment'];
+            
+            // Count visited tabs for this week
+            const visitedCount = weekTabs.filter(tab => 
+                state.visitedTabs.has(`${weekNum}-${tab}`)
+            ).length;
+            
+            // Remove existing progress indicator
+            let progressIndicator = link.querySelector('.progress-indicator');
+            if (!progressIndicator) {
+                progressIndicator = document.createElement('span');
+                progressIndicator.className = 'progress-indicator';
+                link.appendChild(progressIndicator);
+            }
+            
+            // Update progress display
+            progressIndicator.textContent = `${visitedCount}/6`;
+            progressIndicator.className = `progress-indicator ${
+                visitedCount === 6 ? 'complete' : visitedCount > 0 ? 'partial' : 'none'
+            }`;
+        });
+        
+        // Update sub-tabs with visited indicators
+        const subTabs = document.querySelectorAll('.sub-tab-nav[data-tab]');
+        subTabs.forEach(tab => {
+            const tabName = tab.dataset.tab;
+            const tabKey = `${state.currentWeek}-${tabName}`;
+            
+            if (state.visitedTabs.has(tabKey)) {
+                tab.classList.add('visited');
+            } else {
+                tab.classList.remove('visited');
+            }
+        });
+    }
+
     // Get canvas template based on type
     function getCanvasTemplate(type) {
         const templateMap = {
@@ -304,10 +498,38 @@ document.addEventListener('DOMContentLoaded', () => {
                     canvasInstance.setColor(color);
                     palette.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
                     swatch.classList.add('active');
+                    // Clear custom color picker selection
+                    const colorPicker = palette.querySelector('.custom-color-picker');
+                    if (colorPicker) colorPicker.classList.remove('active');
                 });
                 
                 palette.appendChild(swatch);
             });
+            
+            // Add custom color picker
+            const colorPickerContainer = document.createElement('div');
+            colorPickerContainer.className = 'custom-color-container';
+            colorPickerContainer.innerHTML = `
+                <label class="custom-color-picker" data-tooltip="Custom Color">
+                    🎨
+                    <input type="color" class="color-input" value="#000000">
+                </label>
+            `;
+            
+            const colorInput = colorPickerContainer.querySelector('.color-input');
+            const colorPickerLabel = colorPickerContainer.querySelector('.custom-color-picker');
+            
+            colorInput.addEventListener('change', (e) => {
+                const customColor = e.target.value;
+                canvasInstance.setColor(customColor);
+                
+                // Update visual feedback
+                palette.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+                colorPickerLabel.classList.add('active');
+                colorPickerLabel.style.backgroundColor = customColor;
+            });
+            
+            palette.appendChild(colorPickerContainer);
         }
     }
 
