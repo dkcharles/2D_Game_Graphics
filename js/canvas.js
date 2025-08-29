@@ -24,12 +24,19 @@ class PixelCanvas {
         if (!Array.isArray(this.pixels) || this.pixels.length !== this.gridSize) {
             this.pixels = this.createEmptyPixelArray();
         }
+        
+        // History for undo/redo
+        this.history = [];
+        this.historyIndex = -1;
+        this.maxHistorySize = 50;
         if (this.constructor === PixelCanvas) {
             this.init();
         }
     }
     
     init() {
+        // Initialize history with current empty state
+        this.saveToHistory();
         this.setupEventListeners();
         this.redraw();
     }
@@ -74,6 +81,8 @@ class PixelCanvas {
     }
     
     startDrawing(e) {
+        // Save state before starting drawing operation
+        this.saveToHistory();
         this.isDrawing = true;
         this.handleInteraction(e);
     }
@@ -147,6 +156,7 @@ class PixelCanvas {
     }
     
     clear() {
+        this.saveToHistory();
         this.pixels = this.createEmptyPixelArray();
         this.redraw();
     }
@@ -199,6 +209,45 @@ class PixelCanvas {
     
     setColor(color) {
         this.currentColor = color;
+    }
+    
+    // History management for undo/redo
+    saveToHistory() {
+        // Create a deep copy of current state
+        const state = this.pixels.map(row => row.slice());
+        
+        // Remove any states after current index (for when user does something after undo)
+        this.history = this.history.slice(0, this.historyIndex + 1);
+        
+        // Add new state
+        this.history.push(state);
+        
+        // Maintain max history size
+        if (this.history.length > this.maxHistorySize) {
+            this.history.shift();
+        } else {
+            this.historyIndex++;
+        }
+    }
+    
+    undo() {
+        if (this.historyIndex > 0) {
+            this.historyIndex--;
+            this.pixels = this.history[this.historyIndex].map(row => row.slice());
+            this.redraw();
+            return true;
+        }
+        return false;
+    }
+    
+    redo() {
+        if (this.historyIndex < this.history.length - 1) {
+            this.historyIndex++;
+            this.pixels = this.history[this.historyIndex].map(row => row.slice());
+            this.redraw();
+            return true;
+        }
+        return false;
     }
     
     toggleGrid() {
