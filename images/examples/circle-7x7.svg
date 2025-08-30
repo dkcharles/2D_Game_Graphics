@@ -1,0 +1,54 @@
+<svg width="140" height="140" viewBox="0 0 7 7" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .number-label { font-size: 0.3px; fill: #666; text-anchor: middle; }
+  </style>
+  
+  <!-- Correct 7x7 Circle pattern (outline style for clarity) -->
+  <!-- Row 0: 3 pixels -->
+  <rect x="2" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="3" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="4" y="0" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 1: 2 pixels (edges only) -->
+  <rect x="1" y="1" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="1" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 2: 2 pixels (edges only) -->
+  <rect x="0" y="2" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="2" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 3: 2 pixels (middle - edges only) -->
+  <rect x="0" y="3" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="3" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 4: 2 pixels (edges only) -->
+  <rect x="0" y="4" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="4" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 5: 2 pixels (edges only) -->
+  <rect x="1" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 6: 3 pixels -->
+  <rect x="2" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="3" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="4" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Pattern labels -->
+  <text x="7.2" y="0.7" class="number-label">3</text>
+  <text x="7.2" y="1.7" class="number-label">2</text>
+  <text x="7.2" y="2.7" class="number-label">2</text>
+  <text x="7.2" y="3.7" class="number-label">2</text>
+  <text x="7.2" y="4.7" class="number-label">2</text>
+  <text x="7.2" y="5.7" class="number-label">2</text>
+  <text x="7.2" y="6.7" class="number-label">3</text>
+  
+  <!-- Grid lines -->
+  <defs>
+    <pattern id="grid" width="1" height="1" patternUnits="userSpaceOnUse">
+      <path d="M 1 0 L 0 0 0 1" fill="none" stroke="#ddd" stroke-width="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="7" height="7" fill="url(#grid)"/>
+</svg>

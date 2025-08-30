@@ -292,10 +292,32 @@ const courseContent = {
                             
                             <h4>Progressive Shape Challenges:</h4>
                             <ol>
-                                <li><strong>Perfect Square:</strong> Create a filled 4×4 pixel square</li>
-                                <li><strong>Circle Approximation:</strong> Create the best possible circle in a 7×7 area</li>
-                                <li><strong>Triangle Variations:</strong> Draw triangles with different angles and orientations</li>
-                                <li><strong>Five-Pointed Star:</strong> Create a recognizable star shape</li>
+                                <li><strong>Perfect Square:</strong> Create a filled 4×4 pixel square - focus on clean edges and consistent fill</li>
+                                <li>
+                                    <strong>Circle Approximation:</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            Create the best possible circle in a 7×7 area using the 3-2-2-2-2-2-3 pixel pattern (outline style)
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/circle-7x7.svg" alt="7x7 circle with correct circular pattern" class="pixel-example"/>
+                                            <p class="example-caption">7×7 circle pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Triangle Variations:</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            Draw triangles with different angles and orientations - start with a basic isosceles triangle
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/triangle.svg" alt="Example of a pixel art triangle" class="pixel-example"/>
+                                            <p class="example-caption">Basic triangle shape</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><strong>Five-Pointed Star:</strong> Create a recognizable star shape - start from the center and work outward to the five points. <a href="https://uk.pinterest.com/ideas/pixel-art-star-5x5/897535927612/" target="_blank" rel="noopener">See examples here</a>.</li>
                                 <li><strong>Diamond Shape:</strong> Rotate a square to create a diamond</li>
                                 <li><strong>Arrow Shapes:</strong> Create directional arrows pointing different ways</li>
                             </ol>
@@ -307,20 +329,28 @@ const courseContent = {
                             <h4>Circle Creation Techniques:</h4>
                             <p>Creating circles in pixel art requires specific patterns:</p>
                             <ul>
-                                <li><strong>Small circles (7×7):</strong> Use a 1-2-3-3-3-2-1 pixel pattern</li>
+                                <li><strong>Small circles (7×7):</strong> Use a 3-2-2-2-2-2-3 pixel pattern for outline circles</li>
                                 <li><strong>Medium circles (9×9):</strong> Use a 1-3-4-5-5-5-4-3-1 pixel pattern</li>
                                 <li><strong>Symmetry:</strong> Keep patterns symmetric on both axes</li>
                                 <li><strong>Smoothness:</strong> Avoid single-pixel protrusions that break the curve</li>
                             </ul>
 
                             <h4>Diagonal Line Guidelines:</h4>
-                            <p>Creating clean diagonals requires consistent stepping:</p>
-                            <ul>
-                                <li><strong>45-degree lines:</strong> Perfect 1-1-1-1 stepping pattern</li>
-                                <li><strong>Shallow angles:</strong> 2-1-2-1-2-1 stepping pattern</li>
-                                <li><strong>Steep angles:</strong> 1-2-1-2-1-2 stepping pattern</li>
-                                <li><strong>Consistency:</strong> Maintain the same pattern throughout the line</li>
-                            </ul>
+                            <div class="task-with-example">
+                                <div class="task-instructions">
+                                    <p>Creating clean diagonals requires consistent stepping:</p>
+                                    <ul>
+                                        <li><strong>45-degree lines:</strong> Perfect 1-1-1-1 stepping pattern</li>
+                                        <li><strong>Shallow angles:</strong> 2-1-2-1-2-1 stepping pattern</li>
+                                        <li><strong>Steep angles:</strong> 1-2-1-2-1-2 stepping pattern</li>
+                                        <li><strong>Consistency:</strong> Maintain the same pattern throughout the line</li>
+                                    </ul>
+                                </div>
+                                <div class="task-example">
+                                    <img src="images/examples/diagonal-lines.svg" alt="Examples of different diagonal line stepping patterns" class="pixel-example"/>
+                                    <p class="example-caption">Diagonal stepping patterns</p>
+                                </div>
+                            </div>
 
                             <h4>Professional Tips:</h4>
                             <ul>
