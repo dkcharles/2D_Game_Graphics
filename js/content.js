@@ -66,6 +66,20 @@ const courseContent = {
                     </ul>
 
                     <p>As technology advanced, pixel art evolved from a technical limitation to an artistic choice. Modern games like <em>Celeste</em>, <em>Stardew Valley</em>, and <em>Hyper Light Drifter</em> prove that pixel art remains a powerful and popular aesthetic, chosen for its clarity, charm, and nostalgic appeal.</p>
+                    
+                    <div class="example-showcase">
+                        <h4>Modern Pixel Art Excellence: Celeste</h4>
+                        <div class="info-box">
+                            <p><strong>Study Example:</strong> <em>Celeste's</em> main character Madeline demonstrates excellent modern pixel art principles:</p>
+                            <ul>
+                                <li><strong>Clear silhouette:</strong> Instantly recognizable character shape</li>
+                                <li><strong>Limited palette:</strong> Strategic use of just a few colors for maximum impact</li>
+                                <li><strong>Expressive animation:</strong> Personality conveyed through pixel-perfect movement</li>
+                                <li><strong>Technical excellence:</strong> Clean edges, consistent style, readable at small sizes</li>
+                            </ul>
+                            <p><em>View official Celeste sprites at <a href="https://www.spriters-resource.com/pc_computer/celeste/" target="_blank" rel="noopener">The Spriters Resource</a> to see these principles in action.</em></p>
+                        </div>
+                    </div>
 
                     <h3>Understanding the Pixel Grid</h3>
                     <p>The foundation of all pixel art is the grid. Understanding grid relationships is crucial for creating clean, precise artwork:</p>
@@ -676,25 +690,52 @@ const courseContent = {
                             <li><strong>Midtones:</strong> Use the base hue with adjusted saturation</li>
                         </ul>
                     </div>
+                    
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <p><strong>Visual Comparison:</strong> The difference between amateur and professional shading techniques is dramatic. Notice how hue shifting creates more natural, vibrant results.</p>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/hue-shifting.svg" alt="Comparison of gray shadows vs hue-shifted shadows" class="pixel-example-large"/>
+                            <p class="example-caption">Hue shifting makes shadows feel natural rather than muddy</p>
+                        </div>
+                    </div>
 
-                    <h3>Creating Depth with Strategic Shading</h3>
-                    <p>Pixel art typically uses 3-4 carefully chosen shades per color:</p>
-                    <ol>
-                        <li><strong>Shadow (Darkest):</strong> Cooler, less saturated version of base color</li>
-                        <li><strong>Base Color:</strong> The primary hue representing the object</li>
-                        <li><strong>Highlight:</strong> Lighter, often warmer version suggesting light source</li>
-                        <li><strong>Accent (Optional):</strong> Extreme highlight for metallic or magical effects</li>
-                    </ol>
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <h3>Creating Depth with Strategic Shading</h3>
+                            <p>Pixel art typically uses 3-4 carefully chosen shades per color:</p>
+                            <ol>
+                                <li><strong>Shadow (Darkest):</strong> Cooler, less saturated version of base color</li>
+                                <li><strong>Base Color:</strong> The primary hue representing the object</li>
+                                <li><strong>Highlight:</strong> Lighter, often warmer version suggesting light source</li>
+                                <li><strong>Accent (Optional):</strong> Extreme highlight for metallic or magical effects</li>
+                            </ol>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/strategic-shading.svg" alt="Comparison of flat vs strategic shading for depth" class="pixel-example-large"/>
+                            <p class="example-caption">Strategic shading transforms flat shapes into convincing 3D forms</p>
+                        </div>
+                    </div>
 
                     <h3>Color Harmony Principles</h3>
                     <p>Effective pixel art palettes use established color harmony principles:</p>
-                    <ul>
-                        <li><strong>Monochromatic:</strong> Variations of a single hue (safe, cohesive)</li>
-                        <li><strong>Analogous:</strong> Adjacent colors on the color wheel (natural, pleasant)</li>
-                        <li><strong>Complementary:</strong> Opposite colors on the wheel (high contrast, dynamic)</li>
-                        <li><strong>Triadic:</strong> Three evenly spaced colors (vibrant, balanced)</li>
-                        <li><strong>Split-Complementary:</strong> Base color plus colors adjacent to its complement</li>
-                    </ul>
+                    
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <ul>
+                                <li><strong>Monochromatic:</strong> Variations of a single hue (safe, cohesive)</li>
+                                <li><strong>Analogous:</strong> Adjacent colors on the color wheel (natural, pleasant)</li>
+                                <li><strong>Complementary:</strong> Opposite colors on the wheel (high contrast, dynamic)</li>
+                                <li><strong>Triadic:</strong> Three evenly spaced colors (vibrant, balanced)</li>
+                                <li><strong>Split-Complementary:</strong> Base color plus colors adjacent to its complement</li>
+                            </ul>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/color-harmony.svg" alt="Examples of four main color harmony types" class="pixel-example-large"/>
+                            <p class="example-caption">Each harmony type creates different emotional effects and serves different purposes</p>
+                        </div>
+                    </div>
 
                     <h3>Advanced Technique: Dithering</h3>
                     <p>Dithering uses patterns of pixels to create the illusion of intermediate colors or smooth gradients:</p>
@@ -707,6 +748,11 @@ const courseContent = {
                             <li><strong>Gradient:</strong> Progressive patterns for smooth transitions</li>
                         </ul>
                         <p><strong>⚠️ Use Sparingly:</strong> Over-dithering creates visual noise and destroys pixel art's clean aesthetic.</p>
+                    </div>
+                    
+                    <div class="task-example-large">
+                        <img src="images/examples/dithering-patterns.svg" alt="Common dithering patterns for creating gradients" class="pixel-example-large"/>
+                        <p class="example-caption">Different dithering patterns create various blending effects between two colors</p>
                     </div>
 
                     <h3>Palette Size Guidelines</h3>
@@ -751,6 +797,10 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Exploring Color Harmony</h3>
                             <p>This exercise introduces you to color relationships and helps you understand how different color combinations create different emotional effects.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Reference:</strong> <a href="https://graf1x.com/wp-content/uploads/2014/09/color-wheel-poster.jpg" target="_blank">Color Wheel Reference Chart</a> - Use this to identify color relationships while working through the exercises.</p>
+                            </div>
                             
                             <h4>Progressive Color Challenges:</h4>
                             <ol>
@@ -818,6 +868,10 @@ const courseContent = {
                             <h3>Exercise: Creating Form Through Shading</h3>
                             <p>Learn to create the illusion of three-dimensional form using strategic color placement. This exercise builds the skills you'll need for the heart shading challenge.</p>
                             
+                            <div class="info-box">
+                                <p><strong>Video Reference:</strong> <a href="https://www.youtube.com/watch?v=Z58hx22zUo8" target="_blank">Basic Pixel Art Shading Techniques</a> - Watch this video to see fundamental shading techniques demonstrated step by step.</p>
+                            </div>
+                            
                             <h4>Progressive Shading Exercises:</h4>
                             <ol>
                                 <li><strong>Simple Sphere:</strong> Create a basic sphere using 3 shades</li>
@@ -847,6 +901,11 @@ const courseContent = {
                                 <li><strong>Base Color:</strong> The object's natural color</li>
                                 <li><strong>Shadow:</strong> Areas receiving little or no direct light</li>
                             </ol>
+                            
+                            <div class="task-example-large">
+                                <img src="images/examples/three-shade-system.svg" alt="Examples of 3-shade system on sphere and tree" class="pixel-example-large"/>
+                                <p class="example-caption">Each object uses exactly 3 shades to create convincing form and depth</p>
+                            </div>
 
                             <h4>Hue Shifting in Practice:</h4>
                             <p>Make your shading more interesting with subtle hue shifts:</p>
@@ -871,6 +930,47 @@ const courseContent = {
                         </div>
                         
                         <div id="week2-practice2-canvas"></div>
+                        
+                        <div class="reference-section">
+                            <h4>Additional Shading Resources</h4>
+                            <table class="reference-table">
+                                <thead>
+                                    <tr>
+                                        <th>Shape / Resource</th>
+                                        <th>Description</th>
+                                        <th>Download / Access Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Sphere Shading Tutorial by Rappenem (DeviantArt)</strong></td>
+                                        <td>A clear, multi-stage visual guide detailing how to shade a pixel-art sphere—from outline to highlights and bounce light.</td>
+                                        <td>
+                                            <a href="https://www.deviantart.com/rappenem/art/Pixel-Art-Tutorial-Sphere-Shading-1070312230" target="_blank">DeviantArt – Pixel Art Tutorial: Sphere Shading</a><br>
+                                            <a href="https://www.pinterest.com/pin/artstation-pixel-art-tutorial-sphere-shading--1548181182220990/" target="_blank">Pinterest Mirror</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>"Isometric Pixel Art Guide" (Scribd)</strong></td>
+                                        <td>A PDF-style guide covering shading techniques for cubes, cylinders, and spheres in isometric form, including gradients and dithering.</td>
+                                        <td><a href="https://www.scribd.com/document/211018094/Isometric-Pixel-Art-Guide-Rhys-Davies" target="_blank">Scribd – Isometric Pixel Art Guide</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>"The Complete Guide to Isometric Pixel Art" (Scribd)</strong></td>
+                                        <td>Extended PDF guide with detailed instructions on shading cubes, spheres, cylinders, and includes advanced techniques like dithering.</td>
+                                        <td><a href="https://www.scribd.com/document/360272825/The-Complete-Guide-to-Isometric-Pixel-Art-pdf" target="_blank">Scribd – Complete Guide to Isometric Pixel Art</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Worksheet: Shading a Sphere, Cube, Cylinder &amp; Cone</strong></td>
+                                        <td>A downloadable PDF worksheet (paid resource) designed for educational use—guided, shade-by-number instruction for each shape.</td>
+                                        <td>
+                                            <a href="https://www.teacherspayteachers.com/Product/Shading-a-Sphere-Cube-Cylinder-and-Cone-Worksheet-10481428" target="_blank">TeachersPayTeachers – Shading Worksheet</a><br>
+                                            <a href="https://www.pinterest.com/pin/shading-a-sphere-cube-cylinder-and-cone-worksheet--163255555235847833/" target="_blank">Pinterest Mirror</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 `,
                 canvas: {
@@ -890,8 +990,8 @@ const courseContent = {
                             <p>Apply everything you've learned about color theory and shading to create a beautifully shaded heart. This exercise demonstrates your mastery of form, light, and color relationships.</p>
                             
                             <div class="info-box">
-                                <h4>Pre-loaded Elements:</h4>
-                                <p>You'll find a heart outline already created on the canvas. Your task is to add professional-quality shading that brings this flat shape to life.</p>
+                                <h4>Reference Materials:</h4>
+                                <p>Here is a reference video: <a href="https://www.youtube.com/watch?v=kuMcP1p668I" target="_blank">Heart Shading Tutorial</a> - and you may also research your own references.</p>
                             </div>
                             
                             <h4>Professional Shading Process:</h4>

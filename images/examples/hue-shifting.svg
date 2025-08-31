@@ -1,0 +1,75 @@
+<svg width="1680" height="840" viewBox="0 0 14 7" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 0.3px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .bad-label { font-size: 0.3px; fill: #cc0000; text-anchor: middle; font-weight: bold; }
+    .good-label { font-size: 0.3px; fill: #00aa00; text-anchor: middle; font-weight: bold; }
+  </style>
+  
+  <!-- Bad Example: Gray shadows -->
+  <text x="3" y="0.8" class="bad-label">❌ Gray Shadows</text>
+  
+  <!-- Bad sphere - using grays for shadows -->
+  <!-- Row 1 -->
+  <rect x="2" y="1" width="1" height="1" fill="#666666" class="pixel"/> <!-- gray shadow -->
+  <rect x="3" y="1" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="4" y="1" width="1" height="1" fill="#FFB3B3" class="pixel"/> <!-- light red -->
+  
+  <!-- Row 2 -->
+  <rect x="1" y="2" width="1" height="1" fill="#666666" class="pixel"/> <!-- gray shadow -->
+  <rect x="2" y="2" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="3" y="2" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="4" y="2" width="1" height="1" fill="#FFB3B3" class="pixel"/> <!-- light red -->
+  <rect x="5" y="2" width="1" height="1" fill="#FFFFFF" class="pixel"/> <!-- white highlight -->
+  
+  <!-- Row 3 -->
+  <rect x="1" y="3" width="1" height="1" fill="#666666" class="pixel"/> <!-- gray shadow -->
+  <rect x="2" y="3" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="3" y="3" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="4" y="3" width="1" height="1" fill="#FFB3B3" class="pixel"/> <!-- light red -->
+  <rect x="5" y="3" width="1" height="1" fill="#FFFFFF" class="pixel"/> <!-- white highlight -->
+  
+  <!-- Row 4 -->
+  <rect x="2" y="4" width="1" height="1" fill="#666666" class="pixel"/> <!-- gray shadow -->
+  <rect x="3" y="4" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="4" y="4" width="1" height="1" fill="#FFB3B3" class="pixel"/> <!-- light red -->
+  
+  <!-- Good Example: Hue-shifted shadows -->
+  <text x="10" y="0.8" class="good-label">✓ Hue Shifting</text>
+  
+  <!-- Good sphere - using hue shifting -->
+  <!-- Row 1 -->
+  <rect x="9" y="1" width="1" height="1" fill="#B54B73" class="pixel"/> <!-- purple-red shadow -->
+  <rect x="10" y="1" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="11" y="1" width="1" height="1" fill="#FF8F4B" class="pixel"/> <!-- warm orange highlight -->
+  
+  <!-- Row 2 -->
+  <rect x="8" y="2" width="1" height="1" fill="#B54B73" class="pixel"/> <!-- purple-red shadow -->
+  <rect x="9" y="2" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="10" y="2" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="11" y="2" width="1" height="1" fill="#FF8F4B" class="pixel"/> <!-- warm orange highlight -->
+  <rect x="12" y="2" width="1" height="1" fill="#FFDD4B" class="pixel"/> <!-- yellow accent highlight -->
+  
+  <!-- Row 3 -->
+  <rect x="8" y="3" width="1" height="1" fill="#B54B73" class="pixel"/> <!-- purple-red shadow -->
+  <rect x="9" y="3" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="10" y="3" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="11" y="3" width="1" height="1" fill="#FF8F4B" class="pixel"/> <!-- warm orange highlight -->
+  <rect x="12" y="3" width="1" height="1" fill="#FFDD4B" class="pixel"/> <!-- yellow accent highlight -->
+  
+  <!-- Row 4 -->
+  <rect x="9" y="4" width="1" height="1" fill="#B54B73" class="pixel"/> <!-- purple-red shadow -->
+  <rect x="10" y="4" width="1" height="1" fill="#FF6B6B" class="pixel"/> <!-- base red -->
+  <rect x="11" y="4" width="1" height="1" fill="#FF8F4B" class="pixel"/> <!-- warm orange highlight -->
+  
+  <!-- Color legend -->
+  <text x="7" y="6.5" class="label">Cool shadows ← → Warm highlights</text>
+  
+  <!-- Grid lines -->
+  <defs>
+    <pattern id="grid" width="1" height="1" patternUnits="userSpaceOnUse">
+      <path d="M 1 0 L 0 0 0 1" fill="none" stroke="#ccc" stroke-width="0.03"/>
+    </pattern>
+  </defs>
+  <rect width="14" height="7" fill="url(#grid)"/>
+</svg>

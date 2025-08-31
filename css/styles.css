@@ -667,7 +667,7 @@ body {
 }
 
 .task-example {
-    flex: 0 0 160px;
+    flex: 0 0 320px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
@@ -677,7 +677,7 @@ body {
 
 .pixel-example {
     width: 100%;
-    max-width: 120px;
+    max-width: 300px;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 4px;
@@ -688,7 +688,31 @@ body {
     transition: transform 0.2s ease;
 }
 
-.pixel-example:hover {
+/* Large example for specific images that need more space */
+.task-example-large {
+    flex: 0 0 520px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pixel-example-large {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transition: transform 0.2s ease;
+}
+
+.pixel-example:hover,
+.pixel-example-large:hover {
     transform: scale(1.1);
     border-color: var(--accent-primary);
 }
@@ -716,5 +740,15 @@ body {
     
     .pixel-example {
         max-width: 140px;
+    }
+    
+    .task-example-large {
+        flex: none;
+        align-self: center;
+        max-width: 400px;
+    }
+    
+    .pixel-example-large {
+        max-width: 350px;
     }
 }

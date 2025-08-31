@@ -1,0 +1,140 @@
+<svg width="800" height="300" viewBox="0 0 40 15" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 1px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.8px; fill: #666; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="20" y="2" class="label">Dithering Patterns</text>
+  
+  <!-- Checkerboard Pattern (8x6 grid) -->
+  <text x="8" y="4" class="type-label">Checkerboard</text>
+  <rect x="4" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="6" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="8" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="10" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="11" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="4" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="5" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="7" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="9" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="11" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="4" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="6" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="8" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="10" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="11" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="4" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="5" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="7" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="9" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="11" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <text x="7.5" y="10" class="type-label">50% density</text>
+  
+  <!-- Random Density Pattern (8x4 grid) -->
+  <text x="20" y="4" class="type-label">Random Density</text>
+  <rect x="16" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="17" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="19" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="20" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="22" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="23" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="16" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="17" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="18" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="19" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="21" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="23" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="16" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="17" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="18" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="20" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="21" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="22" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="23" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="16" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="17" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="19" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="20" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="22" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="23" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <text x="19.5" y="10" class="type-label">~30% density</text>
+  
+  <!-- Gradient Example (expanded) -->
+  <text x="31" y="4" class="type-label">Gradient Transition</text>
+  
+  <!-- 100% black (4x4) -->
+  <rect x="26" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="26" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="26" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="26" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- 75% black -->
+  <rect x="28" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="29" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="28" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="29" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="28" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="29" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="28" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="29" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- 50% black -->
+  <rect x="30" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="30" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="31" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="30" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="31" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- 25% black -->
+  <rect x="32" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="33" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="32" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="33" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="32" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="33" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  
+  <!-- 0% black (all white) -->
+  <rect x="34" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="35" y="5" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="34" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="35" y="6" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="34" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="35" y="7" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="34" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="35" y="8" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  
+  <text x="30.5" y="10" class="type-label">100% → 75% → 50% → 25% → 0%</text>
+  
+  <!-- Bottom instruction -->
+  <text x="20" y="13" class="type-label">Dithering creates intermediate tones using only two colors</text>
+</svg>

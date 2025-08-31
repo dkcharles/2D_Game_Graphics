@@ -1,0 +1,70 @@
+<svg width="600" height="200" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 0.8px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.6px; fill: #666; text-anchor: middle; }
+    .shade-label { font-size: 0.5px; fill: #444; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="15" y="1" class="label">3-Shade System: Building Form with Light</text>
+  
+  <!-- Red Sphere Example -->
+  <text x="7" y="2.8" class="type-label">Red Sphere</text>
+  
+  <!-- Shadow (darkest) -->
+  <rect x="5" y="3.5" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="5" y="4.5" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="6" y="5.5" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Midtone (base color) -->
+  <rect x="6" y="3.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="3.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="6" y="4.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="4.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="5.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="8" y="5.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Highlight (lightest) -->
+  <rect x="8" y="3.5" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="8" y="4.5" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="9" y="4.5" width="1" height="1" fill="#F87171" class="pixel"/>
+  
+  <!-- Labels for red sphere - spread out horizontally to avoid overlap -->
+  <text x="4" y="7.5" class="shade-label">Shadow</text>
+  <text x="7" y="7.5" class="shade-label">Midtone</text>
+  <text x="10" y="7.5" class="shade-label">Highlight</text>
+  
+  <!-- Green Tree Example -->
+  <text x="22" y="2.8" class="type-label">Green Tree</text>
+  
+  <!-- Tree trunk (brown 3-shade) -->
+  <rect x="22" y="5.5" width="1" height="1" fill="#451A03" class="pixel"/> <!-- shadow -->
+  <rect x="22" y="6.5" width="1" height="1" fill="#92400E" class="pixel"/> <!-- midtone -->
+  <rect x="22" y="7.5" width="1" height="1" fill="#D2691E" class="pixel"/> <!-- highlight -->
+  
+  <!-- Leaves (green 3-shade) -->
+  <!-- Shadow areas -->
+  <rect x="20" y="3.5" width="1" height="1" fill="#14532D" class="pixel"/>
+  <rect x="21" y="4.5" width="1" height="1" fill="#14532D" class="pixel"/>
+  <rect x="20" y="5.5" width="1" height="1" fill="#14532D" class="pixel"/>
+  <rect x="24" y="4.5" width="1" height="1" fill="#14532D" class="pixel"/>
+  
+  <!-- Midtone areas -->
+  <rect x="21" y="3.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="22" y="3.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="23" y="3.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="20" y="4.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="22" y="4.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="23" y="4.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="21" y="5.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="23" y="5.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  
+  <!-- Highlight areas -->
+  <rect x="24" y="3.5" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="4.5" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="24" y="5.5" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  
+  <!-- Bottom instruction - moved down to avoid any overlap -->
+  <text x="15" y="9.5" class="type-label">Each object uses only 3 shades: Shadow → Midtone → Highlight</text>
+</svg>

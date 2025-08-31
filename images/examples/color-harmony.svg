@@ -1,0 +1,93 @@
+<svg width="600" height="200" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 0.8px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.6px; fill: #666; text-anchor: middle; }
+  </style>
+  
+  <!-- Monochromatic Example -->
+  <text x="3" y="1" class="label">Monochromatic</text>
+  <text x="3" y="1.8" class="type-label">(One hue)</text>
+  
+  <!-- Monochromatic flower shape -->
+  <rect x="2" y="2.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  <rect x="4" y="2.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  <rect x="1" y="3.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  <rect x="5" y="3.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  <rect x="2" y="4.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  <rect x="4" y="4.5" width="1" height="1" fill="#1E3A8A" class="pixel"/>
+  
+  <!-- Center -->
+  <rect x="3" y="2.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="2" y="3.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="3" y="3.5" width="1" height="1" fill="#93C5FD" class="pixel"/>
+  <rect x="4" y="3.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="3" y="4.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  
+  <!-- Analogous Example -->
+  <text x="10" y="1" class="label">Analogous</text>
+  <text x="10" y="1.8" class="type-label">(Adjacent hues)</text>
+  
+  <!-- Analogous leaf shape -->
+  <rect x="9" y="2.5" width="1" height="1" fill="#0891B2" class="pixel"/>
+  <rect x="10" y="2.5" width="1" height="1" fill="#06B6D4" class="pixel"/>
+  <rect x="11" y="2.5" width="1" height="1" fill="#0891B2" class="pixel"/>
+  <rect x="8" y="3.5" width="1" height="1" fill="#0891B2" class="pixel"/>
+  <rect x="9" y="3.5" width="1" height="1" fill="#06B6D4" class="pixel"/>
+  <rect x="10" y="3.5" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="11" y="3.5" width="1" height="1" fill="#06B6D4" class="pixel"/>
+  <rect x="12" y="3.5" width="1" height="1" fill="#0891B2" class="pixel"/>
+  <rect x="9" y="4.5" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="10" y="4.5" width="1" height="1" fill="#16A34A" class="pixel"/>
+  <rect x="11" y="4.5" width="1" height="1" fill="#10B981" class="pixel"/>
+  
+  <!-- Complementary Example -->
+  <text x="17" y="1" class="label">Complementary</text>
+  <text x="17" y="1.8" class="type-label">(Opposite hues)</text>
+  
+  <!-- Orange sun with blue sky -->
+  <rect x="15" y="2.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="16" y="2.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="17" y="2.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="18" y="2.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="19" y="2.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="14" y="3.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="15" y="3.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="16" y="3.5" width="1" height="1" fill="#FB923C" class="pixel"/>
+  <rect x="17" y="3.5" width="1" height="1" fill="#FED7AA" class="pixel"/>
+  <rect x="18" y="3.5" width="1" height="1" fill="#FB923C" class="pixel"/>
+  <rect x="19" y="3.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="20" y="3.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="15" y="4.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="16" y="4.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="17" y="4.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="18" y="4.5" width="1" height="1" fill="#F97316" class="pixel"/>
+  <rect x="19" y="4.5" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  
+  <!-- Triadic Example -->
+  <text x="25" y="1" class="label">Triadic</text>
+  <text x="25" y="1.8" class="type-label">(Three evenly spaced)</text>
+  
+  <!-- Red, Yellow, Blue triangle -->
+  <rect x="25" y="2.5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="23" y="4.5" width="1" height="1" fill="#EAB308" class="pixel"/>
+  <rect x="24" y="4.5" width="1" height="1" fill="#EAB308" class="pixel"/>
+  <rect x="24" y="3.5" width="1" height="1" fill="#EAB308" class="pixel"/>
+  <rect x="26" y="4.5" width="1" height="1" fill="#2563EB" class="pixel"/>
+  <rect x="27" y="4.5" width="1" height="1" fill="#2563EB" class="pixel"/>
+  <rect x="26" y="3.5" width="1" height="1" fill="#2563EB" class="pixel"/>
+  <rect x="25" y="3.5" width="1" height="1" fill="#9CA3AF" class="pixel"/>
+  <rect x="25" y="4.5" width="1" height="1" fill="#9CA3AF" class="pixel"/>
+  
+  <!-- Descriptions -->
+  <text x="3" y="7" class="type-label">Calm &amp; Unified</text>
+  <text x="10" y="7" class="type-label">Natural &amp; Pleasant</text>
+  <text x="17" y="7" class="type-label">High Contrast</text>
+  <text x="25" y="7" class="type-label">Vibrant &amp; Balanced</text>
+  
+  <!-- Usage -->
+  <text x="3" y="8.5" class="type-label">Best: Backgrounds</text>
+  <text x="10" y="8.5" class="type-label">Best: Environments</text>
+  <text x="17" y="8.5" class="type-label">Best: UI Elements</text>
+  <text x="25" y="8.5" class="type-label">Best: Accents</text>
+</svg>

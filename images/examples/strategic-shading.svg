@@ -1,0 +1,64 @@
+<svg width="600" height="200" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 0.8px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.6px; fill: #666; text-anchor: middle; }
+    .depth-label { font-size: 0.5px; fill: #444; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="15" y="1" class="label">Strategic Shading for Depth</text>
+  
+  <!-- Flat vs Shaded Comparison -->
+  <text x="7" y="2.5" class="type-label">Flat (No Depth)</text>
+  <text x="22" y="2.5" class="type-label">Strategic Shading (3D Form)</text>
+  
+  <!-- Flat circle -->
+  <rect x="6" y="4" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="4" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="8" y="4" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="5" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="6" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="8" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="9" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="6" y="6" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="7" y="6" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="8" y="6" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Shaded sphere with strategic lighting -->
+  <!-- Shadow side (left) -->
+  <rect x="19" y="4" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="18" y="5" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="19" y="5" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="19" y="6" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Midtone (center) -->
+  <rect x="20" y="4" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="21" y="4" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="20" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="21" y="5" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="20" y="6" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="21" y="6" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Highlight side (right) -->
+  <rect x="22" y="4" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="22" y="5" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="23" y="5" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="22" y="6" width="1" height="1" fill="#F87171" class="pixel"/>
+  
+  <!-- Cast shadow on ground -->
+  <rect x="17" y="7.5" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="18" y="7.5" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="19" y="7.5" width="1" height="1" fill="#666666" class="pixel"/>
+  
+  <!-- Labels -->
+  <text x="7" y="8" class="depth-label">Appears flat</text>
+  <text x="22" y="8" class="depth-label">Shows volume &amp; form</text>
+  
+  <!-- Arrow showing light direction -->
+  <text x="26" y="3.5" class="depth-label">Light →</text>
+  
+  <!-- Key principle -->
+  <text x="15" y="9.5" class="type-label">Key: Consistent light direction creates believable 3D form</text>
+</svg>

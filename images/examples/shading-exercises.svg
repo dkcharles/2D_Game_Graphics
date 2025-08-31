@@ -1,0 +1,180 @@
+<svg width="800" height="600" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 1px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.8px; fill: #666; text-anchor: middle; }
+    .instruction { font-size: 0.6px; fill: #444; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="20" y="2" class="label">Shading Exercise Reference Guide</text>
+  
+  <!-- Exercise 1: Simple Sphere -->
+  <text x="10" y="5" class="type-label">Exercise 1: Simple Sphere (3 shades)</text>
+  
+  <!-- Light direction indicator -->
+  <text x="7" y="6.5" class="instruction">Light ↗</text>
+  
+  <!-- Large sphere with clear 3-shade system -->
+  <!-- Row 1 (top) -->
+  <rect x="9" y="7" width="1" height="1" fill="#F87171" class="pixel"/> <!-- highlight -->
+  <rect x="10" y="7" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="11" y="7" width="1" height="1" fill="#DC2626" class="pixel"/> <!-- base -->
+  
+  <!-- Row 2 -->
+  <rect x="8" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="9" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="10" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="12" y="8" width="1" height="1" fill="#8B1538" class="pixel"/> <!-- shadow -->
+  
+  <!-- Row 3 (middle) -->
+  <rect x="7" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="8" y="9" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="9" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="10" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="12" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="13" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Row 4 -->
+  <rect x="8" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="9" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="10" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="10" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="12" y="10" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Row 5 (bottom) -->
+  <rect x="9" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="10" y="11" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="11" y="11" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <text x="10" y="13" class="instruction">Highlight → Base → Shadow</text>
+  
+  <!-- Exercise 2: Cube -->
+  <text x="30" y="5" class="type-label">Exercise 2: Cube with Face Shading</text>
+  
+  <!-- Light direction -->
+  <text x="27" y="6.5" class="instruction">Light ↗</text>
+  
+  <!-- Cube - 3D isometric style -->
+  <!-- Top face (brightest) -->
+  <rect x="29" y="7" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="30" y="7" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="31" y="7" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="32" y="7" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="30" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="31" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="32" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="33" y="8" width="1" height="1" fill="#F87171" class="pixel"/>
+  
+  <!-- Left face (medium) -->
+  <rect x="29" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="32" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Right face (darkest) -->
+  <rect x="31" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="32" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="33" y="9" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="32" y="10" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="33" y="10" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="33" y="11" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <text x="31" y="13" class="instruction">Top: bright, Left: medium, Right: dark</text>
+  
+  <!-- Exercise 3: Cylinder -->
+  <text x="10" y="17" class="type-label">Exercise 3: Cylinder with Curved Shading</text>
+  
+  <!-- Light direction -->
+  <text x="7" y="18.5" class="instruction">Light ↗</text>
+  
+  <!-- Cylinder with smooth curved transition -->
+  <!-- Top cap -->
+  <rect x="9" y="19" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="10" y="19" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="19" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Cylinder body with gradual shading -->
+  <rect x="8" y="20" width="1" height="1" fill="#F87171" class="pixel"/> <!-- highlight -->
+  <rect x="9" y="20" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="10" y="20" width="1" height="1" fill="#DC2626" class="pixel"/> <!-- base -->
+  <rect x="11" y="20" width="1" height="1" fill="#8B1538" class="pixel"/> <!-- shadow -->
+  <rect x="12" y="20" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <rect x="8" y="21" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="9" y="21" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="10" y="21" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="12" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <rect x="8" y="22" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="9" y="22" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="10" y="22" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="11" y="22" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="12" y="22" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Bottom cap -->
+  <rect x="9" y="23" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="10" y="23" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="11" y="23" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <text x="10" y="25" class="instruction">Smooth curved transition</text>
+  
+  <!-- Exercise 4: Two Boxes with Cast Shadows -->
+  <text x="30" y="17" class="type-label">Exercise 4: Two Boxes with Cast Shadows</text>
+  
+  <!-- Light direction -->
+  <text x="27" y="18.5" class="instruction">Light ↗</text>
+  
+  <!-- First box (casting shadow) -->
+  <!-- Top face -->
+  <rect x="28" y="19" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="29" y="19" width="1" height="1" fill="#F87171" class="pixel"/>
+  <rect x="30" y="19" width="1" height="1" fill="#F87171" class="pixel"/>
+  
+  <!-- Left face -->
+  <rect x="28" y="20" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="21" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Right face -->
+  <rect x="29" y="20" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="30" y="20" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="29" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="30" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Second box (in partial shadow from first box) -->
+  <!-- Top face (partially shadowed) -->
+  <rect x="32" y="20" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="33" y="20" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="34" y="20" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Left face (in shadow) -->
+  <rect x="32" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="32" y="22" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Right face (darkest) -->
+  <rect x="33" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="34" y="21" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="33" y="22" width="1" height="1" fill="#8B1538" class="pixel"/>
+  <rect x="34" y="22" width="1" height="1" fill="#8B1538" class="pixel"/>
+  
+  <!-- Cast shadows on ground -->
+  <rect x="31" y="22" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="32" y="23" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="33" y="23" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="34" y="23" width="1" height="1" fill="#666666" class="pixel"/>
+  <rect x="35" y="23" width="1" height="1" fill="#666666" class="pixel"/>
+  
+  <text x="31" y="25" class="instruction">First box casts shadow on second box</text>
+  
+  <!-- Bottom principles -->
+  <text x="20" y="28" class="type-label">Remember: Consistent light direction for all objects!</text>
+</svg>
