@@ -847,6 +847,46 @@ const courseContent = {
                             <div class="warning-box">
                                 <p><strong>Accessibility Note:</strong> Always ensure sufficient contrast between important elements. About 8% of men and 0.5% of women have some form of color vision deficiency.</p>
                             </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Create a Color Harmony Study</h4>
+                                <p><strong>Assignment:</strong> Create three small pixel art compositions that demonstrate different color harmony principles:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Compositions:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Composition 1 - Complementary Colors:</strong> Use two colors opposite on the color wheel (like red & green, blue & orange)</li>
+                                        <li><strong>Composition 2 - Analogous Colors:</strong> Use 3-4 colors that sit next to each other on the wheel (like blue, blue-green, green)</li>
+                                        <li><strong>Composition 3 - Monochromatic with Accent:</strong> Use shades of one main color plus one bright accent color</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Each composition should clearly demonstrate its color harmony type</li>
+                                        <li>Use the color wheel reference to verify your color relationships</li>
+                                        <li>Create simple geometric shapes or patterns to test your colors</li>
+                                        <li>Ensure sufficient contrast for accessibility</li>
+                                        <li>Notice and document how each color combo makes you feel</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Suggested Approach:</strong></p>
+                                    <ol>
+                                        <li>Start with simple shapes (squares, circles, triangles)</li>
+                                        <li>Test your color choices using the reference wheel</li>
+                                        <li>Create each composition in a different area of the canvas</li>
+                                        <li>Compare how the different harmonies feel emotionally</li>
+                                        <li>Adjust colors if they don't feel harmonious</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Color Tip:</strong> Don't worry about creating complex images - focus on how the colors work together. Simple shapes are perfect for understanding color relationships!</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week2-practice1-canvas"></div>
@@ -926,6 +966,47 @@ const courseContent = {
 
                             <div class="info-box">
                                 <p><strong>Professional Insight:</strong> Good shading makes flat pixel art appear three-dimensional. Master this skill and your pixel art will immediately look more professional and appealing.</p>
+                            </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Master the 3-Shade System</h4>
+                                <p><strong>Assignment:</strong> Create three simple geometric shapes demonstrating the 3-shade shading system:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Shapes:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Shape 1 - Sphere:</strong> Use curved shading to show roundness with 3 shades</li>
+                                        <li><strong>Shape 2 - Cube:</strong> Show different faces receiving different light amounts</li>
+                                        <li><strong>Shape 3 - Cylinder:</strong> Demonstrate how light wraps around a curved surface</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>3-Shade System Rules:</h5>
+                                    <ul>
+                                        <li><strong>Highlight:</strong> Lightest shade where light hits directly (avoid pure white)</li>
+                                        <li><strong>Base Color:</strong> The object's natural mid-tone color</li>
+                                        <li><strong>Shadow:</strong> Darkest shade in areas with little light (avoid pure black)</li>
+                                        <li><strong>Consistent Light Source:</strong> All shapes should have light coming from the same direction</li>
+                                        <li><strong>Smooth Transitions:</strong> Shades should flow naturally into each other</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Step-by-Step Process:</strong></p>
+                                    <ol>
+                                        <li>Choose your base color (the object's natural color)</li>
+                                        <li>Create a lighter shade for highlights (add brightness, slight warmth)</li>
+                                        <li>Create a darker shade for shadows (reduce brightness, slight coolness)</li>
+                                        <li>Draw the basic shape outline in base color</li>
+                                        <li>Add highlights where light hits most directly</li>
+                                        <li>Add shadows in areas turned away from the light</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Light Tip:</strong> Imagine your light source is coming from the top-left. This means highlights go on top-left surfaces, shadows on bottom-right surfaces. Watch the reference video for step-by-step guidance!</p>
+                                </div>
                             </div>
                         </div>
                         
@@ -1262,6 +1343,11 @@ const courseContent = {
                         <li><strong>Triangles and Angles:</strong> Dynamic, aggressive, dangerous, energetic</li>
                         <li><strong>Organic Shapes:</strong> Natural, alive, unpredictable, flowing</li>
                     </ul>
+                    
+                    <div class="task-example-large">
+                        <img src="images/examples/character-design-fundamentals.svg" alt="Character design fundamentals showing silhouettes, shape language, and archetypes" class="pixel-example-large"/>
+                        <p class="example-caption">Visual examples of strong vs weak silhouettes, shape language psychology, and character archetypes</p>
+                    </div>
 
                     <h3>Character Archetypes and Design</h3>
                     <p>Common character roles and their visual characteristics:</p>
@@ -1362,6 +1448,11 @@ const courseContent = {
                                 <li><strong>Cultural Diversity:</strong> Create silhouettes representing diverse body types and presentations</li>
                             </ol>
                             
+                            <div class="task-example-large">
+                                <img src="images/examples/character-silhouettes.svg" alt="Character silhouette examples showing different archetypes and personalities" class="pixel-example-large"/>
+                                <p class="example-caption">Reference examples showing how different silhouettes communicate character archetypes and personalities</p>
+                            </div>
+                            
                             <div class="tip-box">
                                 <p><strong>Silhouette Test:</strong> For each character, create a solid black version. If you can't tell what type of character it is from the silhouette alone, the design needs work.</p>
                             </div>
@@ -1396,6 +1487,35 @@ const courseContent = {
                             <div class="info-box">
                                 <p><strong>Professional Tip:</strong> Great video game characters are recognizable from their silhouettes alone. Think of Mario, Sonic, or Pikachu - their shapes are instantly identifiable even without color or detail.</p>
                             </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Create Three Character Silhouettes</h4>
+                                <p><strong>Assignment:</strong> Using only solid black pixels, create three distinct character silhouettes that clearly communicate different archetypes:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Characters:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Character 1 - The Hero:</strong> Create a balanced, confident silhouette with upright posture and heroic proportions</li>
+                                        <li><strong>Character 2 - The Villain:</strong> Design an angular, threatening silhouette with sharp or imposing features</li>
+                                        <li><strong>Character 3 - The Friend:</strong> Make a friendly, approachable silhouette using curved shapes and welcoming posture</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Each silhouette should be instantly recognizable as its archetype</li>
+                                        <li>Use different shape languages (angular vs curved vs balanced)</li>
+                                        <li>Vary proportions to support each character's role</li>
+                                        <li>Ensure cultural sensitivity in all designs</li>
+                                        <li>Test: Cover your work and ask someone else to identify each character type</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Working Tips:</strong> Start with basic shapes, exaggerate key features, and remember that less detail often means stronger silhouettes. Focus on the overall outline rather than internal details.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week3-practice1-canvas"></div>
@@ -1425,6 +1545,11 @@ const courseContent = {
                                 <li><strong>Clothing and Accessories:</strong> Add personality through costume choices</li>
                                 <li><strong>Character Variations:</strong> Create a family of related characters</li>
                             </ol>
+                            
+                            <div class="task-example-large">
+                                <img src="images/examples/character-features.svg" alt="Character feature development examples showing expressions, eye variations, and age proportions" class="pixel-example-large"/>
+                                <p class="example-caption">Reference examples for facial expressions, eye variations, and age-based proportion differences</p>
+                            </div>
                             
                             <h4>Facial Feature Guidelines:</h4>
                             <div class="tip-box">
@@ -1480,6 +1605,48 @@ const courseContent = {
                                 <li><strong>Hierarchy:</strong> Important characters should be more visually complex</li>
                                 <li><strong>Memorability:</strong> Include one distinctive feature that makes each character unique</li>
                             </ul>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Character Feature Development</h4>
+                                <p><strong>Assignment:</strong> Create a character face that demonstrates clear emotional expression and age-appropriate proportions:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Elements:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Step 1 - Choose an Age:</strong> Child, adult, or elderly character (each has different proportion rules)</li>
+                                        <li><strong>Step 2 - Select an Emotion:</strong> Happy, sad, angry, surprised, or determined</li>
+                                        <li><strong>Step 3 - Design Clear Eyes:</strong> Use appropriate size for age and expression</li>
+                                        <li><strong>Step 4 - Create Expressive Mouth:</strong> Match the emotion with appropriate mouth shape</li>
+                                        <li><strong>Step 5 - Add Personality Details:</strong> Hair, accessories, or clothing that support character's story</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Expression should be clear and unmistakable at small size</li>
+                                        <li>Age should be apparent through proportions (head size, eye size, posture)</li>
+                                        <li>Features must be culturally sensitive and respectful</li>
+                                        <li>Character should have one memorable, distinctive feature</li>
+                                        <li>Design works within 32×32 pixel constraint</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Design Process:</strong></p>
+                                    <ol>
+                                        <li>Start with basic head shape appropriate for chosen age</li>
+                                        <li>Place eyes at correct position and size for age group</li>
+                                        <li>Add mouth that clearly shows chosen emotion</li>
+                                        <li>Include defining details (hair, clothing, accessories)</li>
+                                        <li>Test readability - can others identify age and emotion?</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Pro Tip:</strong> Remember that children have larger heads relative to their bodies, and eyes positioned lower on the face. Adults have more balanced proportions, while elderly characters may have smaller eyes and different postures.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week3-practice2-canvas"></div>

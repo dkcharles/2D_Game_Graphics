@@ -1,0 +1,438 @@
+<svg width="900" height="700" viewBox="0 0 45 35" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 1.5px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 1.2px; fill: #666; text-anchor: middle; }
+    .instruction { font-size: 1px; fill: #444; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="22.5" y="2.5" class="label">Character Feature Development</text>
+  
+  <!-- Section 1: Facial Expressions (Much bigger and clearer) -->
+  <text x="22.5" y="5" class="type-label">Facial Expressions</text>
+  
+  <!-- Happy Face -->
+  <text x="8" y="7" class="instruction">Happy</text>
+  <!-- Head (7x7 grid) -->
+  <rect x="5" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="5" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="6" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Clear happy eyes with highlights - moved up one pixel -->
+  <rect x="6" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="9" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="9" y="9" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="10" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Big clear smile - upward curve for happiness -->
+  <rect x="6" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Sad Face -->
+  <text x="18" y="7" class="instruction">Sad</text>
+  <!-- Head -->
+  <rect x="15" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="15" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="16" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="17" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="18" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="19" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Sad eyes -->
+  <rect x="16" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="17" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Clear frown -->
+  <rect x="16" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="17" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Angry Face -->
+  <text x="28" y="7" class="instruction">Angry</text>
+  <!-- Head (red for anger) -->
+  <rect x="25" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="12" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="13" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="25" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="26" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="27" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="28" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="29" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="30" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="14" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <!-- Angry brow -->
+  <rect x="25" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="26" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Angry eyes -->
+  <rect x="26" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="29" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Angry mouth -->
+  <rect x="26" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="27" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="28" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="29" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Surprised Face -->
+  <text x="38" y="7" class="instruction">Surprised</text>
+  <!-- Head -->
+  <rect x="35" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="8" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="9" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="10" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="11" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="12" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="13" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="38" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="39" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="40" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="41" y="14" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Wide surprised eyes -->
+  <rect x="35" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="36" y="10" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="37" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="39" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="40" y="10" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="41" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="36" y="11" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="40" y="11" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Open mouth (round) -->
+  <rect x="37" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="38" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="39" y="12" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="37" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="39" y="13" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="37" y="14" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="38" y="14" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="39" y="14" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Section 2: Age Proportions -->
+  <text x="22.5" y="19" class="type-label">Age Proportions &amp; Eye Variations</text>
+  
+  <!-- Child Character (Large head, big eyes) -->
+  <text x="10" y="21" class="instruction">Child (Large Head, Big Eyes)</text>
+  <!-- Large head -->
+  <rect x="7" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="12" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="13" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="12" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="13" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="12" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="13" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="12" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="13" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="7" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="8" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="9" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="10" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="11" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="12" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="13" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Large eyes with highlights -->
+  <rect x="8" y="24" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="24" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="11" y="24" width="1" height="1" fill="#FFFFFF" class="pixel"/>
+  <rect x="12" y="24" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="25" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="11" y="25" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Small body -->
+  <rect x="9" y="27" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="10" y="27" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="11" y="27" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="9" y="28" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="10" y="28" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="11" y="28" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="9" y="29" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="11" y="29" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  
+  <!-- Adult Character (Balanced proportions) -->
+  <text x="22.5" y="21" class="instruction">Adult (Balanced Proportions)</text>
+  <!-- Head -->
+  <rect x="20" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="22" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="23" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="24" y="22" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="22" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="23" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="24" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="22" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="23" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="24" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="20" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="21" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="22" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="23" y="25" width="1" fill="#F59E0B" class="pixel"/>
+  <rect x="24" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Normal eyes -->
+  <rect x="20" y="23" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="23" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="23" y="23" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="24" y="23" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Proportional body -->
+  <rect x="20" y="26" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="21" y="26" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="22" y="26" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="23" y="26" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="24" y="26" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="20" y="27" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="21" y="27" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="22" y="27" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="23" y="27" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="24" y="27" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="20" y="28" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="21" y="28" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="22" y="28" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="23" y="28" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="24" y="28" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="20" y="29" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="21" y="29" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="22" y="29" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="23" y="29" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="24" y="29" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="21" y="30" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="23" y="30" width="1" height="1" fill="#10B981" class="pixel"/>
+  
+  <!-- Elderly Character (Small eyes, hunched) -->
+  <text x="35" y="21" class="instruction">Elderly (Small Eyes, Hunched)</text>
+  <!-- Head -->
+  <rect x="33" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="34" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="23" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="34" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="24" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="34" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="25" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="34" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="35" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="36" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="37" y="26" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <!-- Small eyes -->
+  <rect x="33" y="24" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="37" y="24" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Hunched body -->
+  <rect x="32" y="27" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="33" y="27" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="34" y="27" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="35" y="27" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="32" y="28" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="33" y="28" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="34" y="28" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="35" y="28" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="32" y="29" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  <rect x="34" y="29" width="1" height="1" fill="#8B5CF6" class="pixel"/>
+  
+  <!-- Bottom principles -->
+  <text x="22.5" y="32.5" class="type-label">Key Development Principles</text>
+  <text x="22.5" y="34" class="instruction">• Expressions must be clear at small sizes • Eye size indicates age • Proportions communicate personality</text>
+</svg>

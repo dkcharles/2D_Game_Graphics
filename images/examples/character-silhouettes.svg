@@ -1,0 +1,148 @@
+<svg width="800" height="400" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 0.8px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.6px; fill: #666; text-anchor: middle; }
+    .instruction { font-size: 0.5px; fill: #444; text-anchor: middle; }
+  </style>
+  
+  <!-- Title -->
+  <text x="20" y="1.5" class="label">Character Silhouette Examples</text>
+  
+  <!-- Row 1: Archetypes -->
+  <text x="20" y="3" class="type-label">Character Archetypes</text>
+  
+  <!-- Hero Silhouette -->
+  <text x="8" y="4.5" class="instruction">Hero</text>
+  <!-- Strong, balanced hero silhouette -->
+  <rect x="7" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="11" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Villain Silhouette -->
+  <text x="20" y="4.5" class="instruction">Villain</text>
+  <!-- Angular, threatening villain -->
+  <rect x="20" y="5" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="17" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="23" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="16" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="24" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Sidekick Silhouette -->
+  <text x="32" y="4.5" class="instruction">Sidekick</text>
+  <!-- Small, energetic sidekick -->
+  <rect x="31" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="6" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="34" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Row 2: Personalities -->
+  <text x="20" y="13" class="type-label">Character Personalities</text>
+  
+  <!-- Confident Character -->
+  <text x="8" y="14.5" class="instruction">Confident</text>
+  <!-- Upright, broad shoulders -->
+  <rect x="7" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="11" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="10" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Shy Character -->
+  <text x="20" y="14.5" class="instruction">Shy</text>
+  <!-- Hunched shoulders, smaller -->
+  <rect x="19" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="18" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="20" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="22" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="19" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="21" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Energetic Character -->
+  <text x="32" y="14.5" class="instruction">Energetic</text>
+  <!-- Dynamic pose, asymmetrical -->
+  <rect x="32" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="15" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="34" y="16" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="30" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="32" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="33" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="35" y="17" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="31" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="34" y="18" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Bottom instruction -->
+  <text x="20" y="19.5" class="instruction">Test: Can you identify each character type from silhouette alone?</text>
+</svg>

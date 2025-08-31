@@ -1,0 +1,158 @@
+<svg width="800" height="600" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { width: 1px; height: 1px; }
+    .label { font-size: 1px; fill: #333; text-anchor: middle; font-weight: bold; }
+    .type-label { font-size: 0.8px; fill: #666; text-anchor: middle; }
+    .instruction { font-size: 0.6px; fill: #444; text-anchor: middle; }
+    .good { fill: #16A34A; }
+    .bad { fill: #DC2626; }
+  </style>
+  
+  <!-- Title -->
+  <text x="20" y="2" class="label">Character Design Fundamentals</text>
+  
+  <!-- Section 1: Silhouette Design -->
+  <text x="10" y="4.5" class="type-label">Silhouette Design</text>
+  
+  <!-- Strong Silhouette (Hero) -->
+  <text x="6" y="6" class="instruction good">✓ Strong Silhouette</text>
+  <!-- Hero character with clear, distinctive outline -->
+  <!-- Head -->
+  <rect x="5" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Body with cape -->
+  <rect x="4" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="8" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Distinctive cape flow -->
+  <rect x="3" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="6" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="9" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <!-- Legs -->
+  <rect x="5" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="5" y="11" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="7" y="11" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Weak Silhouette -->
+  <text x="14" y="6" class="instruction bad">✗ Weak Silhouette</text>
+  <!-- Generic character with unclear outline -->
+  <rect x="13" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="14" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="15" y="7" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="13" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="14" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="15" y="8" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="13" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="14" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="15" y="9" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="14" y="10" width="1" height="1" fill="#000000" class="pixel"/>
+  <rect x="14" y="11" width="1" height="1" fill="#000000" class="pixel"/>
+  
+  <!-- Section 2: Shape Language -->
+  <text x="30" y="4.5" class="type-label">Shape Language Psychology</text>
+  
+  <!-- Curved Character (Friendly) -->
+  <text x="25" y="6" class="instruction">Curved = Friendly</text>
+  <!-- Round, friendly character -->
+  <rect x="24" y="7" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="7" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="26" y="7" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="23" y="8" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="24" y="8" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="8" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="26" y="8" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="27" y="8" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="24" y="9" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="9" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="26" y="9" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="10" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  <rect x="25" y="11" width="1" height="1" fill="#4ADE80" class="pixel"/>
+  
+  <!-- Angular Character (Aggressive) -->
+  <text x="33" y="6" class="instruction">Angular = Aggressive</text>
+  <!-- Sharp, threatening character -->
+  <rect x="33" y="7" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="32" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="33" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="34" y="8" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="31" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="32" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="33" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="34" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="35" y="9" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="32" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="34" y="10" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="32" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  <rect x="34" y="11" width="1" height="1" fill="#DC2626" class="pixel"/>
+  
+  <!-- Section 3: Character Archetypes -->
+  <text x="20" y="15" class="type-label">Character Archetypes</text>
+  
+  <!-- Hero Character -->
+  <text x="8" y="17" class="instruction">Hero: Balanced &amp; Upright</text>
+  <!-- Hero with balanced proportions -->
+  <rect x="7" y="18" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="8" y="18" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="9" y="18" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="6" y="19" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="7" y="19" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="8" y="19" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="9" y="19" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="10" y="19" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="6" y="20" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="7" y="20" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="8" y="20" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="9" y="20" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="10" y="20" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="7" y="21" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="9" y="21" width="1" height="1" fill="#FBBF24" class="pixel"/>
+  <rect x="7" y="22" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  <rect x="9" y="22" width="1" height="1" fill="#3B82F6" class="pixel"/>
+  
+  <!-- Villain Character -->
+  <text x="20" y="17" class="instruction">Villain: Angular &amp; Asymmetric</text>
+  <!-- Villain with sharp angles -->
+  <rect x="20" y="18" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="19" y="19" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="20" y="19" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="21" y="19" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="18" y="20" width="1" height="1" fill="#1F2937" class="pixel"/>
+  <rect x="19" y="20" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="20" y="20" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="21" y="20" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="22" y="20" width="1" height="1" fill="#1F2937" class="pixel"/>
+  <rect x="17" y="21" width="1" height="1" fill="#1F2937" class="pixel"/>
+  <rect x="19" y="21" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="21" y="21" width="1" height="1" fill="#7C2D12" class="pixel"/>
+  <rect x="23" y="21" width="1" height="1" fill="#1F2937" class="pixel"/>
+  <rect x="19" y="22" width="1" height="1" fill="#1F2937" class="pixel"/>
+  <rect x="21" y="22" width="1" height="1" fill="#1F2937" class="pixel"/>
+  
+  <!-- Sidekick Character -->
+  <text x="32" y="17" class="instruction">Sidekick: Small &amp; Energetic</text>
+  <!-- Small, dynamic character -->
+  <rect x="31" y="19" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="32" y="19" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="19" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="30" y="20" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="31" y="20" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="32" y="20" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="20" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="34" y="20" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="31" y="21" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="33" y="21" width="1" height="1" fill="#F59E0B" class="pixel"/>
+  <rect x="31" y="22" width="1" height="1" fill="#10B981" class="pixel"/>
+  <rect x="33" y="22" width="1" height="1" fill="#10B981" class="pixel"/>
+  
+  <!-- Bottom principles -->
+  <text x="20" y="26" class="type-label">Key Principles:</text>
+  <text x="10" y="27.5" class="instruction">• Strong silhouettes are instantly recognizable</text>
+  <text x="30" y="27.5" class="instruction">• Shape language communicates personality</text>
+  <text x="20" y="29" class="instruction">• Archetypes guide design but allow for creative interpretation</text>
+</svg>
