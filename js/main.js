@@ -393,17 +393,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
                 
             case 'tile':
-                const previewCanvas = document.createElement('canvas');
-                previewCanvas.id = 'tile-preview';
-                previewCanvas.width = canvasConfig.gridSize * 3;
-                previewCanvas.height = canvasConfig.gridSize * 3;
+                let previewCanvas = null;
                 
-                const previewContainer = document.getElementById('tile-preview-template').cloneNode(true);
-                previewContainer.style.display = 'block';
-                previewContainer.id = '';
-                previewContainer.querySelector('#tile-preview').replaceWith(previewCanvas);
-                
-                canvasElement.insertBefore(previewContainer, canvasElement.firstChild);
+                // Only create preview if showPreview is not explicitly false
+                if (canvasConfig.showPreview !== false) {
+                    previewCanvas = document.createElement('canvas');
+                    previewCanvas.id = 'tile-preview';
+                    previewCanvas.width = canvasConfig.gridSize * 3;
+                    previewCanvas.height = canvasConfig.gridSize * 3;
+                    
+                    const previewContainer = document.getElementById('tile-preview-template').cloneNode(true);
+                    previewContainer.style.display = 'block';
+                    previewContainer.id = '';
+                    previewContainer.querySelector('#tile-preview').replaceWith(previewCanvas);
+                    
+                    canvasElement.insertBefore(previewContainer, canvasElement.firstChild);
+                }
                 
                 canvasInstance = new TileCanvas(canvas, previewCanvas, {
                     gridSize: canvasConfig.gridSize,

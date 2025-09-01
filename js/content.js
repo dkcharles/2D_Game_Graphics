@@ -2133,42 +2133,64 @@ const courseContent = {
                             <h3>Your Environmental Masterpiece</h3>
                             <p>Create a cohesive environmental tileset that demonstrates mastery of seamless design, cultural sensitivity, and professional environmental art techniques.</p>
                             
+                            <div class="warning-box">
+                                <h4>Perspective Focus: Top-Down View</h4>
+                                <p>For this challenge, create tiles from a <strong>top-down perspective</strong> (bird's eye view). This perspective is ideal for RPGs, strategy games, and adventure games where players look down at the world from above.</p>
+                            </div>
+
                             <div class="info-box">
-                                <h4>Environment Theme Options:</h4>
-                                <p>Choose one environment type and create a complete tileset:</p>
+                                <h4>Top-Down Environment Themes:</h4>
+                                <p>Choose one theme and create a professional tileset as seen from above:</p>
                                 <ul>
-                                    <li><strong>Peaceful Meadow:</strong> Grass, flowers, and natural elements</li>
-                                    <li><strong>Ancient Ruins:</strong> Weathered stone with natural overgrowth</li>
-                                    <li><strong>Mystical Forest:</strong> Trees, moss, and magical elements</li>
-                                    <li><strong>Desert Oasis:</strong> Sand, rocks, and precious water</li>
-                                    <li><strong>Mountain Path:</strong> Stone, snow, and alpine elements</li>
+                                    <li><strong>Grass Plains:</strong> Various grass textures with dirt paths and scattered flowers</li>
+                                    <li><strong>Stone Courtyard:</strong> Flagstone tiles with moss, cracks, and weathering</li>
+                                    <li><strong>Forest Floor:</strong> Dirt, fallen leaves, tree roots, and undergrowth</li>
+                                    <li><strong>Desert Terrain:</strong> Sand dunes, rocky patches, and sparse vegetation</li>
+                                    <li><strong>Cave Interior:</strong> Stone floors with stalactites shadows and moisture</li>
                                 </ul>
                             </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/reference-tiles-topdown.svg" alt="Reference examples showing grass, stone, and dirt tiles from top-down perspective" class="pixel-example" style="width: 400px; height: auto;"/>
+                                <p class="example-caption">Reference tiles: Use these as starting points or inspiration for your environment</p>
+                            </div>
                             
+                            <div class="tip-box">
+                                <h4>Getting Started with References:</h4>
+                                <ol>
+                                    <li><strong>Choose Your Base:</strong> Pick one of the reference tiles above as inspiration</li>
+                                    <li><strong>Modify Colors:</strong> Adjust colors to match your chosen environment theme</li>
+                                    <li><strong>Add Personal Touch:</strong> Include unique elements that make it your own</li>
+                                    <li><strong>Test Seamless Edges:</strong> Ensure your tile works when repeated</li>
+                                    <li><strong>Create Variations:</strong> Make 2-3 versions for visual diversity</li>
+                                </ol>
+                            </div>
+
                             <h4>Professional Tileset Creation Process:</h4>
                             <ol>
+                                <li><strong>Reference Selection:</strong> Choose which reference tile best matches your theme</li>
                                 <li><strong>Environmental Concept:</strong> Define mood, purpose, and cultural context</li>
-                                <li><strong>Cultural Research:</strong> Ensure respectful representation if using cultural elements</li>
-                                <li><strong>Color Palette:</strong> Choose harmonious colors that support the environment's mood</li>
-                                <li><strong>Base Tile Design:</strong> Create primary seamless ground texture</li>
+                                <li><strong>Color Palette:</strong> Adapt colors to support your environment's atmosphere</li>
+                                <li><strong>Base Tile Design:</strong> Create primary seamless texture using reference patterns</li>
+                                <li><strong>Edge Perfection:</strong> Ensure all four edges align seamlessly</li>
                                 <li><strong>Variation Development:</strong> Add 2-3 subtle variations for visual interest</li>
-                                <li><strong>Special Elements:</strong> Design unique features that enhance storytelling</li>
-                                <li><strong>Integration Testing:</strong> Verify tiles work harmoniously with Week 3 characters</li>
-                                <li><strong>Cultural Review:</strong> Ensure inclusive and appropriate representation</li>
+                                <li><strong>Detail Enhancement:</strong> Add unique features that enhance the top-down perspective</li>
+                                <li><strong>Cultural Sensitivity:</strong> Ensure respectful and inclusive design choices</li>
                             </ol>
                             
-                            <h4>Live Preview Integration:</h4>
-                            <p>Use the 3×3 live preview system to:</p>
+                            <h4>Professional Canvas Size:</h4>
+                            <p>This challenge uses a professional 32×32 pixel canvas to allow for:</p>
                             <ul>
-                                <li>Check seamless tiling in real-time</li>
-                                <li>Identify and fix edge alignment issues immediately</li>
-                                <li>Evaluate pattern repetition and visual flow</li>
-                                <li>Test color harmony across repeated tiles</li>
+                                <li>Highly detailed environmental elements and textures</li>
+                                <li>Complex patterns with multiple layers of depth</li>
+                                <li>Industry-standard tile dimensions used in commercial games</li>
+                                <li>Maximum artistic expression in your environmental masterpiece</li>
+                                <li>Room for intricate details like individual stones, leaves, or weathering</li>
                             </ul>
 
                             <h4>Quality Assessment Criteria:</h4>
                             <ul>
-                                <li>✓ <strong>Seamless Perfection:</strong> No visible seams in 3×3 preview</li>
+                                <li>✓ <strong>Seamless Perfection:</strong> Edges must align perfectly when tiles are repeated</li>
                                 <li>✓ <strong>Environmental Cohesion:</strong> All elements feel like they belong together</li>
                                 <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive design choices</li>
                                 <li>✓ <strong>Character Integration:</strong> Works harmoniously with Week 3 character designs</li>
@@ -2204,17 +2226,13 @@ const courseContent = {
                         </div>
                         
                         <div id="week4-challenge-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-challenge-preview"></div>
-                        </div>
                     </div>
                 `,
                 canvas: {
                     type: 'tile',
-                    gridSize: 16,
+                    gridSize: 32,
                     colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887', '#87CEEB', '#FFE4B5', '#CD853F', '#F0E68C'],
-                    showPreview: true
+                    showPreview: false
                 }
             },
             assessment: {

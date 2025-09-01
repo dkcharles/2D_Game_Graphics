@@ -686,20 +686,26 @@ class TileCanvas extends PixelCanvas {
     constructor(canvas, previewCanvas, options = {}) {
         super(canvas, options);
         this.previewCanvas = previewCanvas;
-        this.previewCtx = previewCanvas.getContext('2d');
+        this.previewCtx = previewCanvas ? previewCanvas.getContext('2d') : null;
         this.previewSize = 3; // 3x3 preview
-        // Set preview canvas size (double size)
-        this.previewCanvas.width = this.gridSize * this.previewSize * 2;
-        this.previewCanvas.height = this.gridSize * this.previewSize * 2;
+        // Set preview canvas size (double size) if preview exists
+        if (this.previewCanvas) {
+            this.previewCanvas.width = this.gridSize * this.previewSize * 2;
+            this.previewCanvas.height = this.gridSize * this.previewSize * 2;
+        }
         this.init();
     }
     
     redraw() {
         super.redraw();
-        this.updatePreview();
+        if (this.previewCanvas) {
+            this.updatePreview();
+        }
     }
     
     updatePreview() {
+        if (!this.previewCanvas || !this.previewCtx) return;
+        
         // Clear preview
         this.previewCtx.fillStyle = '#ffffff';
         this.previewCtx.fillRect(0, 0, this.previewCanvas.width, this.previewCanvas.height);

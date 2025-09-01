@@ -1,0 +1,384 @@
+<svg viewBox="0 0 128 96" xmlns="http://www.w3.org/2000/svg" style="image-rendering: pixelated;">
+  <!-- Grid lines for educational clarity -->
+  <defs>
+    <pattern id="grid" width="1" height="1" patternUnits="userSpaceOnUse">
+      <path d="M 1 0 L 0 0 0 1" fill="none" stroke="#e0e0e0" stroke-width="0.05"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="128" height="96" fill="url(#grid)"/>
+  
+  <!-- Tile borders -->
+  <rect x="0" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="48" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="96" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="0" y="48" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="48" y="48" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="96" y="48" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  
+  <!-- GRASS TILE (Top Left) -->
+  <g id="grass-reference">
+    <!-- Base grass layer -->
+    <rect x="0" y="0" width="32" height="32" fill="#4a7c25"/>
+    
+    <!-- Natural grass patches - organic shapes -->
+    <rect x="1" y="1" width="1" height="1" fill="#5d9030"/>
+    <rect x="3" y="1" width="2" height="1" fill="#3d6620"/>
+    <rect x="6" y="1" width="1" height="2" fill="#5d9030"/>
+    <rect x="9" y="1" width="3" height="1" fill="#3d6620"/>
+    <rect x="13" y="1" width="1" height="1" fill="#6ba338"/>
+    <rect x="15" y="1" width="2" height="1" fill="#3d6620"/>
+    <rect x="19" y="1" width="1" height="2" fill="#5d9030"/>
+    <rect x="22" y="1" width="2" height="1" fill="#3d6620"/>
+    <rect x="26" y="1" width="1" height="1" fill="#6ba338"/>
+    <rect x="28" y="1" width="3" height="1" fill="#3d6620"/>
+    
+    <!-- Continue organic pattern throughout -->
+    <rect x="0" y="3" width="1" height="2" fill="#3d6620"/>
+    <rect x="2" y="3" width="1" height="1" fill="#5d9030"/>
+    <rect x="4" y="3" width="2" height="1" fill="#6ba338"/>
+    <rect x="7" y="3" width="1" height="2" fill="#3d6620"/>
+    <rect x="10" y="3" width="1" height="1" fill="#5d9030"/>
+    <rect x="12" y="3" width="2" height="1" fill="#3d6620"/>
+    <rect x="16" y="3" width="1" height="1" fill="#6ba338"/>
+    <rect x="18" y="3" width="2" height="2" fill="#3d6620"/>
+    <rect x="21" y="3" width="1" height="1" fill="#5d9030"/>
+    <rect x="24" y="3" width="3" height="1" fill="#3d6620"/>
+    <rect x="28" y="3" width="1" height="1" fill="#6ba338"/>
+    <rect x="30" y="3" width="2" height="2" fill="#3d6620"/>
+    
+    <!-- Small flower details -->
+    <rect x="5" y="5" width="1" height="1" fill="#ffeb3b"/>
+    <rect x="14" y="7" width="1" height="1" fill="#ff69b4"/>
+    <rect x="23" y="9" width="1" height="1" fill="#ffeb3b"/>
+    <rect x="8" y="12" width="1" height="1" fill="#ff69b4"/>
+    <rect x="27" y="15" width="1" height="1" fill="#ffeb3b"/>
+    
+    <!-- Continue natural grass pattern with more variation -->
+    <!-- Scattered individual pixels for natural randomness -->
+    <rect x="11" y="6" width="1" height="1" fill="#6ba338"/>
+    <rect x="3" y="8" width="1" height="1" fill="#5d9030"/>
+    <rect x="17" y="11" width="1" height="1" fill="#6ba338"/>
+    <rect x="25" y="13" width="1" height="1" fill="#5d9030"/>
+    <rect x="6" y="16" width="1" height="1" fill="#6ba338"/>
+    <rect x="20" y="18" width="1" height="1" fill="#5d9030"/>
+    <rect x="12" y="22" width="1" height="1" fill="#6ba338"/>
+    <rect x="29" y="25" width="1" height="1" fill="#5d9030"/>
+    <rect x="4" y="28" width="1" height="1" fill="#6ba338"/>
+    <rect x="18" y="30" width="1" height="1" fill="#5d9030"/>
+  </g>
+  
+  <!-- STONE TILE (Top Middle) -->
+  <g id="stone-reference">
+    <!-- Base stone -->
+    <rect x="48" y="0" width="32" height="32" fill="#8B7355"/>
+    
+    <!-- Stone blocks -->
+    <rect x="49" y="1" width="12" height="8" fill="#A0886B"/>
+    <rect x="62" y="1" width="9" height="8" fill="#9C8268"/>
+    <rect x="72" y="1" width="7" height="8" fill="#A0886B"/>
+    
+    <rect x="49" y="10" width="8" height="7" fill="#9C8268"/>
+    <rect x="58" y="10" width="11" height="7" fill="#A0886B"/>
+    <rect x="70" y="10" width="9" height="7" fill="#8B7355"/>
+    
+    <rect x="49" y="18" width="10" height="6" fill="#A0886B"/>
+    <rect x="60" y="18" width="8" height="6" fill="#9C8268"/>
+    <rect x="69" y="18" width="10" height="6" fill="#A0886B"/>
+    
+    <rect x="49" y="25" width="9" height="6" fill="#9C8268"/>
+    <rect x="59" y="25" width="12" height="6" fill="#8B7355"/>
+    <rect x="72" y="25" width="7" height="6" fill="#A0886B"/>
+    
+    <!-- Mortar lines -->
+    <rect x="48" y="9" width="32" height="1" fill="#6B5B47"/>
+    <rect x="48" y="17" width="32" height="1" fill="#6B5B47"/>
+    <rect x="48" y="24" width="32" height="1" fill="#6B5B47"/>
+    <rect x="61" y="0" width="1" height="9" fill="#6B5B47"/>
+    <rect x="71" y="0" width="1" height="9" fill="#6B5B47"/>
+    <rect x="57" y="10" width="1" height="7" fill="#6B5B47"/>
+    <rect x="69" y="10" width="1" height="7" fill="#6B5B47"/>
+    <rect x="59" y="18" width="1" height="6" fill="#6B5B47"/>
+    <rect x="68" y="18" width="1" height="6" fill="#6B5B47"/>
+    <rect x="58" y="25" width="1" height="6" fill="#6B5B47"/>
+    <rect x="71" y="25" width="1" height="6" fill="#6B5B47"/>
+    
+    <!-- Weathering -->
+    <rect x="52" y="3" width="2" height="1" fill="#6B5B47"/>
+    <rect x="65" y="5" width="2" height="1" fill="#6B5B47"/>
+    <rect x="75" y="4" width="1" height="2" fill="#6B5B47"/>
+    <rect x="51" y="12" width="1" height="2" fill="#6B5B47"/>
+    <rect x="63" y="14" width="2" height="1" fill="#6B5B47"/>
+  </g>
+  
+  <!-- DIRT TILE (Top Right) -->
+  <g id="dirt-reference">
+    <!-- Base dirt -->
+    <rect x="96" y="0" width="32" height="32" fill="#8B4513"/>
+    
+    <!-- Dirt texture variations -->
+    <rect x="97" y="1" width="5" height="4" fill="#A0522D"/>
+    <rect x="103" y="1" width="4" height="5" fill="#CD853F"/>
+    <rect x="109" y="1" width="6" height="3" fill="#A0522D"/>
+    <rect x="116" y="1" width="4" height="4" fill="#D2691E"/>
+    <rect x="122" y="1" width="5" height="3" fill="#A0522D"/>
+    
+    <rect x="96" y="6" width="4" height="5" fill="#CD853F"/>
+    <rect x="102" y="7" width="5" height="4" fill="#A0522D"/>
+    <rect x="109" y="5" width="3" height="6" fill="#D2691E"/>
+    <rect x="114" y="6" width="6" height="4" fill="#A0522D"/>
+    <rect x="121" y="5" width="4" height="5" fill="#CD853F"/>
+    <rect x="126" y="6" width="2" height="4" fill="#A0522D"/>
+    
+    <rect x="97" y="12" width="6" height="3" fill="#A0522D"/>
+    <rect x="105" y="12" width="4" height="5" fill="#D2691E"/>
+    <rect x="111" y="13" width="5" height="4" fill="#A0522D"/>
+    <rect x="118" y="12" width="4" height="4" fill="#CD853F"/>
+    <rect x="124" y="11" width="4" height="5" fill="#A0522D"/>
+    
+    <rect x="96" y="18" width="5" height="4" fill="#D2691E"/>
+    <rect x="103" y="17" width="4" height="5" fill="#A0522D"/>
+    <rect x="109" y="19" width="6" height="3" fill="#CD853F"/>
+    <rect x="117" y="17" width="5" height="4" fill="#A0522D"/>
+    <rect x="124" y="18" width="4" height="4" fill="#D2691E"/>
+    
+    <rect x="97" y="24" width="4" height="6" fill="#A0522D"/>
+    <rect x="103" y="23" width="6" height="5" fill="#CD853F"/>
+    <rect x="111" y="24" width="4" height="5" fill="#A0522D"/>
+    <rect x="117" y="23" width="5" height="6" fill="#D2691E"/>
+    <rect x="124" y="24" width="4" height="5" fill="#A0522D"/>
+    
+    <!-- Small rocks -->
+    <rect x="100" y="4" width="1" height="1" fill="#654321"/>
+    <rect x="107" y="8" width="1" height="1" fill="#654321"/>
+    <rect x="115" y="9" width="1" height="1" fill="#654321"/>
+    <rect x="102" y="15" width="1" height="1" fill="#654321"/>
+    <rect x="120" y="21" width="1" height="1" fill="#654321"/>
+    <rect x="105" y="27" width="1" height="1" fill="#654321"/>
+  </g>
+  
+  <!-- WATER TILE (Bottom Left) -->
+  <g id="water-reference">
+    <!-- Base water -->
+    <rect x="0" y="48" width="32" height="32" fill="#2E5984"/>
+    
+    <!-- Subtle water surface variations - much more realistic -->
+    <rect x="2" y="49" width="1" height="1" fill="#4682B4"/>
+    <rect x="5" y="49" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="8" y="49" width="1" height="1" fill="#4682B4"/>
+    <rect x="12" y="49" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="16" y="49" width="1" height="1" fill="#4682B4"/>
+    <rect x="20" y="49" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="24" y="49" width="1" height="1" fill="#4682B4"/>
+    <rect x="28" y="49" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="1" y="51" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="4" y="51" width="1" height="1" fill="#4682B4"/>
+    <rect x="7" y="51" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="11" y="51" width="1" height="1" fill="#4682B4"/>
+    <rect x="15" y="51" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="19" y="51" width="1" height="1" fill="#4682B4"/>
+    <rect x="23" y="51" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="27" y="51" width="1" height="1" fill="#4682B4"/>
+    <rect x="30" y="51" width="1" height="1" fill="#5F9EA0"/>
+    
+    <!-- Gentle ripple patterns -->
+    <rect x="3" y="53" width="2" height="1" fill="#4682B4"/>
+    <rect x="9" y="53" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="13" y="53" width="2" height="1" fill="#4682B4"/>
+    <rect x="18" y="53" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="22" y="53" width="2" height="1" fill="#4682B4"/>
+    <rect x="26" y="53" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="1" y="55" width="1" height="1" fill="#4682B4"/>
+    <rect x="6" y="55" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="10" y="55" width="1" height="1" fill="#4682B4"/>
+    <rect x="14" y="55" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="17" y="55" width="1" height="1" fill="#4682B4"/>
+    <rect x="21" y="55" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="25" y="55" width="1" height="1" fill="#4682B4"/>
+    <rect x="29" y="55" width="1" height="1" fill="#5F9EA0"/>
+    
+    <!-- Scattered light reflections -->
+    <rect x="4" y="57" width="1" height="1" fill="#87CEEB"/>
+    <rect x="12" y="57" width="1" height="1" fill="#87CEEB"/>
+    <rect x="20" y="57" width="1" height="1" fill="#87CEEB"/>
+    <rect x="28" y="57" width="1" height="1" fill="#87CEEB"/>
+    
+    <rect x="7" y="59" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="15" y="59" width="1" height="1" fill="#4682B4"/>
+    <rect x="23" y="59" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="31" y="59" width="1" height="1" fill="#4682B4"/>
+    
+    <!-- More subtle surface variations -->
+    <rect x="2" y="61" width="1" height="1" fill="#4682B4"/>
+    <rect x="8" y="61" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="16" y="61" width="1" height="1" fill="#4682B4"/>
+    <rect x="24" y="61" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="5" y="63" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="11" y="63" width="1" height="1" fill="#4682B4"/>
+    <rect x="19" y="63" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="27" y="63" width="1" height="1" fill="#4682B4"/>
+    
+    <rect x="1" y="65" width="1" height="1" fill="#4682B4"/>
+    <rect x="9" y="65" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="17" y="65" width="1" height="1" fill="#4682B4"/>
+    <rect x="25" y="65" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="6" y="67" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="14" y="67" width="1" height="1" fill="#4682B4"/>
+    <rect x="22" y="67" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="30" y="67" width="1" height="1" fill="#4682B4"/>
+    
+    <!-- Final subtle touches -->
+    <rect x="3" y="69" width="1" height="1" fill="#4682B4"/>
+    <rect x="13" y="69" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="21" y="69" width="1" height="1" fill="#4682B4"/>
+    <rect x="29" y="69" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="7" y="71" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="18" y="71" width="1" height="1" fill="#4682B4"/>
+    <rect x="26" y="71" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="4" y="73" width="1" height="1" fill="#4682B4"/>
+    <rect x="15" y="73" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="24" y="73" width="1" height="1" fill="#4682B4"/>
+    
+    <rect x="10" y="75" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="20" y="75" width="1" height="1" fill="#4682B4"/>
+    <rect x="28" y="75" width="1" height="1" fill="#5F9EA0"/>
+    
+    <rect x="2" y="77" width="1" height="1" fill="#4682B4"/>
+    <rect x="12" y="77" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="22" y="77" width="1" height="1" fill="#4682B4"/>
+    
+    <rect x="8" y="79" width="1" height="1" fill="#5F9EA0"/>
+    <rect x="16" y="79" width="1" height="1" fill="#4682B4"/>
+    <rect x="26" y="79" width="1" height="1" fill="#5F9EA0"/>
+  </g>
+  
+  <!-- SAND TILE (Bottom Middle) -->
+  <g id="sand-reference">
+    <!-- Base sand -->
+    <rect x="48" y="48" width="32" height="32" fill="#F4A460"/>
+    
+    <!-- Sand texture -->
+    <rect x="49" y="49" width="3" height="3" fill="#DEB887"/>
+    <rect x="53" y="49" width="4" height="2" fill="#D2B48C"/>
+    <rect x="58" y="49" width="3" height="4" fill="#DEB887"/>
+    <rect x="63" y="49" width="5" height="2" fill="#D2B48C"/>
+    <rect x="69" y="49" width="3" height="3" fill="#DEB887"/>
+    <rect x="74" y="49" width="4" height="2" fill="#D2B48C"/>
+    
+    <rect x="49" y="53" width="4" height="3" fill="#D2B48C"/>
+    <rect x="55" y="52" width="3" height="4" fill="#DEB887"/>
+    <rect x="60" y="53" width="5" height="2" fill="#D2B48C"/>
+    <rect x="67" y="52" width="3" height="4" fill="#DEB887"/>
+    <rect x="72" y="53" width="4" height="3" fill="#D2B48C"/>
+    <rect x="77" y="52" width="3" height="3" fill="#DEB887"/>
+    
+    <rect x="49" y="57" width="3" height="4" fill="#DEB887"/>
+    <rect x="54" y="58" width="4" height="3" fill="#D2B48C"/>
+    <rect x="60" y="57" width="3" height="4" fill="#DEB887"/>
+    <rect x="65" y="58" width="5" height="2" fill="#D2B48C"/>
+    <rect x="72" y="57" width="3" height="4" fill="#DEB887"/>
+    <rect x="77" y="58" width="3" height="3" fill="#D2B48C"/>
+    
+    <rect x="49" y="62" width="4" height="3" fill="#D2B48C"/>
+    <rect x="55" y="63" width="3" height="4" fill="#DEB887"/>
+    <rect x="60" y="62" width="5" height="3" fill="#D2B48C"/>
+    <rect x="67" y="63" width="3" height="4" fill="#DEB887"/>
+    <rect x="72" y="62" width="4" height="3" fill="#D2B48C"/>
+    <rect x="78" y="63" width="2" height="3" fill="#DEB887"/>
+    
+    <rect x="49" y="67" width="3" height="4" fill="#DEB887"/>
+    <rect x="54" y="68" width="4" height="3" fill="#D2B48C"/>
+    <rect x="60" y="67" width="3" height="4" fill="#DEB887"/>
+    <rect x="65" y="68" width="5" height="2" fill="#D2B48C"/>
+    <rect x="72" y="67" width="3" height="4" fill="#DEB887"/>
+    <rect x="77" y="68" width="3" height="3" fill="#D2B48C"/>
+    
+    <rect x="49" y="72" width="4" height="3" fill="#D2B48C"/>
+    <rect x="55" y="73" width="3" height="4" fill="#DEB887"/>
+    <rect x="60" y="72" width="5" height="3" fill="#D2B48C"/>
+    <rect x="67" y="73" width="3" height="4" fill="#DEB887"/>
+    <rect x="72" y="72" width="4" height="3" fill="#D2B48C"/>
+    <rect x="78" y="73" width="2" height="4" fill="#DEB887"/>
+    
+    <!-- Small debris -->
+    <rect x="52" y="51" width="1" height="1" fill="#CD853F"/>
+    <rect x="61" y="55" width="1" height="1" fill="#CD853F"/>
+    <rect x="70" y="59" width="1" height="1" fill="#CD853F"/>
+    <rect x="56" y="65" width="1" height="1" fill="#CD853F"/>
+    <rect x="75" y="70" width="1" height="1" fill="#CD853F"/>
+  </g>
+  
+  <!-- MOSS STONE TILE (Bottom Right) -->
+  <g id="moss-stone-reference">
+    <!-- Base stone -->
+    <rect x="96" y="48" width="32" height="32" fill="#696969"/>
+    
+    <!-- Stone texture -->
+    <rect x="97" y="49" width="6" height="4" fill="#778899"/>
+    <rect x="104" y="49" width="5" height="6" fill="#2F4F4F"/>
+    <rect x="111" y="49" width="4" height="5" fill="#778899"/>
+    <rect x="117" y="49" width="6" height="4" fill="#708090"/>
+    <rect x="124" y="49" width="4" height="5" fill="#778899"/>
+    
+    <rect x="97" y="55" width="4" height="5" fill="#708090"/>
+    <rect x="103" y="56" width="6" height="4" fill="#778899"/>
+    <rect x="111" y="55" width="5" height="6" fill="#2F4F4F"/>
+    <rect x="118" y="56" width="4" height="5" fill="#778899"/>
+    <rect x="124" y="55" width="4" height="6" fill="#708090"/>
+    
+    <rect x="97" y="62" width="5" height="4" fill="#778899"/>
+    <rect x="104" y="61" width="4" height="6" fill="#2F4F4F"/>
+    <rect x="110" y="62" width="6" height="4" fill="#708090"/>
+    <rect x="118" y="61" width="5" height="5" fill="#778899"/>
+    <rect x="125" y="62" width="3" height="4" fill="#2F4F4F"/>
+    
+    <rect x="97" y="68" width="6" height="5" fill="#2F4F4F"/>
+    <rect x="105" y="69" width="4" height="6" fill="#778899"/>
+    <rect x="111" y="68" width="5" height="4" fill="#708090"/>
+    <rect x="118" y="69" width="4" height="5" fill="#778899"/>
+    <rect x="124" y="68" width="4" height="6" fill="#2F4F4F"/>
+    
+    <!-- Moss patches -->
+    <rect x="100" y="51" width="2" height="3" fill="#228B22"/>
+    <rect x="107" y="52" width="1" height="2" fill="#32CD32"/>
+    <rect x="115" y="51" width="2" height="2" fill="#228B22"/>
+    <rect x="121" y="52" width="1" height="3" fill="#32CD32"/>
+    <rect x="126" y="51" width="2" height="2" fill="#228B22"/>
+    
+    <rect x="98" y="58" width="1" height="2" fill="#32CD32"/>
+    <rect x="106" y="59" width="2" height="1" fill="#228B22"/>
+    <rect x="113" y="58" width="1" height="3" fill="#32CD32"/>
+    <rect x="120" y="59" width="2" height="2" fill="#228B22"/>
+    <rect x="126" y="58" width="1" height="2" fill="#32CD32"/>
+    
+    <rect x="101" y="64" width="2" height="1" fill="#228B22"/>
+    <rect x="108" y="63" width="1" height="2" fill="#32CD32"/>
+    <rect x="114" y="64" width="2" height="2" fill="#228B22"/>
+    <rect x="121" y="63" width="1" height="2" fill="#32CD32"/>
+    <rect x="127" y="64" width="1" height="1" fill="#228B22"/>
+    
+    <rect x="99" y="71" width="2" height="2" fill="#228B22"/>
+    <rect x="108" y="72" width="1" height="1" fill="#32CD32"/>
+    <rect x="114" y="71" width="2" height="1" fill="#228B22"/>
+    <rect x="120" y="72" width="1" height="2" fill="#32CD32"/>
+    <rect x="126" y="71" width="2" height="2" fill="#228B22"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="16" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Grass</text>
+  <text x="64" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Stone</text>
+  <text x="112" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Dirt</text>
+  <text x="16" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Water</text>
+  <text x="64" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Sand</text>
+  <text x="112" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333" font-weight="bold">Moss Stone</text>
+  
+  <!-- Main title -->
+  <text x="64" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">Reference Tiles - Top-Down Perspective</text>
+</svg>
