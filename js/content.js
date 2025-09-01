@@ -3098,8 +3098,8 @@ const courseContent = {
                             <div class="visual-example">
                                 <h4>Unity Settings Example:</h4>
                                 <div class="unity-settings-demo">
-                                    <img src="https://stuartspixelgames.com/wp-content/uploads/2020/07/standard-import-settings.png" alt="Unity texture inspector showing correct pixel art import settings: Point filter mode, no compression" style="max-width: 400px; width: 100%; height: auto; border: 2px solid #2C3E50; border-radius: 5px;"/>
-                                    <p class="example-caption"><strong>Unity Texture Inspector:</strong> Essential settings for crisp pixel art - Point filter, no compression, proper texture type</p>
+                                    <img src="images/examples/unity-import-settings.svg" alt="Unity texture inspector showing correct pixel art import settings: Point filter mode, no compression, sprite texture type" style="max-width: 400px; width: 100%; height: auto; border: 2px solid #2C3E50; border-radius: 5px; background: #393939;"/>
+                                    <p class="example-caption"><strong>Unity Texture Inspector:</strong> Critical settings highlighted - Point filter and no compression are essential for sharp pixel art</p>
                                 </div>
                             </div>
                         </div>
