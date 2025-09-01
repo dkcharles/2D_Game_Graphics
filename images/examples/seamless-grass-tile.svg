@@ -1,0 +1,65 @@
+<svg viewBox="0 0 96 64" xmlns="http://www.w3.org/2000/svg" style="image-rendering: pixelated;">
+  <!-- Grid lines for educational clarity -->
+  <defs>
+    <pattern id="grid" width="2" height="2" patternUnits="userSpaceOnUse">
+      <path d="M 2 0 L 0 0 0 2" fill="none" stroke="#e0e0e0" stroke-width="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="96" height="64" fill="url(#grid)"/>
+  
+  <!-- 3x3 tiling demonstration -->
+  <!-- Row 1 -->
+  <g id="tile-pattern">
+    <!-- Base grass -->
+    <rect x="0" y="16" width="32" height="16" fill="#4a7c25"/>
+    <!-- Darker grass patches -->
+    <rect x="2" y="20" width="4" height="8" fill="#3d6620"/>
+    <rect x="8" y="18" width="6" height="10" fill="#3d6620"/>
+    <rect x="16" y="22" width="3" height="6" fill="#3d6620"/>
+    <rect x="22" y="16" width="4" height="12" fill="#3d6620"/>
+    <rect x="28" y="20" width="4" height="8" fill="#3d6620"/>
+    <!-- Lighter grass highlights -->
+    <rect x="4" y="16" width="2" height="4" fill="#5d9030"/>
+    <rect x="10" y="16" width="2" height="4" fill="#5d9030"/>
+    <rect x="18" y="18" width="2" height="4" fill="#5d9030"/>
+    <rect x="26" y="18" width="2" height="4" fill="#5d9030"/>
+    <rect x="30" y="16" width="2" height="4" fill="#5d9030"/>
+    <!-- Individual grass blades -->
+    <rect x="1" y="8" width="2" height="8" fill="#5d9030"/>
+    <rect x="5" y="6" width="2" height="10" fill="#4a7c25"/>
+    <rect x="9" y="10" width="2" height="6" fill="#5d9030"/>
+    <rect x="13" y="8" width="2" height="8" fill="#4a7c25"/>
+    <rect x="17" y="12" width="2" height="4" fill="#5d9030"/>
+    <rect x="21" y="8" width="2" height="8" fill="#4a7c25"/>
+    <rect x="25" y="6" width="2" height="10" fill="#5d9030"/>
+    <rect x="29" y="10" width="2" height="6" fill="#4a7c25"/>
+    <!-- Small flowers -->
+    <rect x="7" y="12" width="2" height="2" fill="#ffeb3b"/>
+    <rect x="19" y="8" width="2" height="2" fill="#e91e63"/>
+    <rect x="31" y="7" width="2" height="2" fill="#ffeb3b"/>
+    <!-- Special elements that cross boundaries -->
+    <rect x="30" y="8" width="4" height="2" fill="#5d9030"/>
+    <rect x="0" y="14" width="4" height="2" fill="#3d6620"/>
+  </g>
+  
+  <!-- Repeat pattern for 3x3 grid -->
+  <use href="#tile-pattern" x="32" y="0"/>
+  <use href="#tile-pattern" x="64" y="0"/>
+  <use href="#tile-pattern" x="0" y="32"/>
+  <use href="#tile-pattern" x="32" y="32"/>
+  <use href="#tile-pattern" x="64" y="32"/>
+  
+  <!-- Tile borders -->
+  <rect x="0" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="32" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="64" y="0" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="0" y="32" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="32" y="32" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  <rect x="64" y="32" width="32" height="32" fill="none" stroke="#666" stroke-width="0.5"/>
+  
+  <!-- Labels -->
+  <text x="48" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#333" font-weight="bold">Seamless Tiling Demonstration</text>
+  
+</svg>
