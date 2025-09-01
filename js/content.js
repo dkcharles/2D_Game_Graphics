@@ -2623,6 +2623,22 @@ const courseContent = {
                             <h3>Exercise: Create a Bouncing Ball Animation</h3>
                             <p>Master the foundational principles of timing, arcs, and squash/stretch through the classic bouncing ball exercise.</p>
                             
+                            <div class="info-box">
+                                <h4>Animation Canvas Controls:</h4>
+                                <ul>
+                                    <li><strong>Add Frames:</strong> Click the + button to add new animation frames</li>
+                                    <li><strong>Delete Frames:</strong> Select a frame and use the delete button to remove it</li>
+                                    <li><strong>Play Animation:</strong> Use the play button to preview your animation loop</li>
+                                    <li><strong>Onion Skinning:</strong> Toggle to see previous/next frames as transparent guides</li>
+                                    <li><strong>Frame Navigation:</strong> Click frame thumbnails to jump between frames</li>
+                                </ul>
+                            </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/ball-animation-frames.svg" alt="Five frames showing bouncing ball animation with squash and stretch" class="pixel-example" style="width: 320px; height: auto;"/>
+                                <p class="example-caption">Example: 5-frame bouncing ball showing arc motion, squash, and stretch</p>
+                            </div>
+                            
                             <h4>Animation Goals:</h4>
                             <ol>
                                 <li><strong>Timing:</strong> Create 8-12 frame loop showing ball bouncing</li>
@@ -2645,11 +2661,15 @@ const courseContent = {
 
                             <h4>Technical Tips:</h4>
                             <ul>
-                                <li><strong>Use Onion Skinning:</strong> Enable to see previous frame as guide</li>
-                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear</li>
-                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak</li>
-                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast</li>
+                                <li><strong>Use Onion Skinning:</strong> This essential feature shows previous and next frames as transparent overlays, helping you maintain consistent motion paths and spacing between frames</li>
+                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear - use onion skinning to ensure smooth arcs</li>
+                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak - adjust frame spacing accordingly</li>
+                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast - exaggerate for better animation appeal</li>
                             </ul>
+                            
+                            <div class="tip-box">
+                                <p><strong>💡 Onion Skinning Pro Tip:</strong> Keep onion skinning enabled throughout your animation work. It prevents common mistakes like inconsistent ball size, broken motion paths, or uneven spacing between frames.</p>
+                            </div>
 
                             <div class="warning-box">
                                 <p><strong>Common Mistakes:</strong> Avoid linear motion, uniform timing, or forgetting squash/stretch. Every frame should show the ball's weight and momentum.</p>
@@ -2675,6 +2695,11 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Create Character Breathing Animation</h3>
                             <p>Bring your character designs to life with subtle idle animation that shows personality and life.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🔍 Reference Study First:</h4>
+                                <p><strong>Before starting, find good reference animations:</strong> Search for "pixel art idle animations", "character breathing animation", or "2D game idle cycles" on sites like Pinterest, ArtStation, or game development forums. Study how professional artists handle subtle movement, timing, and secondary animation.</p>
+                            </div>
                             
                             <h4>Animation Objectives:</h4>
                             <ol>
@@ -2727,6 +2752,12 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Master Challenge: Professional Walk Cycle Animation</h3>
                             <p>Create a complete walk cycle that demonstrates professional animation skills and character personality.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🎯 Essential Reference Research:</h4>
+                                <p><strong>Professional animators always use reference:</strong> Before drawing a single frame, study real walking videos, classic animation walk cycles (Disney, Studio Ghibli), and pixel art walk cycles from successful games. Search for "walk cycle reference", "animation walk cycle breakdown", or "pixel art character walk" to find quality examples.</p>
+                                <p><strong>Recommended Study:</strong> Richard Williams' "The Animator's Survival Kit" walk cycle examples, classic game sprites (Street Fighter, King of Fighters), and modern indie pixel art games.</p>
+                            </div>
                             
                             <h4>Walk Cycle Requirements:</h4>
                             <ol>
@@ -3067,11 +3098,8 @@ const courseContent = {
                             <div class="visual-example">
                                 <h4>Unity Settings Example:</h4>
                                 <div class="unity-settings-demo">
-                                    <div class="settings-image-placeholder" style="width: 300px; height: 200px; background: linear-gradient(45deg, #3498DB, #2980B9); border: 2px solid #2C3E50; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-                                        Unity Import Settings Screenshot
-                                        <br>
-                                        (Filter: Point, Compression: None)
-                                    </div>
+                                    <img src="https://stuartspixelgames.com/wp-content/uploads/2020/07/standard-import-settings.png" alt="Unity texture inspector showing correct pixel art import settings: Point filter mode, no compression" style="max-width: 400px; width: 100%; height: auto; border: 2px solid #2C3E50; border-radius: 5px;"/>
+                                    <p class="example-caption"><strong>Unity Texture Inspector:</strong> Essential settings for crisp pixel art - Point filter, no compression, proper texture type</p>
                                 </div>
                             </div>
                         </div>
