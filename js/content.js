@@ -1938,6 +1938,11 @@ const courseContent = {
                         </ul>
                     </div>
 
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/examples/seamless-grass-tile.svg" alt="Example of seamless grass tile showing original tile next to identical copy with matching edges" class="pixel-example" style="width: 400px; height: auto;"/>
+                        <p class="example-caption">Example: Seamless grass tile demonstrating perfect edge alignment</p>
+                    </div>
+
                     <h3>Types of Environmental Elements</h3>
                     <p>Different environmental elements serve different purposes:</p>
                     <ul>
@@ -2032,52 +2037,60 @@ const courseContent = {
             practice1: {
                 title: "Practice 1: Seamless Patterns",
                 content: `
-                    <h2>Practice 1: Mastering Seamless Tile Design</h2>
+                    <h2>Practice 1: Top-Down Grass Tile Creation</h2>
                     
                     <div class="exercise-container">
                         <div class="exercise-instructions">
-                            <h3>Exercise: Understanding Seamless Mathematics</h3>
-                            <p>Learn to create tiles that connect perfectly by mastering edge relationships and pattern mathematics. This technical foundation is essential for professional environmental art.</p>
+                            <h3>Exercise: Creating Seamless Top-Down Grass Tiles</h3>
+                            <p>Learn to create grass textures viewed from above (top-down perspective) that tile seamlessly. This is a fundamental skill for creating ground textures in many 2D games, especially RPGs and strategy games.</p>
                             
-                            <h4>Progressive Seamless Challenges:</h4>
+                            <div class="info-box">
+                                <p><strong>Video Tutorial:</strong> <a href="https://www.youtube.com/watch?v=W9bpaSrytBM" target="_blank">Creating Seamless Grass Textures in Pixel Art</a> - Watch this demonstration of professional grass tile techniques.</p>
+                            </div>
+
+                            <div class="info-box">
+                                <p><strong>Additional Resources:</strong> <a href="https://lospec.com/pixel-art-tutorials/tags/grass" target="_blank">Lospec Grass Tutorials Collection</a> - Browse multiple approaches to creating pixel art grass textures.</p>
+                            </div>
+                            
+                            <h4>Top-Down Grass Tile Challenges:</h4>
                             <ol>
-                                <li><strong>Simple Texture:</strong> Create a basic grass or stone texture that tiles seamlessly</li>
-                                <li><strong>Edge Alignment:</strong> Ensure left/right and top/bottom edges match perfectly</li>
-                                <li><strong>Corner Precision:</strong> Verify all four corner pixels align correctly</li>
-                                <li><strong>Pattern Flow:</strong> Create visual movement that works when repeated</li>
-                                <li><strong>Live Preview:</strong> Use the 3×3 preview to check your work</li>
+                                <li><strong>Grass Blade Patterns:</strong> Create varied grass blade shapes as seen from above</li>
+                                <li><strong>Color Variation:</strong> Use 3-4 shades of green for depth and variety</li>
+                                <li><strong>Edge Alignment:</strong> Ensure grass patterns flow seamlessly across tile borders</li>
+                                <li><strong>Natural Randomness:</strong> Avoid obvious geometric patterns in grass placement</li>
+                                <li><strong>Live Preview Testing:</strong> Use the 3×3 preview to verify seamless repetition</li>
                             </ol>
                             
                             <div class="tip-box">
                                 <p><strong>Edge Mathematics:</strong> The pixel at position (0,0) must match the pixel at (15,0), (0,15), and (15,15) for perfect tiling in a 16×16 tile.</p>
                             </div>
                             
-                            <h4>Seamless Design Techniques:</h4>
+                            <h4>Top-Down Grass Design Techniques:</h4>
                             <ul>
-                                <li><strong>Edge Wrapping:</strong> Design elements that flow naturally across tile boundaries</li>
-                                <li><strong>Central Focus:</strong> Place major details in tile centers, minor elements near edges</li>
-                                <li><strong>Pattern Breaking:</strong> Avoid obvious geometric patterns that reveal tiling</li>
-                                <li><strong>Organic Randomness:</strong> Use irregular patterns that feel natural</li>
+                                <li><strong>Grass Blade Shapes:</strong> Create short, irregular shapes representing grass viewed from above</li>
+                                <li><strong>Clumping Patterns:</strong> Group grass blades in natural clusters with gaps between</li>
+                                <li><strong>Color Depth:</strong> Use darker greens for shadows between blades, lighter for tips</li>
+                                <li><strong>Edge Flow:</strong> Ensure grass patterns continue naturally across tile boundaries</li>
+                                <li><strong>Organic Distribution:</strong> Avoid grid-like placement of grass elements</li>
                             </ul>
 
-                            <h4>Common Seamless Tile Mistakes:</h4>
+                            <h4>Common Top-Down Grass Mistakes:</h4>
                             <ul>
-                                <li><strong>Edge Misalignment:</strong> Pixels don't match between adjacent edges</li>
-                                <li><strong>Corner Problems:</strong> Corner pixels don't align with all four neighbors</li>
-                                <li><strong>Obvious Repetition:</strong> Clear geometric patterns that reveal the grid</li>
-                                <li><strong>Symmetry Issues:</strong> Perfect symmetry that looks artificial</li>
-                                <li><strong>Scale Problems:</strong> Details too large or small for the tile size</li>
+                                <li><strong>Side-View Grass:</strong> Drawing grass blades as if viewed from the side instead of above</li>
+                                <li><strong>Too Uniform:</strong> Making all grass blades the same size and color</li>
+                                <li><strong>Grid Pattern:</strong> Placing grass elements in obvious rows and columns</li>
+                                <li><strong>Edge Breaks:</strong> Grass patterns that don't continue across tile edges</li>
+                                <li><strong>Wrong Scale:</strong> Individual blades too large or detailed for top-down view</li>
                             </ul>
 
-                            <h4>Natural Texture Inspiration:</h4>
-                            <div class="info-box">
-                                <h5>Organic Textures to Try:</h5>
+                            <h4>Top-Down Grass Inspiration:</h4>
+                            <div class="tip-box">
+                                <h5>Real-World References:</h5>
                                 <ul>
-                                    <li><strong>Grass:</strong> Random blade patterns with subtle color variation</li>
-                                    <li><strong>Stone:</strong> Irregular shapes with cracks and weathering</li>
-                                    <li><strong>Wood:</strong> Grain patterns that flow naturally across edges</li>
-                                    <li><strong>Water:</strong> Ripple patterns that suggest movement</li>
-                                    <li><strong>Sand:</strong> Granular texture with subtle shade variations</li>
+                                    <li><strong>Lawn Texture:</strong> Look at grass from above in yards and parks</li>
+                                    <li><strong>Aerial Photos:</strong> Study satellite images of grassy areas</li>
+                                    <li><strong>Game References:</strong> Analyze grass tiles in successful 2D games</li>
+                                    <li><strong>Texture Libraries:</strong> Study seamless grass textures in game asset stores</li>
                                 </ul>
                             </div>
 
@@ -2127,6 +2140,27 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Building Cohesive Tile Families</h3>
                             <p>Learn to create multiple tiles that work together while maintaining visual consistency. This skill is essential for building interesting, varied game environments.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Video Tutorial:</strong> <a href="https://www.slynyrd.com/blog/2019/8/27/pixelblog-20-top-down-tiles" target="_blank">SLYNYRD's Top-Down Tiles Tutorial</a> - Learn professional techniques for creating cohesive tile variations.</p>
+                            </div>
+
+                            <div class="info-box">
+                                <p><strong>Complete Guide:</strong> <a href="https://www.sandromaglione.com/articles/how-to-create-a-pixel-art-tileset-complete-guide" target="_blank">How to Create a Pixel Art Tileset</a> - Comprehensive tutorial covering tile variations and environmental diversity.</p>
+                            </div>
+
+                            <div class="info-box">
+                                <p><strong>Advanced Techniques:</strong> <a href="https://pinnguaq.com/learn/pixel-art/pixel-art-3c-tile-permutations-in-graphicsgale/" target="_blank">Pinnguaq's Tile Permutations Tutorial</a> - Learn how to create transitional tiles for natural environmental blending.</p>
+                            </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/grass-variation-family.svg" alt="Example showing four grass tile variations: base grass, grass with flowers, grass with rocks, and dense grass" class="pixel-example" style="width: 300px; height: auto;"/>
+                                <p class="example-caption">Example: 2D side-on grass tile family showing base tile plus three variations</p>
+                            </div>
+                            
+                            <div class="warning-box">
+                                <p><strong>Perspective Note:</strong> The grass variations shown above are designed for 2D side-on/platformer games where you see grass from the side. For top-down games (like RPGs), grass would look different - more like scattered dots and patches viewed from above, as practiced in Week 4 Practice 1.</p>
+                            </div>
                             
                             <h4>Tile Family Development:</h4>
                             <ol>
@@ -2191,6 +2225,55 @@ const courseContent = {
                             <div class="warning-box">
                                 <p><strong>Avoid Over-Variation:</strong> Too many different tiles can make environments feel chaotic. Aim for subtle variation that adds interest without overwhelming the player.</p>
                             </div>
+
+                            <h4>Rule Tiles for Automated World Building</h4>
+                            <p>Once you've mastered manual tile variations, rule tiles can automate much of the world-building process by intelligently choosing which tiles to place based on their surroundings.</p>
+
+                            <div class="info-box">
+                                <p><strong>Unity Rule Tiles Tutorial:</strong> <a href="https://learn.unity.com/tutorial/using-rule-tiles" target="_blank">Unity Learn - Using Rule Tiles</a> - Official tutorial for implementing automated tiling systems.</p>
+                            </div>
+
+                            <div class="info-box">
+                                <p><strong>Video Tutorial:</strong> <a href="https://www.bitchute.com/video/XLrgP65BfhOw/" target="_blank">Auto Tiling with Rule Tiles in Unity 2022</a> - Step-by-step pixel art tileset implementation with rule tiles.</p>
+                            </div>
+
+                            <h5>What Are Rule Tiles?</h5>
+                            <p>Rule tiles automatically choose which sprite to display based on the tiles around them. Instead of manually placing each tile variation, you paint with one brush and the system selects the appropriate tile based on predefined rules.</p>
+
+                            <h5>Rule Tile Benefits for Pixel Artists:</h5>
+                            <ul>
+                                <li><strong>Rapid Prototyping:</strong> Quickly paint large areas and let the system handle transitions</li>
+                                <li><strong>Consistent Logic:</strong> Tiles always connect properly according to your rules</li>
+                                <li><strong>Easy Iteration:</strong> Modify rules to instantly update entire levels</li>
+                                <li><strong>Reduced Errors:</strong> No manual placement mistakes or forgotten edge cases</li>
+                                <li><strong>Artist-Friendly:</strong> Focus on creating art rather than tedious placement</li>
+                            </ul>
+
+                            <h5>Setting Up Rule Tiles (Unity Workflow):</h5>
+                            <ol>
+                                <li><strong>Install 2D Tilemap Extras:</strong> Get Unity's 2D-extras package for rule tile functionality</li>
+                                <li><strong>Create Rule Tile Asset:</strong> Make a new Rule Tile asset in your project</li>
+                                <li><strong>Add Sprite Variations:</strong> Import all your tile variations (base, corners, edges, etc.)</li>
+                                <li><strong>Define Rules:</strong> Set grid patterns for when each sprite should appear</li>
+                                <li><strong>Paint and Test:</strong> Use the rule tile brush to paint areas and see automatic adaptation</li>
+                            </ol>
+
+                            <div class="tip-box">
+                                <p><strong>💡 Rule Tile Strategy:</strong> Start by creating a complete set of manual tile variations (like the grass family above). Then use these variations as the sprites in your rule tile system for fully automated world building.</p>
+                            </div>
+
+                            <h5>Rule Patterns You'll Need:</h5>
+                            <ul>
+                                <li><strong>Interior Tiles:</strong> Surrounded by the same material on all sides</li>
+                                <li><strong>Edge Tiles:</strong> Different sprites for top, bottom, left, right edges</li>
+                                <li><strong>Corner Tiles:</strong> Internal and external corners (8 variations)</li>
+                                <li><strong>Single Tiles:</strong> Isolated tiles with no neighbors</li>
+                                <li><strong>End Caps:</strong> Terminal points of paths or structures</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>Learning Path:</strong> Master manual tile creation first (as practiced in this exercise), then move to rule tiles for automation. Understanding manual techniques helps you design better rule systems.</p>
+                            </div>
                         </div>
                         
                         <div id="week4-practice2-canvas"></div>
@@ -2217,42 +2300,64 @@ const courseContent = {
                             <h3>Your Environmental Masterpiece</h3>
                             <p>Create a cohesive environmental tileset that demonstrates mastery of seamless design, cultural sensitivity, and professional environmental art techniques.</p>
                             
+                            <div class="warning-box">
+                                <h4>Perspective Focus: Top-Down View</h4>
+                                <p>For this challenge, create tiles from a <strong>top-down perspective</strong> (bird's eye view). This perspective is ideal for RPGs, strategy games, and adventure games where players look down at the world from above.</p>
+                            </div>
+
                             <div class="info-box">
-                                <h4>Environment Theme Options:</h4>
-                                <p>Choose one environment type and create a complete tileset:</p>
+                                <h4>Top-Down Environment Themes:</h4>
+                                <p>Choose one theme and create a professional tileset as seen from above:</p>
                                 <ul>
-                                    <li><strong>Peaceful Meadow:</strong> Grass, flowers, and natural elements</li>
-                                    <li><strong>Ancient Ruins:</strong> Weathered stone with natural overgrowth</li>
-                                    <li><strong>Mystical Forest:</strong> Trees, moss, and magical elements</li>
-                                    <li><strong>Desert Oasis:</strong> Sand, rocks, and precious water</li>
-                                    <li><strong>Mountain Path:</strong> Stone, snow, and alpine elements</li>
+                                    <li><strong>Grass Plains:</strong> Various grass textures with dirt paths and scattered flowers</li>
+                                    <li><strong>Stone Courtyard:</strong> Flagstone tiles with moss, cracks, and weathering</li>
+                                    <li><strong>Forest Floor:</strong> Dirt, fallen leaves, tree roots, and undergrowth</li>
+                                    <li><strong>Desert Terrain:</strong> Sand dunes, rocky patches, and sparse vegetation</li>
+                                    <li><strong>Cave Interior:</strong> Stone floors with stalactites shadows and moisture</li>
                                 </ul>
                             </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/reference-tiles-topdown.svg" alt="Reference examples showing grass, stone, and dirt tiles from top-down perspective" class="pixel-example" style="width: 400px; height: auto;"/>
+                                <p class="example-caption">Reference tiles: Use these as starting points or inspiration for your environment</p>
+                            </div>
                             
+                            <div class="tip-box">
+                                <h4>Getting Started with References:</h4>
+                                <ol>
+                                    <li><strong>Choose Your Base:</strong> Pick one of the reference tiles above as inspiration</li>
+                                    <li><strong>Modify Colors:</strong> Adjust colors to match your chosen environment theme</li>
+                                    <li><strong>Add Personal Touch:</strong> Include unique elements that make it your own</li>
+                                    <li><strong>Test Seamless Edges:</strong> Ensure your tile works when repeated</li>
+                                    <li><strong>Create Variations:</strong> Make 2-3 versions for visual diversity</li>
+                                </ol>
+                            </div>
+
                             <h4>Professional Tileset Creation Process:</h4>
                             <ol>
+                                <li><strong>Reference Selection:</strong> Choose which reference tile best matches your theme</li>
                                 <li><strong>Environmental Concept:</strong> Define mood, purpose, and cultural context</li>
-                                <li><strong>Cultural Research:</strong> Ensure respectful representation if using cultural elements</li>
-                                <li><strong>Color Palette:</strong> Choose harmonious colors that support the environment's mood</li>
-                                <li><strong>Base Tile Design:</strong> Create primary seamless ground texture</li>
+                                <li><strong>Color Palette:</strong> Adapt colors to support your environment's atmosphere</li>
+                                <li><strong>Base Tile Design:</strong> Create primary seamless texture using reference patterns</li>
+                                <li><strong>Edge Perfection:</strong> Ensure all four edges align seamlessly</li>
                                 <li><strong>Variation Development:</strong> Add 2-3 subtle variations for visual interest</li>
-                                <li><strong>Special Elements:</strong> Design unique features that enhance storytelling</li>
-                                <li><strong>Integration Testing:</strong> Verify tiles work harmoniously with Week 3 characters</li>
-                                <li><strong>Cultural Review:</strong> Ensure inclusive and appropriate representation</li>
+                                <li><strong>Detail Enhancement:</strong> Add unique features that enhance the top-down perspective</li>
+                                <li><strong>Cultural Sensitivity:</strong> Ensure respectful and inclusive design choices</li>
                             </ol>
                             
-                            <h4>Live Preview Integration:</h4>
-                            <p>Use the 3×3 live preview system to:</p>
+                            <h4>Professional Canvas Size:</h4>
+                            <p>This challenge uses a professional 32×32 pixel canvas to allow for:</p>
                             <ul>
-                                <li>Check seamless tiling in real-time</li>
-                                <li>Identify and fix edge alignment issues immediately</li>
-                                <li>Evaluate pattern repetition and visual flow</li>
-                                <li>Test color harmony across repeated tiles</li>
+                                <li>Highly detailed environmental elements and textures</li>
+                                <li>Complex patterns with multiple layers of depth</li>
+                                <li>Industry-standard tile dimensions used in commercial games</li>
+                                <li>Maximum artistic expression in your environmental masterpiece</li>
+                                <li>Room for intricate details like individual stones, leaves, or weathering</li>
                             </ul>
 
                             <h4>Quality Assessment Criteria:</h4>
                             <ul>
-                                <li>✓ <strong>Seamless Perfection:</strong> No visible seams in 3×3 preview</li>
+                                <li>✓ <strong>Seamless Perfection:</strong> Edges must align perfectly when tiles are repeated</li>
                                 <li>✓ <strong>Environmental Cohesion:</strong> All elements feel like they belong together</li>
                                 <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive design choices</li>
                                 <li>✓ <strong>Character Integration:</strong> Works harmoniously with Week 3 character designs</li>
@@ -2288,17 +2393,13 @@ const courseContent = {
                         </div>
                         
                         <div id="week4-challenge-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-challenge-preview"></div>
-                        </div>
                     </div>
                 `,
                 canvas: {
                     type: 'tile',
-                    gridSize: 16,
+                    gridSize: 32,
                     colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887', '#87CEEB', '#FFE4B5', '#CD853F', '#F0E68C'],
-                    showPreview: true
+                    showPreview: false
                 }
             },
             assessment: {

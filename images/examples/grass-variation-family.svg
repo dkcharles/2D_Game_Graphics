@@ -1,0 +1,167 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" style="image-rendering: pixelated;">
+  <!-- Grid lines for educational clarity -->
+  <defs>
+    <pattern id="grid" width="2" height="2" patternUnits="userSpaceOnUse">
+      <path d="M 2 0 L 0 0 0 2" fill="none" stroke="#e0e0e0" stroke-width="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="96" height="96" fill="url(#grid)"/>
+  
+  <!-- Tile borders -->
+  <rect x="8" y="8" width="32" height="32" fill="none" stroke="#666" stroke-width="1"/>
+  <rect x="56" y="8" width="32" height="32" fill="none" stroke="#666" stroke-width="1"/>
+  <rect x="8" y="56" width="32" height="32" fill="none" stroke="#666" stroke-width="1"/>
+  <rect x="56" y="56" width="32" height="32" fill="none" stroke="#666" stroke-width="1"/>
+  
+  <!-- BASE TILE (Top Left) - Clean grass -->
+  <g id="base-grass">
+    <!-- Base grass layer -->
+    <rect x="8" y="28" width="32" height="12" fill="#4a7c25"/>
+    <!-- Grass blade clusters -->
+    <rect x="10" y="20" width="2" height="8" fill="#5d9030"/>
+    <rect x="14" y="18" width="2" height="10" fill="#4a7c25"/>
+    <rect x="18" y="22" width="2" height="6" fill="#5d9030"/>
+    <rect x="22" y="19" width="2" height="9" fill="#4a7c25"/>
+    <rect x="26" y="21" width="2" height="7" fill="#5d9030"/>
+    <rect x="30" y="17" width="2" height="11" fill="#4a7c25"/>
+    <rect x="34" y="20" width="2" height="8" fill="#5d9030"/>
+    <rect x="38" y="19" width="2" height="9" fill="#4a7c25"/>
+    
+    <!-- Darker grass patches for depth -->
+    <rect x="12" y="30" width="4" height="6" fill="#3d6620"/>
+    <rect x="20" y="32" width="3" height="4" fill="#3d6620"/>
+    <rect x="28" y="29" width="4" height="7" fill="#3d6620"/>
+    <rect x="36" y="31" width="3" height="5" fill="#3d6620"/>
+    
+    <!-- Light grass highlights -->
+    <rect x="16" y="28" width="2" height="3" fill="#6ba338"/>
+    <rect x="24" y="28" width="2" height="3" fill="#6ba338"/>
+    <rect x="32" y="28" width="2" height="3" fill="#6ba338"/>
+  </g>
+  
+  <!-- VARIATION 1 (Top Right) - Grass with flowers -->
+  <g id="flower-grass">
+    <!-- Copy base grass pattern -->
+    <rect x="56" y="28" width="32" height="12" fill="#4a7c25"/>
+    <rect x="58" y="20" width="2" height="8" fill="#5d9030"/>
+    <rect x="62" y="18" width="2" height="10" fill="#4a7c25"/>
+    <rect x="66" y="22" width="2" height="6" fill="#5d9030"/>
+    <rect x="70" y="19" width="2" height="9" fill="#4a7c25"/>
+    <rect x="74" y="21" width="2" height="7" fill="#5d9030"/>
+    <rect x="78" y="17" width="2" height="11" fill="#4a7c25"/>
+    <rect x="82" y="20" width="2" height="8" fill="#5d9030"/>
+    <rect x="86" y="19" width="2" height="9" fill="#4a7c25"/>
+    
+    <!-- Darker patches -->
+    <rect x="60" y="30" width="4" height="6" fill="#3d6620"/>
+    <rect x="68" y="32" width="3" height="4" fill="#3d6620"/>
+    <rect x="76" y="29" width="4" height="7" fill="#3d6620"/>
+    <rect x="84" y="31" width="3" height="5" fill="#3d6620"/>
+    
+    <!-- Light highlights -->
+    <rect x="64" y="28" width="2" height="3" fill="#6ba338"/>
+    <rect x="72" y="28" width="2" height="3" fill="#6ba338"/>
+    <rect x="80" y="28" width="2" height="3" fill="#6ba338"/>
+    
+    <!-- Add small flowers -->
+    <rect x="61" y="22" width="2" height="2" fill="#ffeb3b"/>
+    <rect x="75" y="19" width="2" height="2" fill="#ff69b4"/>
+    <rect x="83" y="21" width="2" height="2" fill="#ffeb3b"/>
+    <rect x="69" y="17" width="2" height="2" fill="#ff69b4"/>
+  </g>
+  
+  <!-- VARIATION 2 (Bottom Left) - Grass with rocks/dirt patches -->
+  <g id="rocky-grass">
+    <!-- Copy base grass pattern -->
+    <rect x="8" y="76" width="32" height="12" fill="#4a7c25"/>
+    <rect x="10" y="68" width="2" height="8" fill="#5d9030"/>
+    <rect x="14" y="66" width="2" height="10" fill="#4a7c25"/>
+    <rect x="18" y="70" width="2" height="6" fill="#5d9030"/>
+    <rect x="22" y="67" width="2" height="9" fill="#4a7c25"/>
+    <rect x="26" y="69" width="2" height="7" fill="#5d9030"/>
+    <rect x="30" y="65" width="2" height="11" fill="#4a7c25"/>
+    <rect x="34" y="68" width="2" height="8" fill="#5d9030"/>
+    <rect x="38" y="67" width="2" height="9" fill="#4a7c25"/>
+    
+    <!-- Darker patches -->
+    <rect x="12" y="78" width="4" height="6" fill="#3d6620"/>
+    <rect x="20" y="80" width="3" height="4" fill="#3d6620"/>
+    <rect x="28" y="77" width="4" height="7" fill="#3d6620"/>
+    <rect x="36" y="79" width="3" height="5" fill="#3d6620"/>
+    
+    <!-- Light highlights -->
+    <rect x="16" y="76" width="2" height="3" fill="#6ba338"/>
+    <rect x="24" y="76" width="2" height="3" fill="#6ba338"/>
+    <rect x="32" y="76" width="2" height="3" fill="#6ba338"/>
+    
+    <!-- Add small rocks and dirt patches on ground -->
+    <rect x="15" y="82" width="3" height="4" fill="#8B4513"/>
+    <rect x="25" y="80" width="2" height="6" fill="#A0522D"/>
+    <rect x="35" y="83" width="4" height="3" fill="#8B4513"/>
+    <rect x="11" y="81" width="2" height="5" fill="#A0522D"/>
+    <!-- Some scattered small rocks -->
+    <rect x="19" y="84" width="1" height="2" fill="#654321"/>
+    <rect x="29" y="82" width="1" height="2" fill="#654321"/>
+    <rect x="37" y="85" width="1" height="1" fill="#654321"/>
+  </g>
+  
+  <!-- VARIATION 3 (Bottom Right) - Dense grass -->
+  <g id="dense-grass">
+    <!-- Base grass layer -->
+    <rect x="56" y="76" width="32" height="12" fill="#4a7c25"/>
+    
+    <!-- MUCH denser grass blades - more and closer together -->
+    <rect x="57" y="68" width="1" height="8" fill="#5d9030"/>
+    <rect x="59" y="67" width="1" height="9" fill="#4a7c25"/>
+    <rect x="61" y="66" width="1" height="10" fill="#5d9030"/>
+    <rect x="63" y="68" width="1" height="8" fill="#4a7c25"/>
+    <rect x="65" y="65" width="1" height="11" fill="#5d9030"/>
+    <rect x="67" y="67" width="1" height="9" fill="#4a7c25"/>
+    <rect x="69" y="66" width="1" height="10" fill="#5d9030"/>
+    <rect x="71" y="68" width="1" height="8" fill="#4a7c25"/>
+    <rect x="73" y="64" width="1" height="12" fill="#5d9030"/>
+    <rect x="75" y="67" width="1" height="9" fill="#4a7c25"/>
+    <rect x="77" y="65" width="1" height="11" fill="#5d9030"/>
+    <rect x="79" y="68" width="1" height="8" fill="#4a7c25"/>
+    <rect x="81" y="66" width="1" height="10" fill="#5d9030"/>
+    <rect x="83" y="67" width="1" height="9" fill="#4a7c25"/>
+    <rect x="85" y="65" width="1" height="11" fill="#5d9030"/>
+    <rect x="87" y="68" width="1" height="8" fill="#4a7c25"/>
+    
+    <!-- Additional layer of even more grass -->
+    <rect x="58" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="62" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="66" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="70" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="74" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="78" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="82" y="69" width="1" height="7" fill="#3d6620"/>
+    <rect x="86" y="69" width="1" height="7" fill="#3d6620"/>
+    
+    <!-- Dense darker patches -->
+    <rect x="60" y="78" width="6" height="6" fill="#3d6620"/>
+    <rect x="68" y="80" width="5" height="4" fill="#3d6620"/>
+    <rect x="76" y="77" width="6" height="7" fill="#3d6620"/>
+    <rect x="84" y="79" width="4" height="5" fill="#3d6620"/>
+    
+    <!-- Lots of light highlights -->
+    <rect x="64" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="69" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="72" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="75" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="80" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="83" y="76" width="1" height="2" fill="#6ba338"/>
+    <rect x="86" y="76" width="1" height="2" fill="#6ba338"/>
+  </g>
+  
+  <!-- Labels -->
+  <text x="24" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">Base Grass</text>
+  <text x="72" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">+ Flowers</text>
+  <text x="24" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">+ Rocks</text>
+  <text x="72" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">Dense Grass</text>
+  
+  <!-- Main title -->
+  <text x="48" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#333" font-weight="bold">Grass Tile Variation Family</text>
+</svg>
