@@ -1708,671 +1708,14 @@ const courseContent = {
             }
         }
     },
-    // Week 4: Environment Art and Tilemaps
+    // Week 4: Pixel Art Animation  
     week4: {
-        title: "Environment Art and Tilemaps",
-        tabs: {
-            overview: {
-                title: "Overview",
-                content: `
-                    <h2>Week 4: Environment Art and Tilemaps</h2>
-                    
-                    <div class="info-box">
-                        <h3>Learning Objectives</h3>
-                        <ul>
-                            <li>Master seamless tile creation techniques</li>
-                            <li>Design cohesive environment tilesets</li>
-                            <li>Create atmospheric backgrounds and scenes</li>
-                            <li>Understand tile-based level construction</li>
-                            <li>Apply environmental storytelling principles</li>
-                            <li>Integrate characters with environmental designs</li>
-                        </ul>
-                    </div>
-
-                    <p>This week explores the art of creating game environments through tiles and environmental art. You'll learn how to create seamless patterns, design modular tilesets, and build atmospheric game worlds that support and enhance your character designs.</p>
-
-                    <p>Environmental art in pixel games serves multiple purposes: it sets the mood, guides player movement, tells stories about the game world, and provides the stage where your characters perform. Every environmental choice contributes to the player's emotional experience.</p>
-
-                    <h3>Environmental Challenges</h3>
-                    <ul>
-                        <li><strong>Concepts:</strong> Seamless tile design and environmental storytelling</li>
-                        <li><strong>Practice 1:</strong> Basic seamless patterns and tile mathematics</li>
-                        <li><strong>Practice 2:</strong> Creating tile variations and environmental diversity</li>
-                        <li><strong>Challenge:</strong> Design a complete environment tileset with live preview</li>
-                        <li><strong>Assessment:</strong> Environmental design knowledge and portfolio evaluation</li>
-                    </ul>
-
-                    <h3>The Mathematics of Seamless Design</h3>
-                    <p>Creating tiles that connect perfectly requires understanding edge relationships and pattern mathematics. You'll master the technical skills needed for professional tile creation while maintaining artistic quality.</p>
-
-                    <div class="tip-box">
-                        <p><strong>💡 Environment Focus:</strong> Great environmental art supports gameplay and storytelling while remaining visually interesting but not distracting from character action.</p>
-                    </div>
-
-                    <h3>Cultural Sensitivity in World Building</h3>
-                    <p>Environmental design choices carry cultural implications. We'll explore how to create inclusive game worlds that draw inspiration respectfully from diverse cultures while avoiding appropriation or stereotyping.</p>
-                `
-            },
-            concepts: {
-                title: "Concepts",
-                content: `
-                    <h2>Environmental Design Fundamentals</h2>
-                    
-                    <h3>Understanding Seamless Tiles</h3>
-                    <p>Seamless tiles are the foundation of efficient game world construction. A properly designed tile connects perfectly with copies of itself and other tiles in the set.</p>
-                    
-                    <div class="info-box">
-                        <p><strong>Seamless Tile Principles:</strong></p>
-                        <ul>
-                            <li><strong>Edge Continuity:</strong> Left edge pixels must match right edge pixels</li>
-                            <li><strong>Corner Precision:</strong> All four corners must align perfectly</li>
-                            <li><strong>Pattern Flow:</strong> Visual elements should create natural-looking repetition</li>
-                            <li><strong>Variation Balance:</strong> Enough variety to avoid obvious repetition</li>
-                        </ul>
-                    </div>
-
-                    <div style="text-align: center; margin: 20px 0;">
-                        <img src="images/examples/seamless-grass-tile.svg" alt="Example of seamless grass tile showing original tile next to identical copy with matching edges" class="pixel-example" style="width: 400px; height: auto;"/>
-                        <p class="example-caption">Example: Seamless grass tile demonstrating perfect edge alignment</p>
-                    </div>
-
-                    <h3>Types of Environmental Elements</h3>
-                    <p>Different environmental elements serve different purposes:</p>
-                    <ul>
-                        <li><strong>Ground Tiles:</strong> Walkable surfaces that define player movement areas</li>
-                        <li><strong>Wall Tiles:</strong> Barriers that block movement and define space boundaries</li>
-                        <li><strong>Decoration Tiles:</strong> Non-functional elements that add visual interest</li>
-                        <li><strong>Transition Tiles:</strong> Elements that blend different environmental zones</li>
-                        <li><strong>Interactive Elements:</strong> Environmental objects players can engage with</li>
-                    </ul>
-
-                    <h3>Environmental Storytelling</h3>
-                    <p>Game environments tell stories without words:</p>
-                    
-                    <div class="tip-box">
-                        <h4>Storytelling Through Environment:</h4>
-                        <ul>
-                            <li><strong>Wear and Age:</strong> Cracks, moss, and damage suggest history</li>
-                            <li><strong>Human Presence:</strong> Tools, furniture, and paths show habitation</li>
-                            <li><strong>Natural Forces:</strong> Weather effects, erosion, and growth patterns</li>
-                            <li><strong>Cultural Elements:</strong> Architecture and decoration reveal civilizations</li>
-                            <li><strong>Emotional Atmosphere:</strong> Light, color, and composition affect mood</li>
-                        </ul>
-                    </div>
-
-                    <h3>Tile Mathematics and Grid Systems</h3>
-                    <p>Understanding the mathematical relationships in tile design:</p>
-                    <ul>
-                        <li><strong>16×16 Standard:</strong> Most common tile size, balances detail with efficiency</li>
-                        <li><strong>32×32 Detailed:</strong> Allows more complex environmental elements</li>
-                        <li><strong>8×8 Retro:</strong> Classic arcade style with extreme constraints</li>
-                        <li><strong>Mixed Sizes:</strong> Combining different tile sizes for variety</li>
-                    </ul>
-
-                    <h3>Live Preview Systems</h3>
-                    <p>Modern tile design benefits from real-time pattern preview:</p>
-                    <ul>
-                        <li><strong>3×3 Tiling:</strong> Shows how tiles repeat in small groups</li>
-                        <li><strong>Edge Checking:</strong> Immediately reveals alignment problems</li>
-                        <li><strong>Pattern Recognition:</strong> Helps identify and fix obvious repetition</li>
-                        <li><strong>Flow Analysis:</strong> Ensures natural visual movement across tiles</li>
-                    </ul>
-
-                    <h3>Cultural Considerations in Environmental Design</h3>
-                    <p>Creating inclusive and respectful environmental art:</p>
-                    
-                    <div class="warning-box">
-                        <h4>Cultural Sensitivity Guidelines:</h4>
-                        <ul>
-                            <li><strong>Research Respectfully:</strong> Understand cultural significance before using elements</li>
-                            <li><strong>Avoid Sacred Imagery:</strong> Don't casually use religious or sacred symbols</li>
-                            <li><strong>Generic Fantasy:</strong> Create original cultures rather than copying existing ones</li>
-                            <li><strong>Universal Elements:</strong> Focus on natural environments and universal human experiences</li>
-                            <li><strong>Community Consultation:</strong> Seek feedback from relevant cultural communities</li>
-                        </ul>
-                    </div>
-
-                    <h3>Color and Atmosphere in Environments</h3>
-                    <p>Environmental color choices shape player emotions:</p>
-                    <ul>
-                        <li><strong>Warm Environments:</strong> Oranges, reds, yellows create comfort and energy</li>
-                        <li><strong>Cool Environments:</strong> Blues, greens, purples suggest calm or mystery</li>
-                        <li><strong>Monochromatic Schemes:</strong> Single color ranges create strong moods</li>
-                        <li><strong>Accent Colors:</strong> Small pops of contrasting color draw attention</li>
-                        <li><strong>Time of Day:</strong> Different lighting suggests different times and moods</li>
-                    </ul>
-
-                    <h3>Integration with Character Design</h3>
-                    <p>Environments must work harmoniously with characters:</p>
-                    <ul>
-                        <li><strong>Contrast Balance:</strong> Environments should support, not compete with characters</li>
-                        <li><strong>Style Consistency:</strong> Same artistic approach for characters and environments</li>
-                        <li><strong>Color Harmony:</strong> Environmental palettes that complement character colors</li>
-                        <li><strong>Scale Relationships:</strong> Environmental elements appropriately sized for characters</li>
-                    </ul>
-
-                    <h3>Professional Environmental Workflow</h3>
-                    <ol>
-                        <li><strong>Concept Phase:</strong> Define environmental mood, purpose, and cultural context</li>
-                        <li><strong>Research Phase:</strong> Study real-world references and cultural appropriateness</li>
-                        <li><strong>Palette Creation:</strong> Establish harmonious color schemes</li>
-                        <li><strong>Base Tile Design:</strong> Create fundamental seamless elements</li>
-                        <li><strong>Variation Development:</strong> Add diversity while maintaining consistency</li>
-                        <li><strong>Integration Testing:</strong> Verify tiles work well with character designs</li>
-                        <li><strong>Cultural Review:</strong> Ensure respectful and appropriate representation</li>
-                    </ol>
-
-                    <div class="info-box">
-                        <p><strong>Professional Insight:</strong> Great environmental design is invisible to players - it feels so natural and appropriate that they don't consciously notice it, but it strongly influences their emotional experience and immersion in the game world.</p>
-                    </div>
-                `
-            },
-            practice1: {
-                title: "Practice 1: Seamless Patterns",
-                content: `
-                    <h2>Practice 1: Top-Down Grass Tile Creation</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Exercise: Creating Seamless Top-Down Grass Tiles</h3>
-                            <p>Learn to create grass textures viewed from above (top-down perspective) that tile seamlessly. This is a fundamental skill for creating ground textures in many 2D games, especially RPGs and strategy games.</p>
-                            
-                            <div class="info-box">
-                                <p><strong>Video Tutorial:</strong> <a href="https://www.youtube.com/watch?v=W9bpaSrytBM" target="_blank">Creating Seamless Grass Textures in Pixel Art</a> - Watch this demonstration of professional grass tile techniques.</p>
-                            </div>
-
-                            <div class="info-box">
-                                <p><strong>Additional Resources:</strong> <a href="https://lospec.com/pixel-art-tutorials/tags/grass" target="_blank">Lospec Grass Tutorials Collection</a> - Browse multiple approaches to creating pixel art grass textures.</p>
-                            </div>
-                            
-                            <h4>Top-Down Grass Tile Challenges:</h4>
-                            <ol>
-                                <li><strong>Grass Blade Patterns:</strong> Create varied grass blade shapes as seen from above</li>
-                                <li><strong>Color Variation:</strong> Use 3-4 shades of green for depth and variety</li>
-                                <li><strong>Edge Alignment:</strong> Ensure grass patterns flow seamlessly across tile borders</li>
-                                <li><strong>Natural Randomness:</strong> Avoid obvious geometric patterns in grass placement</li>
-                                <li><strong>Live Preview Testing:</strong> Use the 3×3 preview to verify seamless repetition</li>
-                            </ol>
-                            
-                            <div class="tip-box">
-                                <p><strong>Edge Mathematics:</strong> The pixel at position (0,0) must match the pixel at (15,0), (0,15), and (15,15) for perfect tiling in a 16×16 tile.</p>
-                            </div>
-                            
-                            <h4>Top-Down Grass Design Techniques:</h4>
-                            <ul>
-                                <li><strong>Grass Blade Shapes:</strong> Create short, irregular shapes representing grass viewed from above</li>
-                                <li><strong>Clumping Patterns:</strong> Group grass blades in natural clusters with gaps between</li>
-                                <li><strong>Color Depth:</strong> Use darker greens for shadows between blades, lighter for tips</li>
-                                <li><strong>Edge Flow:</strong> Ensure grass patterns continue naturally across tile boundaries</li>
-                                <li><strong>Organic Distribution:</strong> Avoid grid-like placement of grass elements</li>
-                            </ul>
-
-                            <h4>Common Top-Down Grass Mistakes:</h4>
-                            <ul>
-                                <li><strong>Side-View Grass:</strong> Drawing grass blades as if viewed from the side instead of above</li>
-                                <li><strong>Too Uniform:</strong> Making all grass blades the same size and color</li>
-                                <li><strong>Grid Pattern:</strong> Placing grass elements in obvious rows and columns</li>
-                                <li><strong>Edge Breaks:</strong> Grass patterns that don't continue across tile edges</li>
-                                <li><strong>Wrong Scale:</strong> Individual blades too large or detailed for top-down view</li>
-                            </ul>
-
-                            <h4>Top-Down Grass Inspiration:</h4>
-                            <div class="tip-box">
-                                <h5>Real-World References:</h5>
-                                <ul>
-                                    <li><strong>Lawn Texture:</strong> Look at grass from above in yards and parks</li>
-                                    <li><strong>Aerial Photos:</strong> Study satellite images of grassy areas</li>
-                                    <li><strong>Game References:</strong> Analyze grass tiles in successful 2D games</li>
-                                    <li><strong>Texture Libraries:</strong> Study seamless grass textures in game asset stores</li>
-                                </ul>
-                            </div>
-
-                            <h4>Cultural Sensitivity in Environmental Textures:</h4>
-                            <p>When creating environmental elements:</p>
-                            <ul>
-                                <li><strong>Natural Elements:</strong> Focus on universal natural textures</li>
-                                <li><strong>Generic Materials:</strong> Avoid culturally specific architectural elements</li>
-                                <li><strong>Research Carefully:</strong> If using cultural motifs, understand their significance</li>
-                                <li><strong>Universal Appeal:</strong> Create environments that feel welcoming to diverse players</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Live Preview Usage:</strong> The 3×3 preview shows how your tile repeats. Use it constantly while designing to catch edge alignment problems immediately.</p>
-                            </div>
-
-                            <h4>Professional Quality Standards:</h4>
-                            <ul>
-                                <li>Perfect edge alignment with no visible seams</li>
-                                <li>Natural-looking repetition without obvious patterns</li>
-                                <li>Appropriate detail level for intended viewing distance</li>
-                                <li>Color harmony that supports overall environmental palette</li>
-                                <li>Cultural appropriateness and inclusive design</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="week4-practice1-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-practice1-preview"></div>
-                        </div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 16,
-                    colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887'],
-                    showPreview: true
-                }
-            },
-            practice2: {
-                title: "Practice 2: Tile Variations",
-                content: `
-                    <h2>Practice 2: Creating Environmental Diversity</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Exercise: Building Cohesive Tile Families</h3>
-                            <p>Learn to create multiple tiles that work together while maintaining visual consistency. This skill is essential for building interesting, varied game environments.</p>
-                            
-                            <div class="info-box">
-                                <p><strong>Video Tutorial:</strong> <a href="https://www.slynyrd.com/blog/2019/8/27/pixelblog-20-top-down-tiles" target="_blank">SLYNYRD's Top-Down Tiles Tutorial</a> - Learn professional techniques for creating cohesive tile variations.</p>
-                            </div>
-
-                            <div class="info-box">
-                                <p><strong>Complete Guide:</strong> <a href="https://www.sandromaglione.com/articles/how-to-create-a-pixel-art-tileset-complete-guide" target="_blank">How to Create a Pixel Art Tileset</a> - Comprehensive tutorial covering tile variations and environmental diversity.</p>
-                            </div>
-
-                            <div class="info-box">
-                                <p><strong>Advanced Techniques:</strong> <a href="https://pinnguaq.com/learn/pixel-art/pixel-art-3c-tile-permutations-in-graphicsgale/" target="_blank">Pinnguaq's Tile Permutations Tutorial</a> - Learn how to create transitional tiles for natural environmental blending.</p>
-                            </div>
-
-                            <div style="text-align: center; margin: 20px 0;">
-                                <img src="images/examples/grass-variation-family.svg" alt="Example showing four grass tile variations: base grass, grass with flowers, grass with rocks, and dense grass" class="pixel-example" style="width: 300px; height: auto;"/>
-                                <p class="example-caption">Example: 2D side-on grass tile family showing base tile plus three variations</p>
-                            </div>
-                            
-                            <div class="warning-box">
-                                <p><strong>Perspective Note:</strong> The grass variations shown above are designed for 2D side-on/platformer games where you see grass from the side. For top-down games (like RPGs), grass would look different - more like scattered dots and patches viewed from above, as practiced in Week 4 Practice 1.</p>
-                            </div>
-                            
-                            <h4>Tile Family Development:</h4>
-                            <ol>
-                                <li><strong>Base Texture:</strong> Start with one seamless tile as your foundation</li>
-                                <li><strong>Subtle Variations:</strong> Create 2-3 variations with small differences</li>
-                                <li><strong>Edge Transitions:</strong> Design tiles that blend between different textures</li>
-                                <li><strong>Special Elements:</strong> Add unique tiles with distinctive features</li>
-                                <li><strong>Corner Pieces:</strong> Create tiles for corners and intersections</li>
-                            </ol>
-                            
-                            <h4>Variation Techniques:</h4>
-                            <ul>
-                                <li><strong>Color Shifts:</strong> Slight hue or saturation changes for variety</li>
-                                <li><strong>Detail Addition:</strong> Small rocks, flowers, or wear patterns</li>
-                                <li><strong>Density Changes:</strong> More or fewer texture elements</li>
-                                <li><strong>Directional Elements:</strong> Grass blowing, water flowing</li>
-                                <li><strong>Weathering Effects:</strong> Age, damage, or growth patterns</li>
-                            </ul>
-
-                            <div class="tip-box">
-                                <p><strong>💡 Consistency Key:</strong> All variations should feel like they belong in the same world. Maintain consistent lighting, color temperature, and artistic style across all tiles.</p>
-                            </div>
-                            
-                            <h4>Environmental Storytelling Through Tiles:</h4>
-                            <ul>
-                                <li><strong>Pathways:</strong> Worn areas suggesting foot traffic</li>
-                                <li><strong>Natural Growth:</strong> Plants breaking through stone</li>
-                                <li><strong>Human Impact:</strong> Tool marks, construction, or decay</li>
-                                <li><strong>Time Passage:</strong> Weathering, erosion, or seasonal changes</li>
-                                <li><strong>Hidden Details:</strong> Small elements that reward close observation</li>
-                            </ul>
-
-                            <h4>Tile Transition Strategies:</h4>
-                            <div class="info-box">
-                                <h5>Blending Different Materials:</h5>
-                                <ul>
-                                    <li><strong>Gradient Transitions:</strong> Gradual change from one material to another</li>
-                                    <li><strong>Organic Edges:</strong> Natural, irregular boundaries between textures</li>
-                                    <li><strong>Overlay Elements:</strong> Scattered details that bridge different surfaces</li>
-                                    <li><strong>Elevation Changes:</strong> Height differences that justify material changes</li>
-                                </ul>
-                            </div>
-
-                            <h4>Cultural Considerations in Environmental Storytelling:</h4>
-                            <p>When adding cultural elements to environments:</p>
-                            <ul>
-                                <li><strong>Universal Themes:</strong> Focus on shared human experiences</li>
-                                <li><strong>Natural Elements:</strong> Emphasize natural rather than cultural wear patterns</li>
-                                <li><strong>Generic Tools:</strong> Avoid culturally specific implements or symbols</li>
-                                <li><strong>Respectful Research:</strong> If adding cultural elements, understand their significance</li>
-                            </ul>
-
-                            <h4>Advanced Tile Design Concepts:</h4>
-                            <ul>
-                                <li><strong>Modular Systems:</strong> Tiles that combine in multiple ways</li>
-                                <li><strong>Layered Details:</strong> Background base with foreground elements</li>
-                                <li><strong>Seasonal Variations:</strong> Same location in different weather/seasons</li>
-                                <li><strong>Damage States:</strong> Pristine to worn versions of the same tile</li>
-                                <li><strong>Interactive Elements:</strong> Tiles that suggest player interaction</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Avoid Over-Variation:</strong> Too many different tiles can make environments feel chaotic. Aim for subtle variation that adds interest without overwhelming the player.</p>
-                            </div>
-
-                            <h4>Rule Tiles for Automated World Building</h4>
-                            <p>Once you've mastered manual tile variations, rule tiles can automate much of the world-building process by intelligently choosing which tiles to place based on their surroundings.</p>
-
-                            <div class="info-box">
-                                <p><strong>Unity Rule Tiles Tutorial:</strong> <a href="https://learn.unity.com/tutorial/using-rule-tiles" target="_blank">Unity Learn - Using Rule Tiles</a> - Official tutorial for implementing automated tiling systems.</p>
-                            </div>
-
-                            <div class="info-box">
-                                <p><strong>Video Tutorial:</strong> <a href="https://www.bitchute.com/video/XLrgP65BfhOw/" target="_blank">Auto Tiling with Rule Tiles in Unity 2022</a> - Step-by-step pixel art tileset implementation with rule tiles.</p>
-                            </div>
-
-                            <h5>What Are Rule Tiles?</h5>
-                            <p>Rule tiles automatically choose which sprite to display based on the tiles around them. Instead of manually placing each tile variation, you paint with one brush and the system selects the appropriate tile based on predefined rules.</p>
-
-                            <h5>Rule Tile Benefits for Pixel Artists:</h5>
-                            <ul>
-                                <li><strong>Rapid Prototyping:</strong> Quickly paint large areas and let the system handle transitions</li>
-                                <li><strong>Consistent Logic:</strong> Tiles always connect properly according to your rules</li>
-                                <li><strong>Easy Iteration:</strong> Modify rules to instantly update entire levels</li>
-                                <li><strong>Reduced Errors:</strong> No manual placement mistakes or forgotten edge cases</li>
-                                <li><strong>Artist-Friendly:</strong> Focus on creating art rather than tedious placement</li>
-                            </ul>
-
-                            <h5>Setting Up Rule Tiles (Unity Workflow):</h5>
-                            <ol>
-                                <li><strong>Install 2D Tilemap Extras:</strong> Get Unity's 2D-extras package for rule tile functionality</li>
-                                <li><strong>Create Rule Tile Asset:</strong> Make a new Rule Tile asset in your project</li>
-                                <li><strong>Add Sprite Variations:</strong> Import all your tile variations (base, corners, edges, etc.)</li>
-                                <li><strong>Define Rules:</strong> Set grid patterns for when each sprite should appear</li>
-                                <li><strong>Paint and Test:</strong> Use the rule tile brush to paint areas and see automatic adaptation</li>
-                            </ol>
-
-                            <div class="tip-box">
-                                <p><strong>💡 Rule Tile Strategy:</strong> Start by creating a complete set of manual tile variations (like the grass family above). Then use these variations as the sprites in your rule tile system for fully automated world building.</p>
-                            </div>
-
-                            <h5>Rule Patterns You'll Need:</h5>
-                            <ul>
-                                <li><strong>Interior Tiles:</strong> Surrounded by the same material on all sides</li>
-                                <li><strong>Edge Tiles:</strong> Different sprites for top, bottom, left, right edges</li>
-                                <li><strong>Corner Tiles:</strong> Internal and external corners (8 variations)</li>
-                                <li><strong>Single Tiles:</strong> Isolated tiles with no neighbors</li>
-                                <li><strong>End Caps:</strong> Terminal points of paths or structures</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Learning Path:</strong> Master manual tile creation first (as practiced in this exercise), then move to rule tiles for automation. Understanding manual techniques helps you design better rule systems.</p>
-                            </div>
-                        </div>
-                        
-                        <div id="week4-practice2-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-practice2-preview"></div>
-                        </div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 16,
-                    colors: ['#8B4513', '#CD853F', '#F4A460', '#DEB887', '#228B22', '#32CD32', '#654321', '#D2691E', '#90EE90', '#FFFFE0'],
-                    showPreview: true
-                }
-            },
-            challenge: {
-                title: "Challenge: Environment Tileset",
-                content: `
-                    <h2>Challenge: Complete Environmental Tileset</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Your Environmental Masterpiece</h3>
-                            <p>Create a cohesive environmental tileset that demonstrates mastery of seamless design, cultural sensitivity, and professional environmental art techniques.</p>
-                            
-                            <div class="warning-box">
-                                <h4>Perspective Focus: Top-Down View</h4>
-                                <p>For this challenge, create tiles from a <strong>top-down perspective</strong> (bird's eye view). This perspective is ideal for RPGs, strategy games, and adventure games where players look down at the world from above.</p>
-                            </div>
-
-                            <div class="info-box">
-                                <h4>Top-Down Environment Themes:</h4>
-                                <p>Choose one theme and create a professional tileset as seen from above:</p>
-                                <ul>
-                                    <li><strong>Grass Plains:</strong> Various grass textures with dirt paths and scattered flowers</li>
-                                    <li><strong>Stone Courtyard:</strong> Flagstone tiles with moss, cracks, and weathering</li>
-                                    <li><strong>Forest Floor:</strong> Dirt, fallen leaves, tree roots, and undergrowth</li>
-                                    <li><strong>Desert Terrain:</strong> Sand dunes, rocky patches, and sparse vegetation</li>
-                                    <li><strong>Cave Interior:</strong> Stone floors with stalactites shadows and moisture</li>
-                                </ul>
-                            </div>
-
-                            <div style="text-align: center; margin: 20px 0;">
-                                <img src="images/examples/reference-tiles-topdown.svg" alt="Reference examples showing grass, stone, and dirt tiles from top-down perspective" class="pixel-example" style="width: 400px; height: auto;"/>
-                                <p class="example-caption">Reference tiles: Use these as starting points or inspiration for your environment</p>
-                            </div>
-                            
-                            <div class="tip-box">
-                                <h4>Getting Started with References:</h4>
-                                <ol>
-                                    <li><strong>Choose Your Base:</strong> Pick one of the reference tiles above as inspiration</li>
-                                    <li><strong>Modify Colors:</strong> Adjust colors to match your chosen environment theme</li>
-                                    <li><strong>Add Personal Touch:</strong> Include unique elements that make it your own</li>
-                                    <li><strong>Test Seamless Edges:</strong> Ensure your tile works when repeated</li>
-                                    <li><strong>Create Variations:</strong> Make 2-3 versions for visual diversity</li>
-                                </ol>
-                            </div>
-
-                            <h4>Professional Tileset Creation Process:</h4>
-                            <ol>
-                                <li><strong>Reference Selection:</strong> Choose which reference tile best matches your theme</li>
-                                <li><strong>Environmental Concept:</strong> Define mood, purpose, and cultural context</li>
-                                <li><strong>Color Palette:</strong> Adapt colors to support your environment's atmosphere</li>
-                                <li><strong>Base Tile Design:</strong> Create primary seamless texture using reference patterns</li>
-                                <li><strong>Edge Perfection:</strong> Ensure all four edges align seamlessly</li>
-                                <li><strong>Variation Development:</strong> Add 2-3 subtle variations for visual interest</li>
-                                <li><strong>Detail Enhancement:</strong> Add unique features that enhance the top-down perspective</li>
-                                <li><strong>Cultural Sensitivity:</strong> Ensure respectful and inclusive design choices</li>
-                            </ol>
-                            
-                            <h4>Professional Canvas Size:</h4>
-                            <p>This challenge uses a professional 32×32 pixel canvas to allow for:</p>
-                            <ul>
-                                <li>Highly detailed environmental elements and textures</li>
-                                <li>Complex patterns with multiple layers of depth</li>
-                                <li>Industry-standard tile dimensions used in commercial games</li>
-                                <li>Maximum artistic expression in your environmental masterpiece</li>
-                                <li>Room for intricate details like individual stones, leaves, or weathering</li>
-                            </ul>
-
-                            <h4>Quality Assessment Criteria:</h4>
-                            <ul>
-                                <li>✓ <strong>Seamless Perfection:</strong> Edges must align perfectly when tiles are repeated</li>
-                                <li>✓ <strong>Environmental Cohesion:</strong> All elements feel like they belong together</li>
-                                <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive design choices</li>
-                                <li>✓ <strong>Character Integration:</strong> Works harmoniously with Week 3 character designs</li>
-                                <li>✓ <strong>Atmospheric Quality:</strong> Successfully conveys intended mood and setting</li>
-                                <li>✓ <strong>Technical Excellence:</strong> Professional pixel art execution</li>
-                            </ul>
-
-                            <h4>Advanced Environmental Techniques:</h4>
-                            <ul>
-                                <li><strong>Atmospheric Perspective:</strong> Subtle color shifts suggesting depth</li>
-                                <li><strong>Lighting Consistency:</strong> Unified light source across all tiles</li>
-                                <li><strong>Material Suggestion:</strong> Texture patterns that imply different materials</li>
-                                <li><strong>Seasonal Storytelling:</strong> Elements that suggest time of year or weather</li>
-                                <li><strong>Subtle Animation Preparation:</strong> Design elements that could be animated later</li>
-                            </ul>
-
-                            <div class="tip-box">
-                                <p><strong>💡 Professional Insight:</strong> Great environmental art enhances gameplay without distracting from it. Your tileset should create a strong sense of place while remaining visually comfortable for extended play.</p>
-                            </div>
-
-                            <h4>Cultural Sensitivity Excellence:</h4>
-                            <ul>
-                                <li>Have I researched any cultural elements I'm incorporating?</li>
-                                <li>Do my environmental choices avoid harmful stereotypes?</li>
-                                <li>Would this environment feel welcoming to players from diverse backgrounds?</li>
-                                <li>Am I representing nature and human impact respectfully?</li>
-                                <li>Have I considered consulting with relevant communities if needed?</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Portfolio Quality Standard:</strong> This environmental art should be professional enough to include in a portfolio. Every tile should contribute to a cohesive, immersive game world.</p>
-                            </div>
-                        </div>
-                        
-                        <div id="week4-challenge-canvas"></div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 32,
-                    colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887', '#87CEEB', '#FFE4B5', '#CD853F', '#F0E68C'],
-                    showPreview: false
-                }
-            },
-            assessment: {
-                title: "Assessment",
-                content: `
-                    <h2>Week 4 Comprehensive Assessment</h2>
-                    
-                    <p>Evaluate your environmental art and tilemap mastery through this comprehensive assessment!</p>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 1: What is the most critical requirement for a seamless tile?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Using as many colors as possible</div>
-                            <div class="quiz-option" data-correct="true">Perfect edge alignment so tiles connect without visible seams</div>
-                            <div class="quiz-option" data-correct="false">Including complex details in every tile</div>
-                            <div class="quiz-option" data-correct="false">Making the tile perfectly symmetrical</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Seamless tiles must have perfect edge alignment - the pixels on adjacent edges must match exactly so that when tiles are placed next to each other, no seams are visible.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 2: What is "environmental storytelling" in game design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Adding text descriptions to every environmental element</div>
-                            <div class="quiz-option" data-correct="true">Using visual environmental details to convey story and history without words</div>
-                            <div class="quiz-option" data-correct="false">Making environments that change based on story progression</div>
-                            <div class="quiz-option" data-correct="false">Creating environments that talk to the player</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Environmental storytelling uses visual details like wear patterns, tool marks, natural growth, and architectural styles to tell stories about the game world's history and inhabitants without explicit narration.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 3: Why is the 3×3 live preview system useful for tile design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">It makes tiles look more colorful</div>
-                            <div class="quiz-option" data-correct="true">It shows how tiles repeat and helps identify seaming problems immediately</div>
-                            <div class="quiz-option" data-correct="false">It automatically fixes edge alignment issues</div>
-                            <div class="quiz-option" data-correct="false">It adds more detail to the tiles</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> The 3×3 preview shows how your tile looks when repeated, making it easy to spot edge alignment problems, obvious repetition patterns, and visual flow issues in real-time.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 4: When creating tile variations, what is most important to maintain?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Exactly identical colors across all tiles</div>
-                            <div class="quiz-option" data-correct="true">Visual consistency so all tiles feel like they belong in the same world</div>
-                            <div class="quiz-option" data-correct="false">Identical details in every tile</div>
-                            <div class="quiz-option" data-correct="false">Perfect symmetry in all variations</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Visual consistency in lighting, color temperature, artistic style, and overall mood ensures that all tile variations feel cohesive and belong in the same game world.</p>
-                        </div>
-                    </div>
-
-                    <div class="quiz-question">
-                        <h4>Question 5: What should be the primary consideration when incorporating cultural elements into environmental design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Making them as prominent as possible</div>
-                            <div class="quiz-option" data-correct="true">Ensuring respectful, researched representation that avoids stereotypes</div>
-                            <div class="quiz-option" data-correct="false">Using as many different cultural elements as possible</div>
-                            <div class="quiz-option" data-correct="false">Making them blend in completely</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Cultural elements require respectful research and representation. Avoid stereotypes, understand the significance of what you're including, and consider consulting with relevant cultural communities.</p>
-                        </div>
-                    </div>
-
-                    <div class="quiz-question">
-                        <h4>Question 6: How should environmental art relate to character design in a game?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Environment should be more detailed than characters</div>
-                            <div class="quiz-option" data-correct="true">Environment should support and complement characters without competing for attention</div>
-                            <div class="quiz-option" data-correct="false">Environment should use completely different colors than characters</div>
-                            <div class="quiz-option" data-correct="false">Environment should be designed completely independently</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Environmental art should create a harmonious backdrop that supports characters. It should complement character colors, maintain consistent artistic style, and provide appropriate contrast without overwhelming the characters.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-box mt-2">
-                        <h3>Practical Assessment Requirements</h3>
-                        <p>To demonstrate mastery of Week 4 concepts, ensure you have completed:</p>
-                        <ul>
-                            <li>✓ <strong>Seamless Tile Creation:</strong> Perfect edge alignment with no visible seams</li>
-                            <li>✓ <strong>Pattern Mathematics:</strong> Understanding of tile edge relationships</li>
-                            <li>✓ <strong>Tile Variations:</strong> Cohesive family of related environmental elements</li>
-                            <li>✓ <strong>Live Preview Usage:</strong> Effective use of 3×3 preview system</li>
-                            <li>✓ <strong>Environmental Storytelling:</strong> Tiles that suggest history and atmosphere</li>
-                            <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive environmental design</li>
-                        </ul>
-                        
-                        <div class="tip-box">
-                            <h4>Self-Assessment Questions:</h4>
-                            <ul>
-                                <li>Can you create tiles that connect seamlessly without visible edges?</li>
-                                <li>Do your environmental choices tell a story about the game world?</li>
-                                <li>Are your tile variations cohesive while providing visual interest?</li>
-                                <li>Have you considered cultural sensitivity in your environmental design?</li>
-                                <li>Do your environments work harmoniously with your character designs?</li>
-                            </ul>
-                        </div>
-                        
-                        <p><strong>Ready for Week 5?</strong> You should feel confident creating professional environmental art and be excited to bring everything to life through animation!</p>
-                    </div>
-
-                    <div class="info-box mt-2">
-                        <h3>🌍 Congratulations on Environmental Art Mastery!</h3>
-                        <p>You've developed sophisticated environmental design skills that balance technical precision with artistic storytelling. The ability to create immersive, culturally sensitive game worlds is a valuable professional skill.</p>
-                        
-                        <p><strong>What You've Achieved:</strong></p>
-                        <ul>
-                            <li>Mastered seamless tile creation with perfect edge alignment</li>
-                            <li>Learned environmental storytelling through visual details</li>
-                            <li>Developed cultural sensitivity in world-building</li>
-                            <li>Created cohesive tile families with professional consistency</li>
-                            <li>Integrated environmental art with character design</li>
-                        </ul>
-                        
-                        <p><strong>Next Week Preview:</strong> We'll bring everything to life through animation - making your characters move and your environments dynamic!</p>
-                    </div>
-                `
-            }
-        }
-    },
-
-    week5: {
         title: "Pixel Art Animation",
         tabs: {
             overview: {
                 title: "Overview",
                 content: `
-                    <h2>Week 5: Pixel Art Animation</h2>
+                    <h2>Week 4: Pixel Art Animation</h2>
                     
                     <div class="info-box">
                         <h3>Learning Objectives</h3>
@@ -2509,7 +1852,424 @@ const courseContent = {
                             </div>
                         </div>
                         
+                        <div id="week4-practice1-canvas"></div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 16,
+                    colors: ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C', '#000000', '#FFFFFF'],
+                    fps: 8
+                }
+            },
+            practice2: {
+                title: "Practice 2: Character Animation",
+                content: `
+                    <h2>Practice 2: Character Idle Animation</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Exercise: Create Character Breathing Animation</h3>
+                            <p>Bring your character designs to life with subtle idle animation that shows personality and life.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🔍 Reference Study First:</h4>
+                                <p><strong>Before starting, find good reference animations:</strong> Search for "pixel art idle animations", "character breathing animation", or "2D game idle cycles" on sites like Pinterest, ArtStation, or game development forums. Study how professional artists handle subtle movement, timing, and secondary animation.</p>
+                            </div>
+                            
+                            <h4>Animation Objectives:</h4>
+                            <ol>
+                                <li><strong>Subtle Movement:</strong> Gentle breathing or swaying motion</li>
+                                <li><strong>Personality:</strong> Animation reflects character archetype</li>
+                                <li><strong>Loop Seamlessly:</strong> Animation cycles smoothly</li>
+                                <li><strong>Secondary Animation:</strong> Hair, clothing, or accessories move naturally</li>
+                            </ol>
+                            
+                            <h4>Character Animation Types:</h4>
+                            <div class="info-box">
+                                <h5>Choose Your Animation Style:</h5>
+                                <ul>
+                                    <li><strong>🛡️ Knight:</strong> Steady breathing, armor slightly shifting</li>
+                                    <li><strong>🧙 Wizard:</strong> Robes flowing, staff glowing rhythmically</li>
+                                    <li><strong>🏃 Rogue:</strong> Alert stance, hood moving with quick breathing</li>
+                                    <li><strong>⚔️ Fighter:</strong> Confident pose, cape or hair flowing</li>
+                                </ul>
+                            </div>
+
+                            <h4>Technical Approach:</h4>
+                            <ul>
+                                <li><strong>4-6 Frame Loop:</strong> Keep it simple but effective</li>
+                                <li><strong>Chest Movement:</strong> Slight expansion/contraction for breathing</li>
+                                <li><strong>Eye Blinks:</strong> Occasional blink adds life (every 8-12 frames)</li>
+                                <li><strong>Secondary Elements:</strong> Hair, clothing, accessories follow main motion</li>
+                            </ul>
+
+                            <div class="tip-box">
+                                <p><strong>Animation Principle:</strong> Idle animations should be subtle enough not to distract during gameplay, but present enough to make characters feel alive.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="week4-practice2-canvas"></div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 32,
+                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C'],
+                    fps: 6
+                }
+            },
+            challenge: {
+                title: "Challenge: Walk Cycle",
+                content: `
+                    <h2>Challenge: Create a Character Walk Cycle</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Master Challenge: Professional Walk Cycle Animation</h3>
+                            <p>Create a complete walk cycle that demonstrates professional animation skills and character personality.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🎯 Essential Reference Research:</h4>
+                                <p><strong>Professional animators always use reference:</strong> Before drawing a single frame, study real walking videos, classic animation walk cycles (Disney, Studio Ghibli), and pixel art walk cycles from successful games. Search for "walk cycle reference", "animation walk cycle breakdown", or "pixel art character walk" to find quality examples.</p>
+                                <p><strong>Recommended Study:</strong> Richard Williams' "The Animator's Survival Kit" walk cycle examples, classic game sprites (Street Fighter, King of Fighters), and modern indie pixel art games.</p>
+                            </div>
+                            
+                            <h4>Walk Cycle Requirements:</h4>
+                            <ol>
+                                <li><strong>8-Frame Cycle:</strong> Complete walk cycle that loops seamlessly</li>
+                                <li><strong>Character Personality:</strong> Walk style matches character archetype</li>
+                                <li><strong>Proper Timing:</strong> Natural rhythm and weight distribution</li>
+                                <li><strong>Secondary Animation:</strong> Hair, clothing, equipment moves naturally</li>
+                                <li><strong>Professional Quality:</strong> Portfolio-ready animation</li>
+                            </ol>
+                            
+                            <h4>Walk Cycle Breakdown:</h4>
+                            <div class="info-box">
+                                <h5>8-Frame Walk Cycle Structure:</h5>
+                                <ul>
+                                    <li><strong>Frame 1:</strong> Contact - left foot down, right leg forward</li>
+                                    <li><strong>Frame 2:</strong> Recoil - body compresses, weight shifts</li>
+                                    <li><strong>Frame 3:</strong> Passing - right leg passes left, body rises</li>
+                                    <li><strong>Frame 4:</strong> High Point - body at highest position</li>
+                                    <li><strong>Frame 5:</strong> Contact - right foot down, left leg forward</li>
+                                    <li><strong>Frame 6:</strong> Recoil - body compresses, weight shifts</li>
+                                    <li><strong>Frame 7:</strong> Passing - left leg passes right, body rises</li>
+                                    <li><strong>Frame 8:</strong> High Point - body at highest, returns to frame 1</li>
+                                </ul>
+                            </div>
+
+                            <h4>Personality Through Animation:</h4>
+                            <ul>
+                                <li><strong>Confident Character:</strong> Upright posture, steady rhythm, purposeful stride</li>
+                                <li><strong>Sneaky Character:</strong> Low crouch, uneven timing, cautious steps</li>
+                                <li><strong>Heavy Character:</strong> Strong impacts, delayed secondary motion, wide stance</li>
+                                <li><strong>Graceful Character:</strong> Smooth arcs, minimal vertical movement, flowing secondary</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>Portfolio Standard:</strong> This walk cycle should be professional quality - smooth, characterful, and technically excellent. Take time to polish every frame.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="week4-challenge-canvas"></div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 32,
+                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C', '#E67E22', '#95A5A6'],
+                    fps: 8
+                }
+            },
+            assessment: {
+                title: "Assessment",
+                content: `
+                    <h2>Week 4 Animation Assessment</h2>
+                    
+                    <p>Test your animation knowledge and demonstrate your practical skills!</p>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 1: What is the most important principle for creating believable character animation?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Using as many frames as possible</div>
+                            <div class="quiz-option" data-correct="true">Showing proper weight and timing through movement</div>
+                            <div class="quiz-option" data-correct="false">Making every frame perfectly smooth</div>
+                            <div class="quiz-option" data-correct="false">Adding lots of secondary animation details</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Weight and timing are fundamental to believable animation. Characters must feel like they have mass and move with natural rhythm, regardless of frame count.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 2: What does "onion skinning" help achieve in animation?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Adding more colors to the animation</div>
+                            <div class="quiz-option" data-correct="true">Seeing previous and next frames to maintain consistency and smooth motion</div>
+                            <div class="quiz-option" data-correct="false">Making the animation faster to create</div>
+                            <div class="quiz-option" data-correct="false">Automatically generating in-between frames</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Onion skinning shows transparent versions of adjacent frames, helping animators maintain consistent positioning and create smooth motion paths.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 3: In a walk cycle, what creates the sense of weight and impact?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Making the character move faster</div>
+                            <div class="quiz-option" data-correct="true">Body compression on foot contact and rising between steps</div>
+                            <div class="quiz-option" data-correct="false">Adding more frames to the animation</div>
+                            <div class="quiz-option" data-correct="false">Making the character jump instead of walk</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> The vertical movement of the body - compressing on impact and rising between steps - is what creates the sense of weight and natural walking rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 4: What is "secondary animation" in character design?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">The character's second most important movement</div>
+                            <div class="quiz-option" data-correct="true">Elements like hair, clothing, or accessories that follow the main character motion</div>
+                            <div class="quiz-option" data-correct="false">Animation that happens in the background</div>
+                            <div class="quiz-option" data-correct="false">Animation created by a different artist</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Secondary animation refers to elements that react to the primary motion - like hair bouncing when a character jumps, or a cape flowing when they turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>Question 5: Why do pixel art animations often use lower frame rates (8-12 FPS)?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Because it's easier to animate</div>
+                            <div class="quiz-option" data-correct="true">It creates a distinctive aesthetic and reduces workload while maintaining visual appeal</div>
+                            <div class="quiz-option" data-correct="false">Because old computers couldn't handle higher frame rates</div>
+                            <div class="quiz-option" data-correct="false">Because pixel art looks bad at high frame rates</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Lower frame rates are an aesthetic choice that creates the distinctive "pixel art" feel while being practical for production. Each frame is held longer, creating a unique visual rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box mt-2">
+                        <h3>Practical Assessment Requirements</h3>
+                        <p>To demonstrate mastery of Week 4 animation concepts, ensure you have completed:</p>
+                        <ul>
+                            <li>✓ <strong>Bouncing Ball:</strong> Shows proper timing, arcs, and squash/stretch</li>
+                            <li>✓ <strong>Character Idle:</strong> Subtle animation that adds personality</li>
+                            <li>✓ <strong>Walk Cycle:</strong> Professional 8-frame cycle with character personality</li>
+                            <li>✓ <strong>Onion Skinning Usage:</strong> Effective use of animation tools</li>
+                            <li>✓ <strong>Secondary Animation:</strong> Natural movement of hair, clothing, accessories</li>
+                        </ul>
+                        
+                        <div class="tip-box">
+                            <h4>Self-Assessment Questions:</h4>
+                            <ul>
+                                <li>Do your animations show proper weight and timing?</li>
+                                <li>Does character movement reflect their personality?</li>
+                                <li>Are your animation loops seamless and natural?</li>
+                                <li>Have you mastered the onion skinning workflow?</li>
+                                <li>Do secondary elements move believably?</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Ready for Week 5?</strong> You should feel confident creating professional character animations and be excited to explore environmental art and world building!</p>
+                    </div>
+
+                    <div class="info-box mt-2">
+                        <h3>🎬 Congratulations on Animation Mastery!</h3>
+                        <p>You've developed professional animation skills that bring pixel art to life with personality and technical excellence. Character animation is one of the most valued skills in game development.</p>
+                        
+                        <p><strong>What You've Achieved:</strong></p>
+                        <ul>
+                            <li>Mastered fundamental animation principles in pixel art constraints</li>
+                            <li>Created believable character movement with personality</li>
+                            <li>Developed professional animation workflows and tool usage</li>
+                            <li>Built a portfolio of character animations ready for game integration</li>
+                            <li>Understood timing, weight, and secondary animation principles</li>
+                        </ul>
+                        
+                        <p><strong>Next Week Preview:</strong> We'll explore environmental design and tilemap creation - building the worlds where your animated characters will live and adventure!</p>
+                    </div>
+                `
+            }
+        }
+    },
+
+    week5: {
+        title: "Environment Art and Tilemaps",
+        tabs: {
+            overview: {
+                title: "Overview",
+                content: `
+                    <h2>Week 5: Environment Art and Tilemaps</h2>
+                    
+                    <div class="info-box">
+                        <h3>Learning Objectives</h3>
+                        <ul>
+                            <li>Master seamless tile creation and pattern design</li>
+                            <li>Create cohesive environmental art families</li>
+                            <li>Apply cultural sensitivity to world building</li>
+                            <li>Design environments that support character gameplay</li>
+                            <li>Develop professional environmental art workflows</li>
+                        </ul>
+                    </div>
+
+                    <p>Build immersive game worlds! This week, you'll learn how to create seamless environmental tiles and cohesive worlds that tell stories through visual design and support engaging gameplay.</p>
+
+                    <h3>What You'll Master This Week</h3>
+                    <ul>
+                        <li><strong>Practice 1:</strong> Seamless grass tiles - mastering edge mathematics and tiling</li>
+                        <li><strong>Practice 2:</strong> Environmental diversity - creating cohesive tile families</li>
+                        <li><strong>Challenge:</strong> Complete environmental tileset with professional quality</li>
+                        <li><strong>Assessment:</strong> Environmental design knowledge and practical mastery</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <p><strong>💡 Environmental Tip:</strong> Great environmental design is invisible to players - it feels so natural that they don't consciously notice it, but strongly influences their experience!</p>
+                    </div>
+
+                    <h3>Professional Environmental Workflow</h3>
+                    <p>You'll learn industry-standard techniques for creating immersive, culturally sensitive game worlds that enhance gameplay and support narrative through visual storytelling.</p>
+                `
+            },
+            concepts: {
+                title: "Concepts",
+                content: `
+                    <h2>Environmental Design Fundamentals</h2>
+                    
+                    <h3>Understanding Seamless Tiles</h3>
+                    <p>Seamless tiles are the foundation of efficient game world construction. A properly designed tile connects perfectly with copies of itself and other tiles in the set.</p>
+                    
+                    <div class="info-box">
+                        <p><strong>Seamless Tile Principles:</strong></p>
+                        <ul>
+                            <li><strong>Edge Continuity:</strong> Left edge pixels must match right edge pixels</li>
+                            <li><strong>Corner Precision:</strong> All four corners must align perfectly</li>
+                            <li><strong>Pattern Flow:</strong> Visual elements should create natural-looking repetition</li>
+                            <li><strong>Variation Balance:</strong> Enough variety to avoid obvious repetition</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/examples/seamless-grass-tile.svg" alt="Example of seamless grass tile showing original tile next to identical copy with matching edges" class="pixel-example" style="width: 400px; height: auto;"/>
+                        <p class="example-caption">Example: Seamless grass tile demonstrating perfect edge alignment</p>
+                    </div>
+
+                    <h3>Types of Environmental Elements</h3>
+                    <p>Different environmental elements serve different purposes:</p>
+                    <ul>
+                        <li><strong>Ground Tiles:</strong> Walkable surfaces that define player movement areas</li>
+                        <li><strong>Wall Tiles:</strong> Barriers that block movement and define space boundaries</li>
+                        <li><strong>Decoration Tiles:</strong> Non-functional elements that add visual interest</li>
+                        <li><strong>Transition Tiles:</strong> Elements that blend different environmental zones</li>
+                        <li><strong>Interactive Elements:</strong> Environmental objects players can engage with</li>
+                    </ul>
+
+                    <h3>Environmental Storytelling</h3>
+                    <p>Game environments tell stories without words:</p>
+                    
+                    <div class="tip-box">
+                        <h4>Storytelling Through Environment:</h4>
+                        <ul>
+                            <li><strong>Wear and Age:</strong> Cracks, moss, and damage suggest history</li>
+                            <li><strong>Human Presence:</strong> Tools, furniture, and paths show habitation</li>
+                            <li><strong>Natural Forces:</strong> Weather effects, erosion, and growth patterns</li>
+                            <li><strong>Cultural Elements:</strong> Architecture and decoration reveal civilizations</li>
+                            <li><strong>Emotional Atmosphere:</strong> Light, color, and composition affect mood</li>
+                        </ul>
+                    </div>
+
+                    <h3>Cultural Considerations in Environmental Design</h3>
+                    <p>Creating inclusive and respectful environmental art:</p>
+                    
+                    <div class="warning-box">
+                        <h4>Cultural Sensitivity Guidelines:</h4>
+                        <ul>
+                            <li><strong>Research Respectfully:</strong> Understand cultural significance before using elements</li>
+                            <li><strong>Avoid Sacred Imagery:</strong> Don't casually use religious or sacred symbols</li>
+                            <li><strong>Generic Fantasy:</strong> Create original cultures rather than copying existing ones</li>
+                            <li><strong>Universal Elements:</strong> Focus on natural environments and universal human experiences</li>
+                            <li><strong>Community Consultation:</strong> Seek feedback from relevant cultural communities</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-box">
+                        <p><strong>Professional Insight:</strong> Great environmental design is invisible to players - it feels so natural and appropriate that they don't consciously notice it, but it strongly influences their emotional experience and immersion in the game world.</p>
+                    </div>
+                `
+            },
+            practice1: {
+                title: "Practice 1: Bouncing Ball",
+                content: `
+                    <h2>Practice 1: Master Animation Fundamentals</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Exercise: Create a Bouncing Ball Animation</h3>
+                            <p>Master the foundational principles of timing, arcs, and squash/stretch through the classic bouncing ball exercise.</p>
+                            
+                            <div class="info-box">
+                                <h4>Animation Canvas Controls:</h4>
+                                <ul>
+                                    <li><strong>Add Frames:</strong> Click the + button to add new animation frames</li>
+                                    <li><strong>Delete Frames:</strong> Select a frame and use the delete button to remove it</li>
+                                    <li><strong>Play Animation:</strong> Use the play button to preview your animation loop</li>
+                                    <li><strong>Onion Skinning:</strong> Toggle to see previous/next frames as transparent guides</li>
+                                    <li><strong>Frame Navigation:</strong> Click frame thumbnails to jump between frames</li>
+                                </ul>
+                            </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/ball-animation-frames.svg" alt="Five frames showing bouncing ball animation with squash and stretch" class="pixel-example" style="width: 320px; height: auto;"/>
+                                <p class="example-caption">Example: 5-frame bouncing ball showing arc motion, squash, and stretch</p>
+                            </div>
+                            
+                            <h4>Animation Goals:</h4>
+                            <ol>
+                                <li><strong>Timing:</strong> Create 8-12 frame loop showing ball bouncing</li>
+                                <li><strong>Arc Motion:</strong> Natural curved path, not straight lines</li>
+                                <li><strong>Squash/Stretch:</strong> Ball deforms on impact and stretch in air</li>
+                                <li><strong>Weight:</strong> Ball shows gravity and momentum</li>
+                            </ol>
+                            
+                            <h4>Step-by-Step Process:</h4>
+                            <div class="tip-box">
+                                <h5>Frame Planning:</h5>
+                                <ul>
+                                    <li><strong>Frame 1-2:</strong> Ball at highest point (left)</li>
+                                    <li><strong>Frame 3-4:</strong> Ball falling, gaining speed</li>
+                                    <li><strong>Frame 5:</strong> Ball compressed on ground impact</li>
+                                    <li><strong>Frame 6-7:</strong> Ball rising, losing speed</li>
+                                    <li><strong>Frame 8:</strong> Ball at highest point (right)</li>
+                                </ul>
+                            </div>
+
+                            <h4>Technical Tips:</h4>
+                            <ul>
+                                <li><strong>Use Onion Skinning:</strong> This essential feature shows previous and next frames as transparent overlays, helping you maintain consistent motion paths and spacing between frames</li>
+                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear - use onion skinning to ensure smooth arcs</li>
+                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak - adjust frame spacing accordingly</li>
+                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast - exaggerate for better animation appeal</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <p><strong>💡 Onion Skinning Pro Tip:</strong> Keep onion skinning enabled throughout your animation work. It prevents common mistakes like inconsistent ball size, broken motion paths, or uneven spacing between frames.</p>
+                            </div>
+
+                            <div class="warning-box">
+                                <p><strong>Common Mistakes:</strong> Avoid linear motion, uniform timing, or forgetting squash/stretch. Every frame should show the ball's weight and momentum.</p>
+                            </div>
+                        </div>
+                        
                         <div id="week5-practice1-canvas"></div>
+                        <div class="tile-preview">
+                            <h4>Live Tiling Preview (3×3)</h4>
+                            <div id="week5-practice1-preview"></div>
+                        </div>
                     </div>
                 `,
                 canvas: {
@@ -2567,6 +2327,10 @@ const courseContent = {
                         </div>
                         
                         <div id="week5-practice2-canvas"></div>
+                        <div class="tile-preview">
+                            <h4>Live Tiling Preview (3×3)</h4>
+                            <div id="week5-practice2-preview"></div>
+                        </div>
                     </div>
                 `,
                 canvas: {
@@ -2642,9 +2406,9 @@ const courseContent = {
             assessment: {
                 title: "Assessment",
                 content: `
-                    <h2>Week 5 Animation Assessment</h2>
+                    <h2>Week 5 Comprehensive Assessment</h2>
                     
-                    <p>Test your animation knowledge and demonstrate your practical skills!</p>
+                    <p>Evaluate your environmental art and tilemap mastery through this comprehensive assessment!</p>
                     
                     <div class="quiz-question">
                         <h4>Question 1: What is the most important principle for creating believable character animation?</h4>
