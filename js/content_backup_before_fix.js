@@ -66,6 +66,20 @@ const courseContent = {
                     </ul>
 
                     <p>As technology advanced, pixel art evolved from a technical limitation to an artistic choice. Modern games like <em>Celeste</em>, <em>Stardew Valley</em>, and <em>Hyper Light Drifter</em> prove that pixel art remains a powerful and popular aesthetic, chosen for its clarity, charm, and nostalgic appeal.</p>
+                    
+                    <div class="example-showcase">
+                        <h4>Modern Pixel Art Excellence: Celeste</h4>
+                        <div class="info-box">
+                            <p><strong>Study Example:</strong> <em>Celeste's</em> main character Madeline demonstrates excellent modern pixel art principles:</p>
+                            <ul>
+                                <li><strong>Clear silhouette:</strong> Instantly recognizable character shape</li>
+                                <li><strong>Limited palette:</strong> Strategic use of just a few colors for maximum impact</li>
+                                <li><strong>Expressive animation:</strong> Personality conveyed through pixel-perfect movement</li>
+                                <li><strong>Technical excellence:</strong> Clean edges, consistent style, readable at small sizes</li>
+                            </ul>
+                            <p><em>View official Celeste sprites at <a href="https://www.spriters-resource.com/pc_computer/celeste/" target="_blank" rel="noopener">The Spriters Resource</a> to see these principles in action.</em></p>
+                        </div>
+                    </div>
 
                     <h3>Understanding the Pixel Grid</h3>
                     <p>The foundation of all pixel art is the grid. Understanding grid relationships is crucial for creating clean, precise artwork:</p>
@@ -137,11 +151,94 @@ const courseContent = {
                             
                             <h4>Your Progressive Tasks:</h4>
                             <ol>
-                                <li><strong>Single Pixels:</strong> Click on the grid to place individual pixels</li>
-                                <li><strong>Pattern Creation:</strong> Create a simple checkerboard pattern</li>
-                                <li><strong>Letter Formation:</strong> Try writing your initials using pixels</li>
-                                <li><strong>Simple Faces:</strong> Make a basic emoji face (eyes, nose, mouth)</li>
-                                <li><strong>Geometric Patterns:</strong> Create repeating patterns or borders</li>
+                                <li>
+                                    <strong>Single Pixels (1-2 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Click anywhere on the grid to place your first pixel</li>
+                                                <li>Try clicking different colors from the palette below</li>
+                                                <li>Use the eraser tool to remove pixels you don't want</li>
+                                                <li><em>Success goal: Place and remove at least 5 different colored pixels</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/single-pixels.svg" alt="Example of randomly placed colored pixels" class="pixel-example"/>
+                                            <p class="example-caption">Example: Different colored pixels placed on the grid</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Checkerboard Pattern (3-4 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Start with a black pixel in the top-left corner</li>
+                                                <li>Place a white pixel next to it</li>
+                                                <li>Continue alternating black and white across the row</li>
+                                                <li>On the next row, start with white where you had black above</li>
+                                                <li><em>Success goal: Create at least a 4×4 checkerboard pattern</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/checkerboard.svg" alt="Example of a 4x4 checkerboard pattern" class="pixel-example"/>
+                                            <p class="example-caption">Example: 4×4 checkerboard pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Letter Formation (5-7 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Choose one of your initials to start with</li>
+                                                <li>Plan the letter mentally before placing pixels</li>
+                                                <li>Use black pixels on the white background</li>
+                                                <li>Make letters at least 5 pixels tall for readability</li>
+                                                <li><em>Success goal: Create a clearly recognizable letter</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/letter-A.svg" alt="Example of pixel letter A" class="pixel-example"/>
+                                            <p class="example-caption">Example: Letter "A" made with pixels</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Simple Smiley Face (6-8 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Start with two black pixels for eyes, spaced 2-3 pixels apart</li>
+                                                <li>Add a single pixel below and between them for a nose (optional)</li>
+                                                <li>Create a curved smile using 3-5 pixels in an arc shape</li>
+                                                <li>Try different expressions: sad face, surprised face, winking</li>
+                                                <li><em>Success goal: Make a face that clearly conveys an emotion</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/smiley-face.svg" alt="Example of a simple smiley face" class="pixel-example"/>
+                                            <p class="example-caption">Example: Simple smiley face with eyes and curved smile</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Border Pattern (4-5 minutes):</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            <ul>
+                                                <li>Create a border around the edge of your canvas</li>
+                                                <li>Try different patterns: solid line, dashed line, alternating colors</li>
+                                                <li>Experiment with corner designs where lines meet</li>
+                                                <li><em>Success goal: Complete border that looks intentionally designed</em></li>
+                                            </ul>
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/border-pattern.svg" alt="Example of a border pattern with decorative elements" class="pixel-example"/>
+                                            <p class="example-caption">Example: Border with decorative interior pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
                             </ol>
                             
                             <div class="tip-box">
@@ -157,11 +254,24 @@ const courseContent = {
                                 <li><strong>Symmetry:</strong> Balanced pixel placement creates pleasing compositions</li>
                             </ul>
 
-                            <h4>Troubleshooting Common Issues</h4>
+                            <h4>Beginner Tips & Shortcuts</h4>
                             <ul>
-                                <li><strong>Accidental clicks:</strong> Use the eraser tool to remove unwanted pixels</li>
-                                <li><strong>Imprecise placement:</strong> Ensure you're clicking in the center of grid squares</li>
-                                <li><strong>Unclear patterns:</strong> Step back and look at the overall shape</li>
+                                <li><strong>Accidental clicks:</strong> Use the eraser tool or right-click to remove unwanted pixels</li>
+                                <li><strong>Imprecise placement:</strong> Ensure you're clicking in the center of grid squares - watch for the cursor to change</li>
+                                <li><strong>Color switching:</strong> Click directly on colors in the palette, or use number keys 1-8 for quick color selection</li>
+                                <li><strong>Zoom in/out:</strong> Use the mouse wheel or trackpad to get closer for detail work</li>
+                                <li><strong>Grid visibility:</strong> Toggle the grid on/off if it becomes distracting</li>
+                                <li><strong>Undo mistakes:</strong> Press Ctrl+Z (Cmd+Z on Mac) to undo your last action</li>
+                                <li><strong>Planning ahead:</strong> Lightly sketch your design mentally before committing pixels</li>
+                            </ul>
+                            
+                            <h4>Common Beginner Mistakes to Avoid</h4>
+                            <ul>
+                                <li><strong>Rushing:</strong> Take your time with pixel placement - precision matters more than speed</li>
+                                <li><strong>Too many colors:</strong> Start with just 2-3 colors for cleaner results</li>
+                                <li><strong>Ignoring symmetry:</strong> For faces and patterns, try to keep elements balanced</li>
+                                <li><strong>Not using the full canvas:</strong> Don't be afraid to use the entire grid space available</li>
+                                <li><strong>Perfectionism:</strong> Your first attempts won't be perfect - focus on learning and experimenting</li>
                             </ul>
 
                             <div class="info-box">
@@ -196,10 +306,32 @@ const courseContent = {
                             
                             <h4>Progressive Shape Challenges:</h4>
                             <ol>
-                                <li><strong>Perfect Square:</strong> Create a filled 4×4 pixel square</li>
-                                <li><strong>Circle Approximation:</strong> Create the best possible circle in a 7×7 area</li>
-                                <li><strong>Triangle Variations:</strong> Draw triangles with different angles and orientations</li>
-                                <li><strong>Five-Pointed Star:</strong> Create a recognizable star shape</li>
+                                <li><strong>Perfect Square:</strong> Create a filled 4×4 pixel square - focus on clean edges and consistent fill</li>
+                                <li>
+                                    <strong>Circle Approximation:</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            Create the best possible circle in a 7×7 area using the 3-2-2-2-2-2-3 pixel pattern (outline style)
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/circle-7x7.svg" alt="7x7 circle with correct circular pattern" class="pixel-example"/>
+                                            <p class="example-caption">7×7 circle pattern</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>Triangle Variations:</strong>
+                                    <div class="task-with-example">
+                                        <div class="task-instructions">
+                                            Draw triangles with different angles and orientations - start with a basic isosceles triangle
+                                        </div>
+                                        <div class="task-example">
+                                            <img src="images/examples/triangle.svg" alt="Example of a pixel art triangle" class="pixel-example"/>
+                                            <p class="example-caption">Basic triangle shape</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><strong>Five-Pointed Star:</strong> Create a recognizable star shape - start from the center and work outward to the five points. <a href="https://uk.pinterest.com/ideas/pixel-art-star-5x5/897535927612/" target="_blank" rel="noopener">See examples here</a>.</li>
                                 <li><strong>Diamond Shape:</strong> Rotate a square to create a diamond</li>
                                 <li><strong>Arrow Shapes:</strong> Create directional arrows pointing different ways</li>
                             </ol>
@@ -211,20 +343,28 @@ const courseContent = {
                             <h4>Circle Creation Techniques:</h4>
                             <p>Creating circles in pixel art requires specific patterns:</p>
                             <ul>
-                                <li><strong>Small circles (7×7):</strong> Use a 1-2-3-3-3-2-1 pixel pattern</li>
+                                <li><strong>Small circles (7×7):</strong> Use a 3-2-2-2-2-2-3 pixel pattern for outline circles</li>
                                 <li><strong>Medium circles (9×9):</strong> Use a 1-3-4-5-5-5-4-3-1 pixel pattern</li>
                                 <li><strong>Symmetry:</strong> Keep patterns symmetric on both axes</li>
                                 <li><strong>Smoothness:</strong> Avoid single-pixel protrusions that break the curve</li>
                             </ul>
 
                             <h4>Diagonal Line Guidelines:</h4>
-                            <p>Creating clean diagonals requires consistent stepping:</p>
-                            <ul>
-                                <li><strong>45-degree lines:</strong> Perfect 1-1-1-1 stepping pattern</li>
-                                <li><strong>Shallow angles:</strong> 2-1-2-1-2-1 stepping pattern</li>
-                                <li><strong>Steep angles:</strong> 1-2-1-2-1-2 stepping pattern</li>
-                                <li><strong>Consistency:</strong> Maintain the same pattern throughout the line</li>
-                            </ul>
+                            <div class="task-with-example">
+                                <div class="task-instructions">
+                                    <p>Creating clean diagonals requires consistent stepping:</p>
+                                    <ul>
+                                        <li><strong>45-degree lines:</strong> Perfect 1-1-1-1 stepping pattern</li>
+                                        <li><strong>Shallow angles:</strong> 2-1-2-1-2-1 stepping pattern</li>
+                                        <li><strong>Steep angles:</strong> 1-2-1-2-1-2 stepping pattern</li>
+                                        <li><strong>Consistency:</strong> Maintain the same pattern throughout the line</li>
+                                    </ul>
+                                </div>
+                                <div class="task-example">
+                                    <img src="images/examples/diagonal-lines.svg" alt="Examples of different diagonal line stepping patterns" class="pixel-example"/>
+                                    <p class="example-caption">Diagonal stepping patterns</p>
+                                </div>
+                            </div>
 
                             <h4>Professional Tips:</h4>
                             <ul>
@@ -550,25 +690,52 @@ const courseContent = {
                             <li><strong>Midtones:</strong> Use the base hue with adjusted saturation</li>
                         </ul>
                     </div>
+                    
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <p><strong>Visual Comparison:</strong> The difference between amateur and professional shading techniques is dramatic. Notice how hue shifting creates more natural, vibrant results.</p>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/hue-shifting.svg" alt="Comparison of gray shadows vs hue-shifted shadows" class="pixel-example-large"/>
+                            <p class="example-caption">Hue shifting makes shadows feel natural rather than muddy</p>
+                        </div>
+                    </div>
 
-                    <h3>Creating Depth with Strategic Shading</h3>
-                    <p>Pixel art typically uses 3-4 carefully chosen shades per color:</p>
-                    <ol>
-                        <li><strong>Shadow (Darkest):</strong> Cooler, less saturated version of base color</li>
-                        <li><strong>Base Color:</strong> The primary hue representing the object</li>
-                        <li><strong>Highlight:</strong> Lighter, often warmer version suggesting light source</li>
-                        <li><strong>Accent (Optional):</strong> Extreme highlight for metallic or magical effects</li>
-                    </ol>
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <h3>Creating Depth with Strategic Shading</h3>
+                            <p>Pixel art typically uses 3-4 carefully chosen shades per color:</p>
+                            <ol>
+                                <li><strong>Shadow (Darkest):</strong> Cooler, less saturated version of base color</li>
+                                <li><strong>Base Color:</strong> The primary hue representing the object</li>
+                                <li><strong>Highlight:</strong> Lighter, often warmer version suggesting light source</li>
+                                <li><strong>Accent (Optional):</strong> Extreme highlight for metallic or magical effects</li>
+                            </ol>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/strategic-shading.svg" alt="Comparison of flat vs strategic shading for depth" class="pixel-example-large"/>
+                            <p class="example-caption">Strategic shading transforms flat shapes into convincing 3D forms</p>
+                        </div>
+                    </div>
 
                     <h3>Color Harmony Principles</h3>
                     <p>Effective pixel art palettes use established color harmony principles:</p>
-                    <ul>
-                        <li><strong>Monochromatic:</strong> Variations of a single hue (safe, cohesive)</li>
-                        <li><strong>Analogous:</strong> Adjacent colors on the color wheel (natural, pleasant)</li>
-                        <li><strong>Complementary:</strong> Opposite colors on the wheel (high contrast, dynamic)</li>
-                        <li><strong>Triadic:</strong> Three evenly spaced colors (vibrant, balanced)</li>
-                        <li><strong>Split-Complementary:</strong> Base color plus colors adjacent to its complement</li>
-                    </ul>
+                    
+                    <div class="task-with-example">
+                        <div class="task-instructions">
+                            <ul>
+                                <li><strong>Monochromatic:</strong> Variations of a single hue (safe, cohesive)</li>
+                                <li><strong>Analogous:</strong> Adjacent colors on the color wheel (natural, pleasant)</li>
+                                <li><strong>Complementary:</strong> Opposite colors on the wheel (high contrast, dynamic)</li>
+                                <li><strong>Triadic:</strong> Three evenly spaced colors (vibrant, balanced)</li>
+                                <li><strong>Split-Complementary:</strong> Base color plus colors adjacent to its complement</li>
+                            </ul>
+                        </div>
+                        <div class="task-example-large">
+                            <img src="images/examples/color-harmony.svg" alt="Examples of four main color harmony types" class="pixel-example-large"/>
+                            <p class="example-caption">Each harmony type creates different emotional effects and serves different purposes</p>
+                        </div>
+                    </div>
 
                     <h3>Advanced Technique: Dithering</h3>
                     <p>Dithering uses patterns of pixels to create the illusion of intermediate colors or smooth gradients:</p>
@@ -581,6 +748,11 @@ const courseContent = {
                             <li><strong>Gradient:</strong> Progressive patterns for smooth transitions</li>
                         </ul>
                         <p><strong>⚠️ Use Sparingly:</strong> Over-dithering creates visual noise and destroys pixel art's clean aesthetic.</p>
+                    </div>
+                    
+                    <div class="task-example-large">
+                        <img src="images/examples/dithering-patterns.svg" alt="Common dithering patterns for creating gradients" class="pixel-example-large"/>
+                        <p class="example-caption">Different dithering patterns create various blending effects between two colors</p>
                     </div>
 
                     <h3>Palette Size Guidelines</h3>
@@ -625,6 +797,10 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Exploring Color Harmony</h3>
                             <p>This exercise introduces you to color relationships and helps you understand how different color combinations create different emotional effects.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Reference:</strong> <a href="https://graf1x.com/wp-content/uploads/2014/09/color-wheel-poster.jpg" target="_blank">Color Wheel Reference Chart</a> - Use this to identify color relationships while working through the exercises.</p>
+                            </div>
                             
                             <h4>Progressive Color Challenges:</h4>
                             <ol>
@@ -671,6 +847,46 @@ const courseContent = {
                             <div class="warning-box">
                                 <p><strong>Accessibility Note:</strong> Always ensure sufficient contrast between important elements. About 8% of men and 0.5% of women have some form of color vision deficiency.</p>
                             </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Create a Color Harmony Study</h4>
+                                <p><strong>Assignment:</strong> Create three small pixel art compositions that demonstrate different color harmony principles:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Compositions:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Composition 1 - Complementary Colors:</strong> Use two colors opposite on the color wheel (like red & green, blue & orange)</li>
+                                        <li><strong>Composition 2 - Analogous Colors:</strong> Use 3-4 colors that sit next to each other on the wheel (like blue, blue-green, green)</li>
+                                        <li><strong>Composition 3 - Monochromatic with Accent:</strong> Use shades of one main color plus one bright accent color</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Each composition should clearly demonstrate its color harmony type</li>
+                                        <li>Use the color wheel reference to verify your color relationships</li>
+                                        <li>Create simple geometric shapes or patterns to test your colors</li>
+                                        <li>Ensure sufficient contrast for accessibility</li>
+                                        <li>Notice and document how each color combo makes you feel</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Suggested Approach:</strong></p>
+                                    <ol>
+                                        <li>Start with simple shapes (squares, circles, triangles)</li>
+                                        <li>Test your color choices using the reference wheel</li>
+                                        <li>Create each composition in a different area of the canvas</li>
+                                        <li>Compare how the different harmonies feel emotionally</li>
+                                        <li>Adjust colors if they don't feel harmonious</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Color Tip:</strong> Don't worry about creating complex images - focus on how the colors work together. Simple shapes are perfect for understanding color relationships!</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week2-practice1-canvas"></div>
@@ -691,6 +907,10 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Creating Form Through Shading</h3>
                             <p>Learn to create the illusion of three-dimensional form using strategic color placement. This exercise builds the skills you'll need for the heart shading challenge.</p>
+                            
+                            <div class="info-box">
+                                <p><strong>Video Reference:</strong> <a href="https://www.youtube.com/watch?v=Z58hx22zUo8" target="_blank">Basic Pixel Art Shading Techniques</a> - Watch this video to see fundamental shading techniques demonstrated step by step.</p>
+                            </div>
                             
                             <h4>Progressive Shading Exercises:</h4>
                             <ol>
@@ -721,6 +941,11 @@ const courseContent = {
                                 <li><strong>Base Color:</strong> The object's natural color</li>
                                 <li><strong>Shadow:</strong> Areas receiving little or no direct light</li>
                             </ol>
+                            
+                            <div class="task-example-large">
+                                <img src="images/examples/three-shade-system.svg" alt="Examples of 3-shade system on sphere and tree" class="pixel-example-large"/>
+                                <p class="example-caption">Each object uses exactly 3 shades to create convincing form and depth</p>
+                            </div>
 
                             <h4>Hue Shifting in Practice:</h4>
                             <p>Make your shading more interesting with subtle hue shifts:</p>
@@ -742,9 +967,91 @@ const courseContent = {
                             <div class="info-box">
                                 <p><strong>Professional Insight:</strong> Good shading makes flat pixel art appear three-dimensional. Master this skill and your pixel art will immediately look more professional and appealing.</p>
                             </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Master the 3-Shade System</h4>
+                                <p><strong>Assignment:</strong> Create three simple geometric shapes demonstrating the 3-shade shading system:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Shapes:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Shape 1 - Sphere:</strong> Use curved shading to show roundness with 3 shades</li>
+                                        <li><strong>Shape 2 - Cube:</strong> Show different faces receiving different light amounts</li>
+                                        <li><strong>Shape 3 - Cylinder:</strong> Demonstrate how light wraps around a curved surface</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>3-Shade System Rules:</h5>
+                                    <ul>
+                                        <li><strong>Highlight:</strong> Lightest shade where light hits directly (avoid pure white)</li>
+                                        <li><strong>Base Color:</strong> The object's natural mid-tone color</li>
+                                        <li><strong>Shadow:</strong> Darkest shade in areas with little light (avoid pure black)</li>
+                                        <li><strong>Consistent Light Source:</strong> All shapes should have light coming from the same direction</li>
+                                        <li><strong>Smooth Transitions:</strong> Shades should flow naturally into each other</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Step-by-Step Process:</strong></p>
+                                    <ol>
+                                        <li>Choose your base color (the object's natural color)</li>
+                                        <li>Create a lighter shade for highlights (add brightness, slight warmth)</li>
+                                        <li>Create a darker shade for shadows (reduce brightness, slight coolness)</li>
+                                        <li>Draw the basic shape outline in base color</li>
+                                        <li>Add highlights where light hits most directly</li>
+                                        <li>Add shadows in areas turned away from the light</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Light Tip:</strong> Imagine your light source is coming from the top-left. This means highlights go on top-left surfaces, shadows on bottom-right surfaces. Watch the reference video for step-by-step guidance!</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week2-practice2-canvas"></div>
+                        
+                        <div class="reference-section">
+                            <h4>Additional Shading Resources</h4>
+                            <table class="reference-table">
+                                <thead>
+                                    <tr>
+                                        <th>Shape / Resource</th>
+                                        <th>Description</th>
+                                        <th>Download / Access Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Sphere Shading Tutorial by Rappenem (DeviantArt)</strong></td>
+                                        <td>A clear, multi-stage visual guide detailing how to shade a pixel-art sphere—from outline to highlights and bounce light.</td>
+                                        <td>
+                                            <a href="https://www.deviantart.com/rappenem/art/Pixel-Art-Tutorial-Sphere-Shading-1070312230" target="_blank">DeviantArt – Pixel Art Tutorial: Sphere Shading</a><br>
+                                            <a href="https://www.pinterest.com/pin/artstation-pixel-art-tutorial-sphere-shading--1548181182220990/" target="_blank">Pinterest Mirror</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>"Isometric Pixel Art Guide" (Scribd)</strong></td>
+                                        <td>A PDF-style guide covering shading techniques for cubes, cylinders, and spheres in isometric form, including gradients and dithering.</td>
+                                        <td><a href="https://www.scribd.com/document/211018094/Isometric-Pixel-Art-Guide-Rhys-Davies" target="_blank">Scribd – Isometric Pixel Art Guide</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>"The Complete Guide to Isometric Pixel Art" (Scribd)</strong></td>
+                                        <td>Extended PDF guide with detailed instructions on shading cubes, spheres, cylinders, and includes advanced techniques like dithering.</td>
+                                        <td><a href="https://www.scribd.com/document/360272825/The-Complete-Guide-to-Isometric-Pixel-Art-pdf" target="_blank">Scribd – Complete Guide to Isometric Pixel Art</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Worksheet: Shading a Sphere, Cube, Cylinder &amp; Cone</strong></td>
+                                        <td>A downloadable PDF worksheet (paid resource) designed for educational use—guided, shade-by-number instruction for each shape.</td>
+                                        <td>
+                                            <a href="https://www.teacherspayteachers.com/Product/Shading-a-Sphere-Cube-Cylinder-and-Cone-Worksheet-10481428" target="_blank">TeachersPayTeachers – Shading Worksheet</a><br>
+                                            <a href="https://www.pinterest.com/pin/shading-a-sphere-cube-cylinder-and-cone-worksheet--163255555235847833/" target="_blank">Pinterest Mirror</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 `,
                 canvas: {
@@ -764,8 +1071,8 @@ const courseContent = {
                             <p>Apply everything you've learned about color theory and shading to create a beautifully shaded heart. This exercise demonstrates your mastery of form, light, and color relationships.</p>
                             
                             <div class="info-box">
-                                <h4>Pre-loaded Elements:</h4>
-                                <p>You'll find a heart outline already created on the canvas. Your task is to add professional-quality shading that brings this flat shape to life.</p>
+                                <h4>Reference Materials:</h4>
+                                <p>Here is a reference video: <a href="https://www.youtube.com/watch?v=kuMcP1p668I" target="_blank">Heart Shading Tutorial</a> - and you may also research your own references.</p>
                             </div>
                             
                             <h4>Professional Shading Process:</h4>
@@ -1036,6 +1343,11 @@ const courseContent = {
                         <li><strong>Triangles and Angles:</strong> Dynamic, aggressive, dangerous, energetic</li>
                         <li><strong>Organic Shapes:</strong> Natural, alive, unpredictable, flowing</li>
                     </ul>
+                    
+                    <div class="task-example-large">
+                        <img src="images/examples/character-design-fundamentals.svg" alt="Character design fundamentals showing silhouettes, shape language, and archetypes" class="pixel-example-large"/>
+                        <p class="example-caption">Visual examples of strong vs weak silhouettes, shape language psychology, and character archetypes</p>
+                    </div>
 
                     <h3>Character Archetypes and Design</h3>
                     <p>Common character roles and their visual characteristics:</p>
@@ -1136,6 +1448,11 @@ const courseContent = {
                                 <li><strong>Cultural Diversity:</strong> Create silhouettes representing diverse body types and presentations</li>
                             </ol>
                             
+                            <div class="task-example-large">
+                                <img src="images/examples/character-silhouettes.svg" alt="Character silhouette examples showing different archetypes and personalities" class="pixel-example-large"/>
+                                <p class="example-caption">Reference examples showing how different silhouettes communicate character archetypes and personalities</p>
+                            </div>
+                            
                             <div class="tip-box">
                                 <p><strong>Silhouette Test:</strong> For each character, create a solid black version. If you can't tell what type of character it is from the silhouette alone, the design needs work.</p>
                             </div>
@@ -1170,6 +1487,35 @@ const courseContent = {
                             <div class="info-box">
                                 <p><strong>Professional Tip:</strong> Great video game characters are recognizable from their silhouettes alone. Think of Mario, Sonic, or Pikachu - their shapes are instantly identifiable even without color or detail.</p>
                             </div>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Create Three Character Silhouettes</h4>
+                                <p><strong>Assignment:</strong> Using only solid black pixels, create three distinct character silhouettes that clearly communicate different archetypes:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Characters:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Character 1 - The Hero:</strong> Create a balanced, confident silhouette with upright posture and heroic proportions</li>
+                                        <li><strong>Character 2 - The Villain:</strong> Design an angular, threatening silhouette with sharp or imposing features</li>
+                                        <li><strong>Character 3 - The Friend:</strong> Make a friendly, approachable silhouette using curved shapes and welcoming posture</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Each silhouette should be instantly recognizable as its archetype</li>
+                                        <li>Use different shape languages (angular vs curved vs balanced)</li>
+                                        <li>Vary proportions to support each character's role</li>
+                                        <li>Ensure cultural sensitivity in all designs</li>
+                                        <li>Test: Cover your work and ask someone else to identify each character type</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Working Tips:</strong> Start with basic shapes, exaggerate key features, and remember that less detail often means stronger silhouettes. Focus on the overall outline rather than internal details.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week3-practice1-canvas"></div>
@@ -1199,6 +1545,11 @@ const courseContent = {
                                 <li><strong>Clothing and Accessories:</strong> Add personality through costume choices</li>
                                 <li><strong>Character Variations:</strong> Create a family of related characters</li>
                             </ol>
+                            
+                            <div class="task-example-large">
+                                <img src="images/examples/character-features.svg" alt="Character feature development examples showing expressions, eye variations, and age proportions" class="pixel-example-large"/>
+                                <p class="example-caption">Reference examples for facial expressions, eye variations, and age-based proportion differences</p>
+                            </div>
                             
                             <h4>Facial Feature Guidelines:</h4>
                             <div class="tip-box">
@@ -1254,6 +1605,48 @@ const courseContent = {
                                 <li><strong>Hierarchy:</strong> Important characters should be more visually complex</li>
                                 <li><strong>Memorability:</strong> Include one distinctive feature that makes each character unique</li>
                             </ul>
+
+                            <div class="task-container">
+                                <h4>🎯 Your Task: Character Feature Development</h4>
+                                <p><strong>Assignment:</strong> Create a character face that demonstrates clear emotional expression and age-appropriate proportions:</p>
+                                
+                                <div class="task-checklist">
+                                    <h5>Required Elements:</h5>
+                                    <ul class="checklist">
+                                        <li><strong>Step 1 - Choose an Age:</strong> Child, adult, or elderly character (each has different proportion rules)</li>
+                                        <li><strong>Step 2 - Select an Emotion:</strong> Happy, sad, angry, surprised, or determined</li>
+                                        <li><strong>Step 3 - Design Clear Eyes:</strong> Use appropriate size for age and expression</li>
+                                        <li><strong>Step 4 - Create Expressive Mouth:</strong> Match the emotion with appropriate mouth shape</li>
+                                        <li><strong>Step 5 - Add Personality Details:</strong> Hair, accessories, or clothing that support character's story</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="task-requirements">
+                                    <h5>Success Criteria:</h5>
+                                    <ul>
+                                        <li>Expression should be clear and unmistakable at small size</li>
+                                        <li>Age should be apparent through proportions (head size, eye size, posture)</li>
+                                        <li>Features must be culturally sensitive and respectful</li>
+                                        <li>Character should have one memorable, distinctive feature</li>
+                                        <li>Design works within 32×32 pixel constraint</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="example-reference">
+                                    <p><strong>📝 Design Process:</strong></p>
+                                    <ol>
+                                        <li>Start with basic head shape appropriate for chosen age</li>
+                                        <li>Place eyes at correct position and size for age group</li>
+                                        <li>Add mouth that clearly shows chosen emotion</li>
+                                        <li>Include defining details (hair, clothing, accessories)</li>
+                                        <li>Test readability - can others identify age and emotion?</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="tip-box">
+                                    <p><strong>💡 Pro Tip:</strong> Remember that children have larger heads relative to their bodies, and eyes positioned lower on the face. Adults have more balanced proportions, while elderly characters may have smaller eyes and different postures.</p>
+                                </div>
+                            </div>
                         </div>
                         
                         <div id="week3-practice2-canvas"></div>
@@ -1482,7 +1875,7 @@ const courseContent = {
             }
         }
     },
-    // Week 4: Environment Art and Tilemaps
+    // Week 4: Pixel Art Animation  
     week4: {
         title: "Environment Art and Tilemaps",
         tabs: {
@@ -1500,561 +1893,6 @@ const courseContent = {
                             <li>Understand tile-based level construction</li>
                             <li>Apply environmental storytelling principles</li>
                             <li>Integrate characters with environmental designs</li>
-                        </ul>
-                    </div>
-
-                    <p>This week explores the art of creating game environments through tiles and environmental art. You'll learn how to create seamless patterns, design modular tilesets, and build atmospheric game worlds that support and enhance your character designs.</p>
-
-                    <p>Environmental art in pixel games serves multiple purposes: it sets the mood, guides player movement, tells stories about the game world, and provides the stage where your characters perform. Every environmental choice contributes to the player's emotional experience.</p>
-
-                    <h3>Environmental Challenges</h3>
-                    <ul>
-                        <li><strong>Concepts:</strong> Seamless tile design and environmental storytelling</li>
-                        <li><strong>Practice 1:</strong> Basic seamless patterns and tile mathematics</li>
-                        <li><strong>Practice 2:</strong> Creating tile variations and environmental diversity</li>
-                        <li><strong>Challenge:</strong> Design a complete environment tileset with live preview</li>
-                        <li><strong>Assessment:</strong> Environmental design knowledge and portfolio evaluation</li>
-                    </ul>
-
-                    <h3>The Mathematics of Seamless Design</h3>
-                    <p>Creating tiles that connect perfectly requires understanding edge relationships and pattern mathematics. You'll master the technical skills needed for professional tile creation while maintaining artistic quality.</p>
-
-                    <div class="tip-box">
-                        <p><strong>💡 Environment Focus:</strong> Great environmental art supports gameplay and storytelling while remaining visually interesting but not distracting from character action.</p>
-                    </div>
-
-                    <h3>Cultural Sensitivity in World Building</h3>
-                    <p>Environmental design choices carry cultural implications. We'll explore how to create inclusive game worlds that draw inspiration respectfully from diverse cultures while avoiding appropriation or stereotyping.</p>
-                `
-            },
-            concepts: {
-                title: "Concepts",
-                content: `
-                    <h2>Environmental Design Fundamentals</h2>
-                    
-                    <h3>Understanding Seamless Tiles</h3>
-                    <p>Seamless tiles are the foundation of efficient game world construction. A properly designed tile connects perfectly with copies of itself and other tiles in the set.</p>
-                    
-                    <div class="info-box">
-                        <p><strong>Seamless Tile Principles:</strong></p>
-                        <ul>
-                            <li><strong>Edge Continuity:</strong> Left edge pixels must match right edge pixels</li>
-                            <li><strong>Corner Precision:</strong> All four corners must align perfectly</li>
-                            <li><strong>Pattern Flow:</strong> Visual elements should create natural-looking repetition</li>
-                            <li><strong>Variation Balance:</strong> Enough variety to avoid obvious repetition</li>
-                        </ul>
-                    </div>
-
-                    <h3>Types of Environmental Elements</h3>
-                    <p>Different environmental elements serve different purposes:</p>
-                    <ul>
-                        <li><strong>Ground Tiles:</strong> Walkable surfaces that define player movement areas</li>
-                        <li><strong>Wall Tiles:</strong> Barriers that block movement and define space boundaries</li>
-                        <li><strong>Decoration Tiles:</strong> Non-functional elements that add visual interest</li>
-                        <li><strong>Transition Tiles:</strong> Elements that blend different environmental zones</li>
-                        <li><strong>Interactive Elements:</strong> Environmental objects players can engage with</li>
-                    </ul>
-
-                    <h3>Environmental Storytelling</h3>
-                    <p>Game environments tell stories without words:</p>
-                    
-                    <div class="tip-box">
-                        <h4>Storytelling Through Environment:</h4>
-                        <ul>
-                            <li><strong>Wear and Age:</strong> Cracks, moss, and damage suggest history</li>
-                            <li><strong>Human Presence:</strong> Tools, furniture, and paths show habitation</li>
-                            <li><strong>Natural Forces:</strong> Weather effects, erosion, and growth patterns</li>
-                            <li><strong>Cultural Elements:</strong> Architecture and decoration reveal civilizations</li>
-                            <li><strong>Emotional Atmosphere:</strong> Light, color, and composition affect mood</li>
-                        </ul>
-                    </div>
-
-                    <h3>Tile Mathematics and Grid Systems</h3>
-                    <p>Understanding the mathematical relationships in tile design:</p>
-                    <ul>
-                        <li><strong>16×16 Standard:</strong> Most common tile size, balances detail with efficiency</li>
-                        <li><strong>32×32 Detailed:</strong> Allows more complex environmental elements</li>
-                        <li><strong>8×8 Retro:</strong> Classic arcade style with extreme constraints</li>
-                        <li><strong>Mixed Sizes:</strong> Combining different tile sizes for variety</li>
-                    </ul>
-
-                    <h3>Live Preview Systems</h3>
-                    <p>Modern tile design benefits from real-time pattern preview:</p>
-                    <ul>
-                        <li><strong>3×3 Tiling:</strong> Shows how tiles repeat in small groups</li>
-                        <li><strong>Edge Checking:</strong> Immediately reveals alignment problems</li>
-                        <li><strong>Pattern Recognition:</strong> Helps identify and fix obvious repetition</li>
-                        <li><strong>Flow Analysis:</strong> Ensures natural visual movement across tiles</li>
-                    </ul>
-
-                    <h3>Cultural Considerations in Environmental Design</h3>
-                    <p>Creating inclusive and respectful environmental art:</p>
-                    
-                    <div class="warning-box">
-                        <h4>Cultural Sensitivity Guidelines:</h4>
-                        <ul>
-                            <li><strong>Research Respectfully:</strong> Understand cultural significance before using elements</li>
-                            <li><strong>Avoid Sacred Imagery:</strong> Don't casually use religious or sacred symbols</li>
-                            <li><strong>Generic Fantasy:</strong> Create original cultures rather than copying existing ones</li>
-                            <li><strong>Universal Elements:</strong> Focus on natural environments and universal human experiences</li>
-                            <li><strong>Community Consultation:</strong> Seek feedback from relevant cultural communities</li>
-                        </ul>
-                    </div>
-
-                    <h3>Color and Atmosphere in Environments</h3>
-                    <p>Environmental color choices shape player emotions:</p>
-                    <ul>
-                        <li><strong>Warm Environments:</strong> Oranges, reds, yellows create comfort and energy</li>
-                        <li><strong>Cool Environments:</strong> Blues, greens, purples suggest calm or mystery</li>
-                        <li><strong>Monochromatic Schemes:</strong> Single color ranges create strong moods</li>
-                        <li><strong>Accent Colors:</strong> Small pops of contrasting color draw attention</li>
-                        <li><strong>Time of Day:</strong> Different lighting suggests different times and moods</li>
-                    </ul>
-
-                    <h3>Integration with Character Design</h3>
-                    <p>Environments must work harmoniously with characters:</p>
-                    <ul>
-                        <li><strong>Contrast Balance:</strong> Environments should support, not compete with characters</li>
-                        <li><strong>Style Consistency:</strong> Same artistic approach for characters and environments</li>
-                        <li><strong>Color Harmony:</strong> Environmental palettes that complement character colors</li>
-                        <li><strong>Scale Relationships:</strong> Environmental elements appropriately sized for characters</li>
-                    </ul>
-
-                    <h3>Professional Environmental Workflow</h3>
-                    <ol>
-                        <li><strong>Concept Phase:</strong> Define environmental mood, purpose, and cultural context</li>
-                        <li><strong>Research Phase:</strong> Study real-world references and cultural appropriateness</li>
-                        <li><strong>Palette Creation:</strong> Establish harmonious color schemes</li>
-                        <li><strong>Base Tile Design:</strong> Create fundamental seamless elements</li>
-                        <li><strong>Variation Development:</strong> Add diversity while maintaining consistency</li>
-                        <li><strong>Integration Testing:</strong> Verify tiles work well with character designs</li>
-                        <li><strong>Cultural Review:</strong> Ensure respectful and appropriate representation</li>
-                    </ol>
-
-                    <div class="info-box">
-                        <p><strong>Professional Insight:</strong> Great environmental design is invisible to players - it feels so natural and appropriate that they don't consciously notice it, but it strongly influences their emotional experience and immersion in the game world.</p>
-                    </div>
-                `
-            },
-            practice1: {
-                title: "Practice 1: Seamless Patterns",
-                content: `
-                    <h2>Practice 1: Mastering Seamless Tile Design</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Exercise: Understanding Seamless Mathematics</h3>
-                            <p>Learn to create tiles that connect perfectly by mastering edge relationships and pattern mathematics. This technical foundation is essential for professional environmental art.</p>
-                            
-                            <h4>Progressive Seamless Challenges:</h4>
-                            <ol>
-                                <li><strong>Simple Texture:</strong> Create a basic grass or stone texture that tiles seamlessly</li>
-                                <li><strong>Edge Alignment:</strong> Ensure left/right and top/bottom edges match perfectly</li>
-                                <li><strong>Corner Precision:</strong> Verify all four corner pixels align correctly</li>
-                                <li><strong>Pattern Flow:</strong> Create visual movement that works when repeated</li>
-                                <li><strong>Live Preview:</strong> Use the 3×3 preview to check your work</li>
-                            </ol>
-                            
-                            <div class="tip-box">
-                                <p><strong>Edge Mathematics:</strong> The pixel at position (0,0) must match the pixel at (15,0), (0,15), and (15,15) for perfect tiling in a 16×16 tile.</p>
-                            </div>
-                            
-                            <h4>Seamless Design Techniques:</h4>
-                            <ul>
-                                <li><strong>Edge Wrapping:</strong> Design elements that flow naturally across tile boundaries</li>
-                                <li><strong>Central Focus:</strong> Place major details in tile centers, minor elements near edges</li>
-                                <li><strong>Pattern Breaking:</strong> Avoid obvious geometric patterns that reveal tiling</li>
-                                <li><strong>Organic Randomness:</strong> Use irregular patterns that feel natural</li>
-                            </ul>
-
-                            <h4>Common Seamless Tile Mistakes:</h4>
-                            <ul>
-                                <li><strong>Edge Misalignment:</strong> Pixels don't match between adjacent edges</li>
-                                <li><strong>Corner Problems:</strong> Corner pixels don't align with all four neighbors</li>
-                                <li><strong>Obvious Repetition:</strong> Clear geometric patterns that reveal the grid</li>
-                                <li><strong>Symmetry Issues:</strong> Perfect symmetry that looks artificial</li>
-                                <li><strong>Scale Problems:</strong> Details too large or small for the tile size</li>
-                            </ul>
-
-                            <h4>Natural Texture Inspiration:</h4>
-                            <div class="info-box">
-                                <h5>Organic Textures to Try:</h5>
-                                <ul>
-                                    <li><strong>Grass:</strong> Random blade patterns with subtle color variation</li>
-                                    <li><strong>Stone:</strong> Irregular shapes with cracks and weathering</li>
-                                    <li><strong>Wood:</strong> Grain patterns that flow naturally across edges</li>
-                                    <li><strong>Water:</strong> Ripple patterns that suggest movement</li>
-                                    <li><strong>Sand:</strong> Granular texture with subtle shade variations</li>
-                                </ul>
-                            </div>
-
-                            <h4>Cultural Sensitivity in Environmental Textures:</h4>
-                            <p>When creating environmental elements:</p>
-                            <ul>
-                                <li><strong>Natural Elements:</strong> Focus on universal natural textures</li>
-                                <li><strong>Generic Materials:</strong> Avoid culturally specific architectural elements</li>
-                                <li><strong>Research Carefully:</strong> If using cultural motifs, understand their significance</li>
-                                <li><strong>Universal Appeal:</strong> Create environments that feel welcoming to diverse players</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Live Preview Usage:</strong> The 3×3 preview shows how your tile repeats. Use it constantly while designing to catch edge alignment problems immediately.</p>
-                            </div>
-
-                            <h4>Professional Quality Standards:</h4>
-                            <ul>
-                                <li>Perfect edge alignment with no visible seams</li>
-                                <li>Natural-looking repetition without obvious patterns</li>
-                                <li>Appropriate detail level for intended viewing distance</li>
-                                <li>Color harmony that supports overall environmental palette</li>
-                                <li>Cultural appropriateness and inclusive design</li>
-                            </ul>
-                        </div>
-                        
-                        <div id="week4-practice1-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-practice1-preview"></div>
-                        </div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 16,
-                    colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887'],
-                    showPreview: true
-                }
-            },
-            practice2: {
-                title: "Practice 2: Tile Variations",
-                content: `
-                    <h2>Practice 2: Creating Environmental Diversity</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Exercise: Building Cohesive Tile Families</h3>
-                            <p>Learn to create multiple tiles that work together while maintaining visual consistency. This skill is essential for building interesting, varied game environments.</p>
-                            
-                            <h4>Tile Family Development:</h4>
-                            <ol>
-                                <li><strong>Base Texture:</strong> Start with one seamless tile as your foundation</li>
-                                <li><strong>Subtle Variations:</strong> Create 2-3 variations with small differences</li>
-                                <li><strong>Edge Transitions:</strong> Design tiles that blend between different textures</li>
-                                <li><strong>Special Elements:</strong> Add unique tiles with distinctive features</li>
-                                <li><strong>Corner Pieces:</strong> Create tiles for corners and intersections</li>
-                            </ol>
-                            
-                            <h4>Variation Techniques:</h4>
-                            <ul>
-                                <li><strong>Color Shifts:</strong> Slight hue or saturation changes for variety</li>
-                                <li><strong>Detail Addition:</strong> Small rocks, flowers, or wear patterns</li>
-                                <li><strong>Density Changes:</strong> More or fewer texture elements</li>
-                                <li><strong>Directional Elements:</strong> Grass blowing, water flowing</li>
-                                <li><strong>Weathering Effects:</strong> Age, damage, or growth patterns</li>
-                            </ul>
-
-                            <div class="tip-box">
-                                <p><strong>💡 Consistency Key:</strong> All variations should feel like they belong in the same world. Maintain consistent lighting, color temperature, and artistic style across all tiles.</p>
-                            </div>
-                            
-                            <h4>Environmental Storytelling Through Tiles:</h4>
-                            <ul>
-                                <li><strong>Pathways:</strong> Worn areas suggesting foot traffic</li>
-                                <li><strong>Natural Growth:</strong> Plants breaking through stone</li>
-                                <li><strong>Human Impact:</strong> Tool marks, construction, or decay</li>
-                                <li><strong>Time Passage:</strong> Weathering, erosion, or seasonal changes</li>
-                                <li><strong>Hidden Details:</strong> Small elements that reward close observation</li>
-                            </ul>
-
-                            <h4>Tile Transition Strategies:</h4>
-                            <div class="info-box">
-                                <h5>Blending Different Materials:</h5>
-                                <ul>
-                                    <li><strong>Gradient Transitions:</strong> Gradual change from one material to another</li>
-                                    <li><strong>Organic Edges:</strong> Natural, irregular boundaries between textures</li>
-                                    <li><strong>Overlay Elements:</strong> Scattered details that bridge different surfaces</li>
-                                    <li><strong>Elevation Changes:</strong> Height differences that justify material changes</li>
-                                </ul>
-                            </div>
-
-                            <h4>Cultural Considerations in Environmental Storytelling:</h4>
-                            <p>When adding cultural elements to environments:</p>
-                            <ul>
-                                <li><strong>Universal Themes:</strong> Focus on shared human experiences</li>
-                                <li><strong>Natural Elements:</strong> Emphasize natural rather than cultural wear patterns</li>
-                                <li><strong>Generic Tools:</strong> Avoid culturally specific implements or symbols</li>
-                                <li><strong>Respectful Research:</strong> If adding cultural elements, understand their significance</li>
-                            </ul>
-
-                            <h4>Advanced Tile Design Concepts:</h4>
-                            <ul>
-                                <li><strong>Modular Systems:</strong> Tiles that combine in multiple ways</li>
-                                <li><strong>Layered Details:</strong> Background base with foreground elements</li>
-                                <li><strong>Seasonal Variations:</strong> Same location in different weather/seasons</li>
-                                <li><strong>Damage States:</strong> Pristine to worn versions of the same tile</li>
-                                <li><strong>Interactive Elements:</strong> Tiles that suggest player interaction</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Avoid Over-Variation:</strong> Too many different tiles can make environments feel chaotic. Aim for subtle variation that adds interest without overwhelming the player.</p>
-                            </div>
-                        </div>
-                        
-                        <div id="week4-practice2-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-practice2-preview"></div>
-                        </div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 16,
-                    colors: ['#8B4513', '#CD853F', '#F4A460', '#DEB887', '#228B22', '#32CD32', '#654321', '#D2691E', '#90EE90', '#FFFFE0'],
-                    showPreview: true
-                }
-            },
-            challenge: {
-                title: "Challenge: Environment Tileset",
-                content: `
-                    <h2>Challenge: Complete Environmental Tileset</h2>
-                    
-                    <div class="exercise-container">
-                        <div class="exercise-instructions">
-                            <h3>Your Environmental Masterpiece</h3>
-                            <p>Create a cohesive environmental tileset that demonstrates mastery of seamless design, cultural sensitivity, and professional environmental art techniques.</p>
-                            
-                            <div class="info-box">
-                                <h4>Environment Theme Options:</h4>
-                                <p>Choose one environment type and create a complete tileset:</p>
-                                <ul>
-                                    <li><strong>Peaceful Meadow:</strong> Grass, flowers, and natural elements</li>
-                                    <li><strong>Ancient Ruins:</strong> Weathered stone with natural overgrowth</li>
-                                    <li><strong>Mystical Forest:</strong> Trees, moss, and magical elements</li>
-                                    <li><strong>Desert Oasis:</strong> Sand, rocks, and precious water</li>
-                                    <li><strong>Mountain Path:</strong> Stone, snow, and alpine elements</li>
-                                </ul>
-                            </div>
-                            
-                            <h4>Professional Tileset Creation Process:</h4>
-                            <ol>
-                                <li><strong>Environmental Concept:</strong> Define mood, purpose, and cultural context</li>
-                                <li><strong>Cultural Research:</strong> Ensure respectful representation if using cultural elements</li>
-                                <li><strong>Color Palette:</strong> Choose harmonious colors that support the environment's mood</li>
-                                <li><strong>Base Tile Design:</strong> Create primary seamless ground texture</li>
-                                <li><strong>Variation Development:</strong> Add 2-3 subtle variations for visual interest</li>
-                                <li><strong>Special Elements:</strong> Design unique features that enhance storytelling</li>
-                                <li><strong>Integration Testing:</strong> Verify tiles work harmoniously with Week 3 characters</li>
-                                <li><strong>Cultural Review:</strong> Ensure inclusive and appropriate representation</li>
-                            </ol>
-                            
-                            <h4>Live Preview Integration:</h4>
-                            <p>Use the 3×3 live preview system to:</p>
-                            <ul>
-                                <li>Check seamless tiling in real-time</li>
-                                <li>Identify and fix edge alignment issues immediately</li>
-                                <li>Evaluate pattern repetition and visual flow</li>
-                                <li>Test color harmony across repeated tiles</li>
-                            </ul>
-
-                            <h4>Quality Assessment Criteria:</h4>
-                            <ul>
-                                <li>✓ <strong>Seamless Perfection:</strong> No visible seams in 3×3 preview</li>
-                                <li>✓ <strong>Environmental Cohesion:</strong> All elements feel like they belong together</li>
-                                <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive design choices</li>
-                                <li>✓ <strong>Character Integration:</strong> Works harmoniously with Week 3 character designs</li>
-                                <li>✓ <strong>Atmospheric Quality:</strong> Successfully conveys intended mood and setting</li>
-                                <li>✓ <strong>Technical Excellence:</strong> Professional pixel art execution</li>
-                            </ul>
-
-                            <h4>Advanced Environmental Techniques:</h4>
-                            <ul>
-                                <li><strong>Atmospheric Perspective:</strong> Subtle color shifts suggesting depth</li>
-                                <li><strong>Lighting Consistency:</strong> Unified light source across all tiles</li>
-                                <li><strong>Material Suggestion:</strong> Texture patterns that imply different materials</li>
-                                <li><strong>Seasonal Storytelling:</strong> Elements that suggest time of year or weather</li>
-                                <li><strong>Subtle Animation Preparation:</strong> Design elements that could be animated later</li>
-                            </ul>
-
-                            <div class="tip-box">
-                                <p><strong>💡 Professional Insight:</strong> Great environmental art enhances gameplay without distracting from it. Your tileset should create a strong sense of place while remaining visually comfortable for extended play.</p>
-                            </div>
-
-                            <h4>Cultural Sensitivity Excellence:</h4>
-                            <ul>
-                                <li>Have I researched any cultural elements I'm incorporating?</li>
-                                <li>Do my environmental choices avoid harmful stereotypes?</li>
-                                <li>Would this environment feel welcoming to players from diverse backgrounds?</li>
-                                <li>Am I representing nature and human impact respectfully?</li>
-                                <li>Have I considered consulting with relevant communities if needed?</li>
-                            </ul>
-
-                            <div class="warning-box">
-                                <p><strong>Portfolio Quality Standard:</strong> This environmental art should be professional enough to include in a portfolio. Every tile should contribute to a cohesive, immersive game world.</p>
-                            </div>
-                        </div>
-                        
-                        <div id="week4-challenge-canvas"></div>
-                        <div class="tile-preview">
-                            <h4>Live Tiling Preview (3×3)</h4>
-                            <div id="week4-challenge-preview"></div>
-                        </div>
-                    </div>
-                `,
-                canvas: {
-                    type: 'tile',
-                    gridSize: 16,
-                    colors: ['#228B22', '#32CD32', '#90EE90', '#006400', '#8B4513', '#D2691E', '#F4A460', '#DEB887', '#87CEEB', '#FFE4B5', '#CD853F', '#F0E68C'],
-                    showPreview: true
-                }
-            },
-            assessment: {
-                title: "Assessment",
-                content: `
-                    <h2>Week 4 Comprehensive Assessment</h2>
-                    
-                    <p>Evaluate your environmental art and tilemap mastery through this comprehensive assessment!</p>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 1: What is the most critical requirement for a seamless tile?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Using as many colors as possible</div>
-                            <div class="quiz-option" data-correct="true">Perfect edge alignment so tiles connect without visible seams</div>
-                            <div class="quiz-option" data-correct="false">Including complex details in every tile</div>
-                            <div class="quiz-option" data-correct="false">Making the tile perfectly symmetrical</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Seamless tiles must have perfect edge alignment - the pixels on adjacent edges must match exactly so that when tiles are placed next to each other, no seams are visible.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 2: What is "environmental storytelling" in game design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Adding text descriptions to every environmental element</div>
-                            <div class="quiz-option" data-correct="true">Using visual environmental details to convey story and history without words</div>
-                            <div class="quiz-option" data-correct="false">Making environments that change based on story progression</div>
-                            <div class="quiz-option" data-correct="false">Creating environments that talk to the player</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Environmental storytelling uses visual details like wear patterns, tool marks, natural growth, and architectural styles to tell stories about the game world's history and inhabitants without explicit narration.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 3: Why is the 3×3 live preview system useful for tile design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">It makes tiles look more colorful</div>
-                            <div class="quiz-option" data-correct="true">It shows how tiles repeat and helps identify seaming problems immediately</div>
-                            <div class="quiz-option" data-correct="false">It automatically fixes edge alignment issues</div>
-                            <div class="quiz-option" data-correct="false">It adds more detail to the tiles</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> The 3×3 preview shows how your tile looks when repeated, making it easy to spot edge alignment problems, obvious repetition patterns, and visual flow issues in real-time.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="quiz-question">
-                        <h4>Question 4: When creating tile variations, what is most important to maintain?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Exactly identical colors across all tiles</div>
-                            <div class="quiz-option" data-correct="true">Visual consistency so all tiles feel like they belong in the same world</div>
-                            <div class="quiz-option" data-correct="false">Identical details in every tile</div>
-                            <div class="quiz-option" data-correct="false">Perfect symmetry in all variations</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Visual consistency in lighting, color temperature, artistic style, and overall mood ensures that all tile variations feel cohesive and belong in the same game world.</p>
-                        </div>
-                    </div>
-
-                    <div class="quiz-question">
-                        <h4>Question 5: What should be the primary consideration when incorporating cultural elements into environmental design?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Making them as prominent as possible</div>
-                            <div class="quiz-option" data-correct="true">Ensuring respectful, researched representation that avoids stereotypes</div>
-                            <div class="quiz-option" data-correct="false">Using as many different cultural elements as possible</div>
-                            <div class="quiz-option" data-correct="false">Making them blend in completely</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Cultural elements require respectful research and representation. Avoid stereotypes, understand the significance of what you're including, and consider consulting with relevant cultural communities.</p>
-                        </div>
-                    </div>
-
-                    <div class="quiz-question">
-                        <h4>Question 6: How should environmental art relate to character design in a game?</h4>
-                        <div class="quiz-options">
-                            <div class="quiz-option" data-correct="false">Environment should be more detailed than characters</div>
-                            <div class="quiz-option" data-correct="true">Environment should support and complement characters without competing for attention</div>
-                            <div class="quiz-option" data-correct="false">Environment should use completely different colors than characters</div>
-                            <div class="quiz-option" data-correct="false">Environment should be designed completely independently</div>
-                        </div>
-                        <div class="quiz-explanation">
-                            <p><strong>Explanation:</strong> Environmental art should create a harmonious backdrop that supports characters. It should complement character colors, maintain consistent artistic style, and provide appropriate contrast without overwhelming the characters.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-box mt-2">
-                        <h3>Practical Assessment Requirements</h3>
-                        <p>To demonstrate mastery of Week 4 concepts, ensure you have completed:</p>
-                        <ul>
-                            <li>✓ <strong>Seamless Tile Creation:</strong> Perfect edge alignment with no visible seams</li>
-                            <li>✓ <strong>Pattern Mathematics:</strong> Understanding of tile edge relationships</li>
-                            <li>✓ <strong>Tile Variations:</strong> Cohesive family of related environmental elements</li>
-                            <li>✓ <strong>Live Preview Usage:</strong> Effective use of 3×3 preview system</li>
-                            <li>✓ <strong>Environmental Storytelling:</strong> Tiles that suggest history and atmosphere</li>
-                            <li>✓ <strong>Cultural Sensitivity:</strong> Respectful and inclusive environmental design</li>
-                        </ul>
-                        
-                        <div class="tip-box">
-                            <h4>Self-Assessment Questions:</h4>
-                            <ul>
-                                <li>Can you create tiles that connect seamlessly without visible edges?</li>
-                                <li>Do your environmental choices tell a story about the game world?</li>
-                                <li>Are your tile variations cohesive while providing visual interest?</li>
-                                <li>Have you considered cultural sensitivity in your environmental design?</li>
-                                <li>Do your environments work harmoniously with your character designs?</li>
-                            </ul>
-                        </div>
-                        
-                        <p><strong>Ready for Week 5?</strong> You should feel confident creating professional environmental art and be excited to bring everything to life through animation!</p>
-                    </div>
-
-                    <div class="info-box mt-2">
-                        <h3>🌍 Congratulations on Environmental Art Mastery!</h3>
-                        <p>You've developed sophisticated environmental design skills that balance technical precision with artistic storytelling. The ability to create immersive, culturally sensitive game worlds is a valuable professional skill.</p>
-                        
-                        <p><strong>What You've Achieved:</strong></p>
-                        <ul>
-                            <li>Mastered seamless tile creation with perfect edge alignment</li>
-                            <li>Learned environmental storytelling through visual details</li>
-                            <li>Developed cultural sensitivity in world-building</li>
-                            <li>Created cohesive tile families with professional consistency</li>
-                            <li>Integrated environmental art with character design</li>
-                        </ul>
-                        
-                        <p><strong>Next Week Preview:</strong> We'll bring everything to life through animation - making your characters move and your environments dynamic!</p>
-                    </div>
-                `
-            }
-        }
-    },
-
-    week5: {
-        title: "Pixel Art Animation",
-        tabs: {
-            overview: {
-                title: "Overview",
-                content: `
-                    <h2>Week 5: Pixel Art Animation</h2>
-                    
-                    <div class="info-box">
-                        <h3>Learning Objectives</h3>
-                        <ul>
-                            <li>Apply animation principles to pixel art constraints</li>
-                            <li>Create smooth character animations</li>
-                            <li>Master timing and spacing in limited frames</li>
-                            <li>Use onion skinning effectively</li>
-                            <li>Develop professional animation workflows</li>
                         </ul>
                     </div>
 
@@ -2129,6 +1967,22 @@ const courseContent = {
                             <h3>Exercise: Create a Bouncing Ball Animation</h3>
                             <p>Master the foundational principles of timing, arcs, and squash/stretch through the classic bouncing ball exercise.</p>
                             
+                            <div class="info-box">
+                                <h4>Animation Canvas Controls:</h4>
+                                <ul>
+                                    <li><strong>Add Frames:</strong> Click the + button to add new animation frames</li>
+                                    <li><strong>Delete Frames:</strong> Select a frame and use the delete button to remove it</li>
+                                    <li><strong>Play Animation:</strong> Use the play button to preview your animation loop</li>
+                                    <li><strong>Onion Skinning:</strong> Toggle to see previous/next frames as transparent guides</li>
+                                    <li><strong>Frame Navigation:</strong> Click frame thumbnails to jump between frames</li>
+                                </ul>
+                            </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/ball-animation-frames.svg" alt="Five frames showing bouncing ball animation with squash and stretch" class="pixel-example" style="width: 320px; height: auto;"/>
+                                <p class="example-caption">Example: 5-frame bouncing ball showing arc motion, squash, and stretch</p>
+                            </div>
+                            
                             <h4>Animation Goals:</h4>
                             <ol>
                                 <li><strong>Timing:</strong> Create 8-12 frame loop showing ball bouncing</li>
@@ -2151,18 +2005,22 @@ const courseContent = {
 
                             <h4>Technical Tips:</h4>
                             <ul>
-                                <li><strong>Use Onion Skinning:</strong> Enable to see previous frame as guide</li>
-                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear</li>
-                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak</li>
-                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast</li>
+                                <li><strong>Use Onion Skinning:</strong> This essential feature shows previous and next frames as transparent overlays, helping you maintain consistent motion paths and spacing between frames</li>
+                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear - use onion skinning to ensure smooth arcs</li>
+                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak - adjust frame spacing accordingly</li>
+                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast - exaggerate for better animation appeal</li>
                             </ul>
+                            
+                            <div class="tip-box">
+                                <p><strong>💡 Onion Skinning Pro Tip:</strong> Keep onion skinning enabled throughout your animation work. It prevents common mistakes like inconsistent ball size, broken motion paths, or uneven spacing between frames.</p>
+                            </div>
 
                             <div class="warning-box">
                                 <p><strong>Common Mistakes:</strong> Avoid linear motion, uniform timing, or forgetting squash/stretch. Every frame should show the ball's weight and momentum.</p>
                             </div>
                         </div>
                         
-                        <div id="week5-practice1-canvas"></div>
+                        <div id="week4-practice1-canvas"></div>
                     </div>
                 `,
                 canvas: {
@@ -2181,6 +2039,428 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Exercise: Create Character Breathing Animation</h3>
                             <p>Bring your character designs to life with subtle idle animation that shows personality and life.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🔍 Reference Study First:</h4>
+                                <p><strong>Before starting, find good reference animations:</strong> Search for "pixel art idle animations", "character breathing animation", or "2D game idle cycles" on sites like Pinterest, ArtStation, or game development forums. Study how professional artists handle subtle movement, timing, and secondary animation.</p>
+                            </div>
+                            
+                            <h4>Animation Objectives:</h4>
+                            <ol>
+                                <li><strong>Subtle Movement:</strong> Gentle breathing or swaying motion</li>
+                                <li><strong>Personality:</strong> Animation reflects character archetype</li>
+                                <li><strong>Loop Seamlessly:</strong> Animation cycles smoothly</li>
+                                <li><strong>Secondary Animation:</strong> Hair, clothing, or accessories move naturally</li>
+                            </ol>
+                            
+                            <h4>Character Animation Types:</h4>
+                            <div class="info-box">
+                                <h5>Choose Your Animation Style:</h5>
+                                <ul>
+                                    <li><strong>🛡️ Knight:</strong> Steady breathing, armor slightly shifting</li>
+                                    <li><strong>🧙 Wizard:</strong> Robes flowing, staff glowing rhythmically</li>
+                                    <li><strong>🏃 Rogue:</strong> Alert stance, hood moving with quick breathing</li>
+                                    <li><strong>⚔️ Fighter:</strong> Confident pose, cape or hair flowing</li>
+                                </ul>
+                            </div>
+
+                            <h4>Technical Approach:</h4>
+                            <ul>
+                                <li><strong>4-6 Frame Loop:</strong> Keep it simple but effective</li>
+                                <li><strong>Chest Movement:</strong> Slight expansion/contraction for breathing</li>
+                                <li><strong>Eye Blinks:</strong> Occasional blink adds life (every 8-12 frames)</li>
+                                <li><strong>Secondary Elements:</strong> Hair, clothing, accessories follow main motion</li>
+                            </ul>
+
+                            <div class="tip-box">
+                                <p><strong>Animation Principle:</strong> Idle animations should be subtle enough not to distract during gameplay, but present enough to make characters feel alive.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="week4-practice2-canvas"></div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 32,
+                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C'],
+                    fps: 6
+                }
+            },
+            challenge: {
+                title: "Challenge: Walk Cycle",
+                content: `
+                    <h2>Challenge: Create a Character Walk Cycle</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Master Challenge: Professional Walk Cycle Animation</h3>
+                            <p>Create a complete walk cycle that demonstrates professional animation skills and character personality.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🎯 Essential Reference Research:</h4>
+                                <p><strong>Professional animators always use reference:</strong> Before drawing a single frame, study real walking videos, classic animation walk cycles (Disney, Studio Ghibli), and pixel art walk cycles from successful games. Search for "walk cycle reference", "animation walk cycle breakdown", or "pixel art character walk" to find quality examples.</p>
+                                <p><strong>Recommended Study:</strong> Richard Williams' "The Animator's Survival Kit" walk cycle examples, classic game sprites (Street Fighter, King of Fighters), and modern indie pixel art games.</p>
+                            </div>
+                            
+                            <h4>Walk Cycle Requirements:</h4>
+                            <ol>
+                                <li><strong>8-Frame Cycle:</strong> Complete walk cycle that loops seamlessly</li>
+                                <li><strong>Character Personality:</strong> Walk style matches character archetype</li>
+                                <li><strong>Proper Timing:</strong> Natural rhythm and weight distribution</li>
+                                <li><strong>Secondary Animation:</strong> Hair, clothing, equipment moves naturally</li>
+                                <li><strong>Professional Quality:</strong> Portfolio-ready animation</li>
+                            </ol>
+                            
+                            <h4>Walk Cycle Breakdown:</h4>
+                            <div class="info-box">
+                                <h5>8-Frame Walk Cycle Structure:</h5>
+                                <ul>
+                                    <li><strong>Frame 1:</strong> Contact - left foot down, right leg forward</li>
+                                    <li><strong>Frame 2:</strong> Recoil - body compresses, weight shifts</li>
+                                    <li><strong>Frame 3:</strong> Passing - right leg passes left, body rises</li>
+                                    <li><strong>Frame 4:</strong> High Point - body at highest position</li>
+                                    <li><strong>Frame 5:</strong> Contact - right foot down, left leg forward</li>
+                                    <li><strong>Frame 6:</strong> Recoil - body compresses, weight shifts</li>
+                                    <li><strong>Frame 7:</strong> Passing - left leg passes right, body rises</li>
+                                    <li><strong>Frame 8:</strong> High Point - body at highest, returns to frame 1</li>
+                                </ul>
+                            </div>
+
+                            <h4>Personality Through Animation:</h4>
+                            <ul>
+                                <li><strong>Confident Character:</strong> Upright posture, steady rhythm, purposeful stride</li>
+                                <li><strong>Sneaky Character:</strong> Low crouch, uneven timing, cautious steps</li>
+                                <li><strong>Heavy Character:</strong> Strong impacts, delayed secondary motion, wide stance</li>
+                                <li><strong>Graceful Character:</strong> Smooth arcs, minimal vertical movement, flowing secondary</li>
+                            </ul>
+
+                            <div class="warning-box">
+                                <p><strong>Portfolio Standard:</strong> This walk cycle should be professional quality - smooth, characterful, and technically excellent. Take time to polish every frame.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="week4-challenge-canvas"></div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 32,
+                    colors: ['#2C3E50', '#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#ECF0F1', '#9B59B6', '#1ABC9C', '#E67E22', '#95A5A6'],
+                    fps: 8
+                }
+            },
+            assessment: {
+                title: "Assessment",
+                content: `
+                    <h2>Week 4 Animation Assessment</h2>
+                    
+                    <p>Test your animation knowledge and demonstrate your practical skills!</p>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 1: What is the most important principle for creating believable character animation?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Using as many frames as possible</div>
+                            <div class="quiz-option" data-correct="true">Showing proper weight and timing through movement</div>
+                            <div class="quiz-option" data-correct="false">Making every frame perfectly smooth</div>
+                            <div class="quiz-option" data-correct="false">Adding lots of secondary animation details</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Weight and timing are fundamental to believable animation. Characters must feel like they have mass and move with natural rhythm, regardless of frame count.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 2: What does "onion skinning" help achieve in animation?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Adding more colors to the animation</div>
+                            <div class="quiz-option" data-correct="true">Seeing previous and next frames to maintain consistency and smooth motion</div>
+                            <div class="quiz-option" data-correct="false">Making the animation faster to create</div>
+                            <div class="quiz-option" data-correct="false">Automatically generating in-between frames</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Onion skinning shows transparent versions of adjacent frames, helping animators maintain consistent positioning and create smooth motion paths.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 3: In a walk cycle, what creates the sense of weight and impact?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Making the character move faster</div>
+                            <div class="quiz-option" data-correct="true">Body compression on foot contact and rising between steps</div>
+                            <div class="quiz-option" data-correct="false">Adding more frames to the animation</div>
+                            <div class="quiz-option" data-correct="false">Making the character jump instead of walk</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> The vertical movement of the body - compressing on impact and rising between steps - is what creates the sense of weight and natural walking rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Question 4: What is "secondary animation" in character design?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">The character's second most important movement</div>
+                            <div class="quiz-option" data-correct="true">Elements like hair, clothing, or accessories that follow the main character motion</div>
+                            <div class="quiz-option" data-correct="false">Animation that happens in the background</div>
+                            <div class="quiz-option" data-correct="false">Animation created by a different artist</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Secondary animation refers to elements that react to the primary motion - like hair bouncing when a character jumps, or a cape flowing when they turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h4>Question 5: Why do pixel art animations often use lower frame rates (8-12 FPS)?</h4>
+                        <div class="quiz-options">
+                            <div class="quiz-option" data-correct="false">Because it's easier to animate</div>
+                            <div class="quiz-option" data-correct="true">It creates a distinctive aesthetic and reduces workload while maintaining visual appeal</div>
+                            <div class="quiz-option" data-correct="false">Because old computers couldn't handle higher frame rates</div>
+                            <div class="quiz-option" data-correct="false">Because pixel art looks bad at high frame rates</div>
+                        </div>
+                        <div class="quiz-explanation">
+                            <p><strong>Explanation:</strong> Lower frame rates are an aesthetic choice that creates the distinctive "pixel art" feel while being practical for production. Each frame is held longer, creating a unique visual rhythm.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box mt-2">
+                        <h3>Practical Assessment Requirements</h3>
+                        <p>To demonstrate mastery of Week 4 animation concepts, ensure you have completed:</p>
+                        <ul>
+                            <li>✓ <strong>Bouncing Ball:</strong> Shows proper timing, arcs, and squash/stretch</li>
+                            <li>✓ <strong>Character Idle:</strong> Subtle animation that adds personality</li>
+                            <li>✓ <strong>Walk Cycle:</strong> Professional 8-frame cycle with character personality</li>
+                            <li>✓ <strong>Onion Skinning Usage:</strong> Effective use of animation tools</li>
+                            <li>✓ <strong>Secondary Animation:</strong> Natural movement of hair, clothing, accessories</li>
+                        </ul>
+                        
+                        <div class="tip-box">
+                            <h4>Self-Assessment Questions:</h4>
+                            <ul>
+                                <li>Do your animations show proper weight and timing?</li>
+                                <li>Does character movement reflect their personality?</li>
+                                <li>Are your animation loops seamless and natural?</li>
+                                <li>Have you mastered the onion skinning workflow?</li>
+                                <li>Do secondary elements move believably?</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Ready for Week 5?</strong> You should feel confident creating professional character animations and be excited to explore environmental art and world building!</p>
+                    </div>
+
+                    <div class="info-box mt-2">
+                        <h3>🎬 Congratulations on Animation Mastery!</h3>
+                        <p>You've developed professional animation skills that bring pixel art to life with personality and technical excellence. Character animation is one of the most valued skills in game development.</p>
+                        
+                        <p><strong>What You've Achieved:</strong></p>
+                        <ul>
+                            <li>Mastered fundamental animation principles in pixel art constraints</li>
+                            <li>Created believable character movement with personality</li>
+                            <li>Developed professional animation workflows and tool usage</li>
+                            <li>Built a portfolio of character animations ready for game integration</li>
+                            <li>Understood timing, weight, and secondary animation principles</li>
+                        </ul>
+                        
+                        <p><strong>Next Week Preview:</strong> We'll explore environmental design and tilemap creation - building the worlds where your animated characters will live and adventure!</p>
+                    </div>
+                `
+            }
+        }
+    },
+
+    week5: {
+        title: "Pixel Art Animation",
+        tabs: {
+            overview: {
+                title: "Overview",
+                content: `
+                    <h2>Week 5: Pixel Art Animation</h2>
+                    
+                    <div class="info-box">
+                        <h3>Learning Objectives</h3>
+                        <ul>
+                            <li>Master seamless tile creation and pattern design</li>
+                            <li>Create cohesive environmental art families</li>
+                            <li>Apply cultural sensitivity to world building</li>
+                            <li>Design environments that support character gameplay</li>
+                            <li>Develop professional environmental art workflows</li>
+                        </ul>
+                    </div>
+
+                    <p>Build immersive game worlds! This week, you'll learn how to create seamless environmental tiles and cohesive worlds that tell stories through visual design and support engaging gameplay.</p>
+
+                    <h3>What You'll Master This Week</h3>
+                    <ul>
+                        <li><strong>Practice 1:</strong> Seamless grass tiles - mastering edge mathematics and tiling</li>
+                        <li><strong>Practice 2:</strong> Environmental diversity - creating cohesive tile families</li>
+                        <li><strong>Challenge:</strong> Complete environmental tileset with professional quality</li>
+                        <li><strong>Assessment:</strong> Environmental design knowledge and practical mastery</li>
+                    </ul>
+
+                    <div class="tip-box">
+                        <p><strong>💡 Environmental Tip:</strong> Great environmental design is invisible to players - it feels so natural that they don't consciously notice it, but strongly influences their experience!</p>
+                    </div>
+
+                    <h3>Professional Environmental Workflow</h3>
+                    <p>You'll learn industry-standard techniques for creating immersive, culturally sensitive game worlds that enhance gameplay and support narrative through visual storytelling.</p>
+                `
+            },
+            concepts: {
+                title: "Concepts",
+                content: `
+                    <h2>Environmental Design Fundamentals</h2>
+                    
+                    <h3>Understanding Seamless Tiles</h3>
+                    <p>Seamless tiles are the foundation of efficient game world construction. A properly designed tile connects perfectly with copies of itself and other tiles in the set.</p>
+                    
+                    <div class="info-box">
+                        <p><strong>Seamless Tile Principles:</strong></p>
+                        <ul>
+                            <li><strong>Edge Continuity:</strong> Left edge pixels must match right edge pixels</li>
+                            <li><strong>Corner Precision:</strong> All four corners must align perfectly</li>
+                            <li><strong>Pattern Flow:</strong> Visual elements should create natural-looking repetition</li>
+                            <li><strong>Variation Balance:</strong> Enough variety to avoid obvious repetition</li>
+                        </ul>
+                    </div>
+
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="images/examples/seamless-grass-tile.svg" alt="Example of seamless grass tile showing original tile next to identical copy with matching edges" class="pixel-example" style="width: 400px; height: auto;"/>
+                        <p class="example-caption">Example: Seamless grass tile demonstrating perfect edge alignment</p>
+                    </div>
+
+                    <h3>Types of Environmental Elements</h3>
+                    <p>Different environmental elements serve different purposes:</p>
+                    <ul>
+                        <li><strong>Ground Tiles:</strong> Walkable surfaces that define player movement areas</li>
+                        <li><strong>Wall Tiles:</strong> Barriers that block movement and define space boundaries</li>
+                        <li><strong>Decoration Tiles:</strong> Non-functional elements that add visual interest</li>
+                        <li><strong>Transition Tiles:</strong> Elements that blend different environmental zones</li>
+                        <li><strong>Interactive Elements:</strong> Environmental objects players can engage with</li>
+                    </ul>
+
+                    <h3>Environmental Storytelling</h3>
+                    <p>Game environments tell stories without words:</p>
+                    
+                    <div class="tip-box">
+                        <h4>Storytelling Through Environment:</h4>
+                        <ul>
+                            <li><strong>Wear and Age:</strong> Cracks, moss, and damage suggest history</li>
+                            <li><strong>Human Presence:</strong> Tools, furniture, and paths show habitation</li>
+                            <li><strong>Natural Forces:</strong> Weather effects, erosion, and growth patterns</li>
+                            <li><strong>Cultural Elements:</strong> Architecture and decoration reveal civilizations</li>
+                            <li><strong>Emotional Atmosphere:</strong> Light, color, and composition affect mood</li>
+                        </ul>
+                    </div>
+
+                    <h3>Cultural Considerations in Environmental Design</h3>
+                    <p>Creating inclusive and respectful environmental art:</p>
+                    
+                    <div class="warning-box">
+                        <h4>Cultural Sensitivity Guidelines:</h4>
+                        <ul>
+                            <li><strong>Research Respectfully:</strong> Understand cultural significance before using elements</li>
+                            <li><strong>Avoid Sacred Imagery:</strong> Don't casually use religious or sacred symbols</li>
+                            <li><strong>Generic Fantasy:</strong> Create original cultures rather than copying existing ones</li>
+                            <li><strong>Universal Elements:</strong> Focus on natural environments and universal human experiences</li>
+                            <li><strong>Community Consultation:</strong> Seek feedback from relevant cultural communities</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-box">
+                        <p><strong>Professional Insight:</strong> Great environmental design is invisible to players - it feels so natural and appropriate that they don't consciously notice it, but it strongly influences their emotional experience and immersion in the game world.</p>
+                    </div>
+                `
+            },
+            practice1: {
+                title: "Practice 1: Bouncing Ball",
+                content: `
+                    <h2>Practice 1: Master Animation Fundamentals</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Exercise: Create a Bouncing Ball Animation</h3>
+                            <p>Master the foundational principles of timing, arcs, and squash/stretch through the classic bouncing ball exercise.</p>
+                            
+                            <div class="info-box">
+                                <h4>Animation Canvas Controls:</h4>
+                                <ul>
+                                    <li><strong>Add Frames:</strong> Click the + button to add new animation frames</li>
+                                    <li><strong>Delete Frames:</strong> Select a frame and use the delete button to remove it</li>
+                                    <li><strong>Play Animation:</strong> Use the play button to preview your animation loop</li>
+                                    <li><strong>Onion Skinning:</strong> Toggle to see previous/next frames as transparent guides</li>
+                                    <li><strong>Frame Navigation:</strong> Click frame thumbnails to jump between frames</li>
+                                </ul>
+                            </div>
+
+                            <div style="text-align: center; margin: 20px 0;">
+                                <img src="images/examples/ball-animation-frames.svg" alt="Five frames showing bouncing ball animation with squash and stretch" class="pixel-example" style="width: 320px; height: auto;"/>
+                                <p class="example-caption">Example: 5-frame bouncing ball showing arc motion, squash, and stretch</p>
+                            </div>
+                            
+                            <h4>Animation Goals:</h4>
+                            <ol>
+                                <li><strong>Timing:</strong> Create 8-12 frame loop showing ball bouncing</li>
+                                <li><strong>Arc Motion:</strong> Natural curved path, not straight lines</li>
+                                <li><strong>Squash/Stretch:</strong> Ball deforms on impact and stretch in air</li>
+                                <li><strong>Weight:</strong> Ball shows gravity and momentum</li>
+                            </ol>
+                            
+                            <h4>Step-by-Step Process:</h4>
+                            <div class="tip-box">
+                                <h5>Frame Planning:</h5>
+                                <ul>
+                                    <li><strong>Frame 1-2:</strong> Ball at highest point (left)</li>
+                                    <li><strong>Frame 3-4:</strong> Ball falling, gaining speed</li>
+                                    <li><strong>Frame 5:</strong> Ball compressed on ground impact</li>
+                                    <li><strong>Frame 6-7:</strong> Ball rising, losing speed</li>
+                                    <li><strong>Frame 8:</strong> Ball at highest point (right)</li>
+                                </ul>
+                            </div>
+
+                            <h4>Technical Tips:</h4>
+                            <ul>
+                                <li><strong>Use Onion Skinning:</strong> This essential feature shows previous and next frames as transparent overlays, helping you maintain consistent motion paths and spacing between frames</li>
+                                <li><strong>Arc Paths:</strong> Ball follows curved trajectory, not linear - use onion skinning to ensure smooth arcs</li>
+                                <li><strong>Speed Variation:</strong> Faster near ground, slower at peak - adjust frame spacing accordingly</li>
+                                <li><strong>Deformation:</strong> Squash on impact, stretch when fast - exaggerate for better animation appeal</li>
+                            </ul>
+                            
+                            <div class="tip-box">
+                                <p><strong>💡 Onion Skinning Pro Tip:</strong> Keep onion skinning enabled throughout your animation work. It prevents common mistakes like inconsistent ball size, broken motion paths, or uneven spacing between frames.</p>
+                            </div>
+
+                            <div class="warning-box">
+                                <p><strong>Common Mistakes:</strong> Avoid linear motion, uniform timing, or forgetting squash/stretch. Every frame should show the ball's weight and momentum.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="week5-practice1-canvas"></div>
+                        <div class="tile-preview">
+                            <h4>Live Tiling Preview (3×3)</h4>
+                            <div id="week5-practice1-preview"></div>
+                        </div>
+                    </div>
+                `,
+                canvas: {
+                    type: 'animation',
+                    gridSize: 16,
+                    colors: ['#E74C3C', '#3498DB', '#2ECC71', '#F39C12', '#9B59B6', '#1ABC9C', '#000000', '#FFFFFF'],
+                    fps: 8
+                }
+            },
+            practice2: {
+                title: "Practice 2: Character Animation",
+                content: `
+                    <h2>Practice 2: Character Idle Animation</h2>
+                    
+                    <div class="exercise-container">
+                        <div class="exercise-instructions">
+                            <h3>Exercise: Create Character Breathing Animation</h3>
+                            <p>Bring your character designs to life with subtle idle animation that shows personality and life.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🔍 Reference Study First:</h4>
+                                <p><strong>Before starting, find good reference animations:</strong> Search for "pixel art idle animations", "character breathing animation", or "2D game idle cycles" on sites like Pinterest, ArtStation, or game development forums. Study how professional artists handle subtle movement, timing, and secondary animation.</p>
+                            </div>
                             
                             <h4>Animation Objectives:</h4>
                             <ol>
@@ -2215,6 +2495,10 @@ const courseContent = {
                         </div>
                         
                         <div id="week5-practice2-canvas"></div>
+                        <div class="tile-preview">
+                            <h4>Live Tiling Preview (3×3)</h4>
+                            <div id="week5-practice2-preview"></div>
+                        </div>
                     </div>
                 `,
                 canvas: {
@@ -2233,6 +2517,12 @@ const courseContent = {
                         <div class="exercise-instructions">
                             <h3>Master Challenge: Professional Walk Cycle Animation</h3>
                             <p>Create a complete walk cycle that demonstrates professional animation skills and character personality.</p>
+                            
+                            <div class="warning-box">
+                                <h4>🎯 Essential Reference Research:</h4>
+                                <p><strong>Professional animators always use reference:</strong> Before drawing a single frame, study real walking videos, classic animation walk cycles (Disney, Studio Ghibli), and pixel art walk cycles from successful games. Search for "walk cycle reference", "animation walk cycle breakdown", or "pixel art character walk" to find quality examples.</p>
+                                <p><strong>Recommended Study:</strong> Richard Williams' "The Animator's Survival Kit" walk cycle examples, classic game sprites (Street Fighter, King of Fighters), and modern indie pixel art games.</p>
+                            </div>
                             
                             <h4>Walk Cycle Requirements:</h4>
                             <ol>
@@ -2284,9 +2574,9 @@ const courseContent = {
             assessment: {
                 title: "Assessment",
                 content: `
-                    <h2>Week 5 Animation Assessment</h2>
+                    <h2>Week 5 Comprehensive Assessment</h2>
                     
-                    <p>Test your animation knowledge and demonstrate your practical skills!</p>
+                    <p>Evaluate your environmental art and tilemap mastery through this comprehensive assessment!</p>
                     
                     <div class="quiz-question">
                         <h4>Question 1: What is the most important principle for creating believable character animation?</h4>
@@ -2573,11 +2863,8 @@ const courseContent = {
                             <div class="visual-example">
                                 <h4>Unity Settings Example:</h4>
                                 <div class="unity-settings-demo">
-                                    <div class="settings-image-placeholder" style="width: 300px; height: 200px; background: linear-gradient(45deg, #3498DB, #2980B9); border: 2px solid #2C3E50; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
-                                        Unity Import Settings Screenshot
-                                        <br>
-                                        (Filter: Point, Compression: None)
-                                    </div>
+                                    <img src="images/examples/unity-import-settings.svg" alt="Unity texture inspector showing correct pixel art import settings: Point filter mode, no compression, sprite texture type" style="max-width: 400px; width: 100%; height: auto; border: 2px solid #2C3E50; border-radius: 5px; background: #393939;"/>
+                                    <p class="example-caption"><strong>Unity Texture Inspector:</strong> Critical settings highlighted - Point filter and no compression are essential for sharp pixel art</p>
                                 </div>
                             </div>
                         </div>
